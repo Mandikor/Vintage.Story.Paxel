@@ -1,0 +1,57 @@
+[
+  {
+    "ingredientPattern": "AS,LP",
+    "ingredients": {
+      "P": { "type": "item", "code": "game:pickaxe-tinbronze" },
+      "A": { "type": "item", "code": "game:axe-felling-tinbronze" },
+      "S": { "type": "item", "code": "game:shovel-tinbronze" },
+      "L": { "type": "item", "code": "game:flaxtwine", "quantity": 4 }
+    },
+    "width": 2,
+    "height": 2,
+    "recipeGroup": 1,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxel-tinbronze", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "_AS,_TP,TL_",
+    "ingredients": {
+      "P": { "type": "item", "code": "game:pickaxehead-tinbronze" },
+      "A": { "type": "item", "code": "game:axehead-tinbronze" },
+      "S": { "type": "item", "code": "game:shovelhead-tinbronze" },
+      "T": { "type": "item", "code": "game:plank-*", "quantity": 2 },
+      "L": { "type": "item", "code": "game:flaxtwine", "quantity": 4 }
+    },
+    "width": 3,
+    "height": 3,
+    "recipeGroup": 2,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxel-tinbronze", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "__P,_T_,TL_",
+    "ingredients": {
+      "P": { "type": "item", "code": "paxel:paxelhead-tinbronze" },
+      "T": { "type": "item", "code": "game:plank-*", "quantity": 2 },
+      "L": { "type": "item", "code": "game:flaxtwine", "quantity": 4 }
+    },
+    "width": 3,
+    "height": 3,
+    "recipeGroup": 3,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxel-tinbronze", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "AS,_P",
+    "ingredients": {
+      "P": { "type": "item", "code": "game:pickaxehead-tinbronze" },
+      "A": { "type": "item", "code": "game:axehead-tinbronze" },
+      "S": { "type": "item", "code": "game:shovelhead-tinbronze" }
+    },
+    "width": 2,
+    "height": 2,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxelhead-tinbronze", "quantity": 1 }
+  }
+]
+

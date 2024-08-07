@@ -1,0 +1,250 @@
+{
+  "code": "paxel",
+
+  "class": "ItemPaxel",
+
+  "heldTpHitAnimation": "shoveldig",
+
+  "tool": "shovel",
+
+  "storageFlags": 5,
+
+  "creativeinventory": {
+    "general": [ "*" ],
+    "items": [ "*" ],
+    "tools": [ "*" ],
+    "paxel": [ "*" ]
+  },
+
+  "behaviors": [
+    {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "WallHalves",
+        "wallOffY": 2,
+        "sprintKey": true,
+        "selectionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.1,
+          "z2": 1
+        },
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 0,
+          "y2": 0,
+          "z2": 0
+        }
+      }
+    }
+  ],
+
+  "attributes": {
+
+    "handbook": {
+      "groupBy": [ "paxel-*" ]
+    },
+
+    "rackable": true,
+
+    "toolrackTransform": {
+      "rotation": {
+        "x": 0,
+        "y": 1,
+        "z": -1
+      },
+      "translation": {
+        "x": -0.47,
+        "y": 0.6,
+        "z": 0
+      },
+      "origin": {
+        "x": -0.8,
+        "y": 0.4,
+        "z": 0.5
+      },
+      "scale": 1.25
+    },
+
+    "groundStorageTransform": {
+      "translation": {
+        "x": 0,
+        "y": 0.3,
+        "z": -0.16
+      },
+      "rotation": {
+        "x": 13,
+        "y": 88,
+        "z": -87
+      },
+      "scale": 0.88
+    },
+
+    "slotRefillIdentifier": "paxel"
+
+  },
+
+  "maxstacksize": 1,
+
+  "variantgroups": [
+    {
+      "code": "material",
+      "states": [ "iron", "meteoriciron", "steel" ]
+    }
+  ],
+
+  "texturesByType": {
+    "*": {
+      "metal": { "base": "game:block/metal/ingot/{material}" }
+    }
+  },
+
+  "shapeByType": {
+    "*-iron": { "base": "paxel:item/tool/paxel-iron" },
+    "*-meteoriciron": { "base": "paxel:item/tool/paxel-iron" },
+    "*-steel": { "base": "paxel:item/tool/paxel-iron" }
+  },
+
+  "damagedby": [ "blockbreaking", "attacking" ],
+
+  "tooltierbytype": {
+    "*-iron": 4,
+    "*-meteoriciron": 4,
+    "*-steel": 5
+  },
+
+  "miningspeedbytype": {
+    "*-iron": {
+      "soil": 6,
+      "sand": 6,
+      "gravel": 4,
+      "snow": 4,
+      "ceramic": 2.75,
+      "stone": 7.5,
+      "ore": 7.5,
+      "metal": 7.5,
+      "ice": 3.5,
+      "wood": 8.4,
+      "plant": 5,
+      "leaves": 3.2
+    },
+    "*-meteoriciron": {
+      "soil": 6.5,
+      "sand": 6.5,
+      "gravel": 4.2,
+      "snow": 4.2,
+      "ceramic": 3,
+      "stone": 8,
+      "ore": 8,
+      "metal": 8,
+      "ice": 3.75,
+      "wood": 9.6,
+      "plant": 5.5,
+      "leaves": 3.6
+    },
+    "*-steel": {
+      "soil": 7,
+      "sand": 7,
+      "gravel": 4.4,
+      "snow": 4.4,
+      "ceramic": 3.25,
+      "stone": 9,
+      "ore": 9,
+      "metal": 9,
+      "ice": 4.25,
+      "wood": 11,
+      "plant": 6,
+      "leaves": 4
+    }
+  },
+
+  "durabilitybytype": {
+    "paxel-iron": 5720, //3100 + 2100 from iron ingots + 10% from all
+    "paxel-meteoriciron": 6600, //3900 + 2100 from iron ingots + 10% from all
+    "paxel-steel": 10340 //7300 + 2100 from iron ingots + 10% from all
+  },
+
+  "attackRange": 1.6,
+
+  "attackpowerbytype": {
+    "paxel-iron": 2.5,
+    "paxel-meteoriciron": 2.8,
+    "paxel-steel": 3.5
+  },
+
+  "guiTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": -35,
+      "y": 55,
+      "z": -10
+    },
+    "origin": {
+      "x": 0.4,
+      "y": 0,
+      "z": 0.45
+    },
+    "scale": 1.15
+  },
+
+  "fpHandTransform": {
+    "translation": {
+      "x": 0.0468,
+      "y": -0.2,
+      "z": 0
+    },
+    "rotation": {
+      "x": -15,
+      "y": 15,
+      "z": 100
+    },
+    "scale": 2
+  },
+
+  "groundTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "scale": 3.6
+  },
+
+  "tpHandTransform": {
+    "translation": {
+      "x": -1.04,
+      "y": -0.24,
+      "z": -0.61
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": -10
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.7,
+      "z": 0.5
+    },
+    "scale": 0.8
+  }
+
+}

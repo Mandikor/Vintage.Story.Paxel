@@ -1,0 +1,57 @@
+[
+  {
+    "ingredientPattern": "AS,LP",
+    "ingredients": {
+      "P": { "type": "item", "code": "game:pickaxe-bismuthbronze" },
+      "A": { "type": "item", "code": "game:axe-felling-bismuthbronze" },
+      "S": { "type": "item", "code": "game:shovel-bismuthbronze" },
+      "L": { "type": "item", "code": "game:flaxtwine", "quantity": 4 }
+    },
+    "width": 2,
+    "height": 2,
+    "recipeGroup": 1,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxel-bismuthbronze", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "_AS,_TP,TL_",
+    "ingredients": {
+      "P": { "type": "item", "code": "game:pickaxehead-bismuthbronze" },
+      "A": { "type": "item", "code": "game:axehead-bismuthbronze" },
+      "S": { "type": "item", "code": "game:shovelhead-bismuthbronze" },
+      "T": { "type": "item", "code": "game:plank-*", "quantity": 2 },
+      "L": { "type": "item", "code": "game:flaxtwine", "quantity": 4 }
+    },
+    "width": 3,
+    "height": 3,
+    "recipeGroup": 2,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxel-bismuthbronze", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "__P,_T_,TL_",
+    "ingredients": {
+      "P": { "type": "item", "code": "paxel:paxelhead-bismuthbronze" },
+      "T": { "type": "item", "code": "game:plank-*", "quantity": 2 },
+      "L": { "type": "item", "code": "game:flaxtwine", "quantity": 4 }
+    },
+    "width": 3,
+    "height": 3,
+    "recipeGroup": 3,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxel-bismuthbronze", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "AS,_P",
+    "ingredients": {
+      "P": { "type": "item", "code": "game:pickaxehead-bismuthbronze" },
+      "A": { "type": "item", "code": "game:axehead-bismuthbronze" },
+      "S": { "type": "item", "code": "game:shovelhead-bismuthbronze" }
+    },
+    "width": 2,
+    "height": 2,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxelhead-bismuthbronze", "quantity": 1 }
+  }
+]
+

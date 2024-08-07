@@ -1,0 +1,116 @@
+{
+
+  // Tab Name for Creative Mode
+  "game:tabname-paxel": "Paxel",
+
+
+  // Claymold
+  "paxel:block-paxelmold-raw": "ungebrannte Paxel Gussform",
+  "paxel:block-paxelmold-burned": "Paxel Gussform",
+  "paxel:blockcraftdesc-paxelmold-raw": "Um Paxelköpfe direkt aus geschmolzenem Metall herzustellen",
+
+
+  // Stone Age Additions
+  "paxel:item-paxelhead-chert": "Paxelkopf (Hornstein)",
+  "paxel:item-paxelhead-granite": "Paxelkopf (Granit)",
+  "paxel:item-paxelhead-andesite": "Paxelkopf (Andesit)",
+  "paxel:item-paxelhead-basalt": "Paxelkopf (Basalt)",
+  "paxel:item-paxelhead-obsidian": "Paxelkopf (Obsidian)",
+  "paxel:item-paxelhead-peridotite": "Paxelkopf (Peridotit)",
+  "paxel:item-paxelhead-flint": "Paxelkopf (Feuerstein)",
+
+  "paxel:item-paxel-chert": "Paxel (Hornstein)",
+  "paxel:item-paxel-granite": "Paxel (Granit)",
+  "paxel:item-paxel-andesite": "Paxel (Andesit)",
+  "paxel:item-paxel-basalt": "Paxel (Basalt)",
+  "paxel:item-paxel-obsidian": "Paxel (Obsidian)",
+  "paxel:item-paxel-peridotite": "Paxel (Peridotit)",
+  "paxel:item-paxel-flint": "Paxel (Feuerstein)",
+
+  "paxel:item-paxel-bone-chert": "Paxel (Hornstein)",
+  "paxel:item-paxel-bone-granite": "Paxel (Granit)",
+  "paxel:item-paxel-bone-andesite": "Paxel (Andesit)",
+  "paxel:item-paxel-bone-basalt": "Paxel (Basalt)",
+  "paxel:item-paxel-bone-obsidian": "Paxel (Obsidian)",
+  "paxel:item-paxel-bone-peridotite": "Paxel (Peridotit)",
+  "paxel:item-paxel-bone-flint": "Paxel (Feuerstein)",
+
+  // Mod: Geology Additions 
+  "paxel:item-paxelhead-diorite": "Paxelhead (Diorite)",
+  "paxel:item-paxelhead-gabbro": "Paxelhead (Gabbro)",
+  "paxel:item-paxelhead-quartzite": "Paxelhead (Quartzite)",
+
+  "paxel:item-paxel-diorite": "Paxel (Diorite)",
+  "paxel:item-paxel-gabbro": "Paxel (Gabbro)",
+  "paxel:item-paxel-quartzite": "Paxel (Quartzite)",
+
+  "paxel:item-paxel-bone-diorite": "Paxel (Diorite)",
+  "paxel:item-paxel-bone-gabbro": "Paxel (Gabbro)",
+  "paxel:item-paxel-bone-quartzite": "Paxel (Quartzite)",
+
+
+  // Copper Age Additions
+  "paxel:item-paxel-copper": "Paxel (Kupfer)",
+  "paxel:item-paxel-tinbronze": "Paxel (Zinnbronze)",
+  "paxel:item-paxel-bismuthbronze": "Paxel (Wismutbronze)",
+  "paxel:item-paxel-blackbronze": "Paxel (Schwarzbronze)",
+
+  "paxel:item-paxelhead-copper": "Paxelkopf (Kupfer)",
+  "paxel:item-paxelhead-tinbronze": "Paxelkopf (Zinnbronze)",
+  "paxel:item-paxelhead-bismuthbronze": "Paxelkopf (Wismutbronze)",
+  "paxel:item-paxelhead-blackbronze": "Paxelkopf (Schwarzbronze)",
+
+
+  // Iron Age Additions
+  "paxel:item-paxel-iron": "Paxel (Eisen)",
+  "paxel:item-paxel-meteoriciron": "Paxel (Meteoreisen)",
+  "paxel:item-paxel-steel": "Paxel (Stahl)",
+
+  "paxel:item-paxelhead-iron": "Paxelkopf (Eisen)",
+  "paxel:item-paxelhead-meteoriciron": "Paxelkopf (Meteoreisen)",
+  "paxel:item-paxelhead-steel": "Paxelkopf (Stahl)",
+
+
+  // Decoration Paxel
+  "paxel:item-paxel-gold": "Paxel (Gold)",
+  "paxel:item-paxel-silver": "Paxel (Silber)",
+
+  "paxel:item-paxelhead-gold": "Paxelkopf (Gold)",
+  "paxel:item-paxelhead-silver": "Paxelkopf (Silber)",
+
+
+  // New Metals
+  "paxel:item-paxel-electrum": "Paxel (Elektrum)",
+  "paxel:item-paxelhead-electrum": "Paxelhead (Elektrum)",
+
+  "paxel:item-paxel-platinum": "Paxel (Platin)",
+  "paxel:item-paxelhead-platinum": "Paxelhead (Platin)",
+
+  "paxel:item-paxel-cupronickel": "Paxel (Kupfernickel)",
+  "paxel:item-paxelhead-cupronickel": "Paxelhead (Kupfernickel)",
+
+  "paxel:item-paxel-titanium": "Paxel (Titan)",
+  "paxel:item-paxelhead-titanium": "Paxelhead (Titan)",
+
+  "paxel:item-paxel-stainlesssteel": "Paxel (Edelstahl)",
+  "paxel:item-paxelhead-stainlesssteel": "Paxelhead (Edelstahl)",
+
+  "paxel:item-paxel-uranium": "Paxel (Uran)",
+  "paxel:item-paxelhead-uranium": "Paxelhead (Uran)",
+
+
+  // Handbook Additions
+  "paxel:paxel-metal-handbook-title": "",
+  "paxel:paxel-metal-handbook-text": "",
+
+  "paxel:paxelhead-metal-handbook-title": "",
+  "paxel:paxelhead-metal-handbook-text": "",
+
+  "paxel:paxel-stone-handbook-title": "",
+  "paxel:paxel-stone-handbook-text": "",
+
+  "paxel:paxelhead-stone-handbook-title": "",
+  "paxel:paxelhead-stone-handbook-text": ""
+
+
+}

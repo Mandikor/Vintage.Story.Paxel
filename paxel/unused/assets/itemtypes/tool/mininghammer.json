@@ -1,0 +1,226 @@
+{
+  "code": "mininghammer",
+  "class": "ItemAOETool",
+  "damagedby": [
+    "blockbreaking",
+    "attacking"
+  ],
+  "creativeinventory": {
+    "paxeldev": [
+      "*"
+    ]
+  },
+  "tool": "pickaxe",
+  "variantgroups": [
+    {
+      "code": "metal",
+      "states": [
+        "copper",
+        "tinbronze",
+        "bismuthbronze",
+        "blackbronze",
+        "iron",
+        "steel",
+        "meteoriciron"
+      ]
+    }
+  ],
+  "attributes": {
+    "codePrefixes": [
+      "cobbleskull",
+      "mossycobblestone",
+      "lichencobblestone",
+      "cobblestonestairs",
+      "cobblestone",
+      "cobblestoneslab",
+      "stalagsection",
+      "rock",
+      "ore",
+      "mossystonebricks",
+      "quartz",
+      "lichenrockpolished",
+      "lichenstonebricks",
+      "stonepath",
+      "stonepathstairs",
+      "mossyrockpolished",
+      "rockpolished",
+      "polishedrockslab",
+      "quartzslab",
+      "quartzpillar",
+      "quartzstairs",
+      "stonebricks",
+      "stonebrickslab",
+      "stonebrickstairs"
+    ],
+    "handbook": {
+      "groupBy": [ "mininghammer-*" ]
+    },
+
+    "toolrackTransform": {
+      "rotation": {
+        "y": 3,
+        "z": -1
+      },
+      "translation": {
+        "x": -0.35,
+        "y": 0.5
+      },
+      "scale": 1
+    }
+  },
+  "shape": {
+    "base": "paxel:item/tool/mininghammer"
+  },
+  "heldTpHitAnimation": "smithing",
+  "textures": {
+    "wood": {
+      "base": "game:item/tool/material/wood"
+    },
+    "metal": {
+      "base": "game:block/metal/ingot/{metal}"
+    }
+  },
+  "miningspeedbytype": {
+    "*-copper": {
+      "stone": 4,
+      "metal": 4,
+      "ore": 4,
+      "ice": 1.75
+    },
+    "*-tinbronze": {
+      "stone": 6,
+      "metal": 6,
+      "ore": 6,
+      "ice": 2.3
+    },
+    "*-bismuthbronze": {
+      "stone": 5.5,
+      "metal": 5.5,
+      "ore": 5.5,
+      "ice": 2.2
+    },
+    "*-blackbronze": {
+      "stone": 6.5,
+      "metal": 6.5,
+      "ore": 6.5,
+      "ice": 2.8
+    },
+    "*-iron": {
+      "stone": 7.5,
+      "metal": 7.5,
+      "ore": 7.5,
+      "ice": 3.5
+    },
+    "*-meteoriciron": {
+      "stone": 8,
+      "metal": 8,
+      "ore": 8,
+      "ice": 3.75
+    },
+    "*-steel": {
+      "stone": 9,
+      "metal": 9,
+      "ore": 9,
+      "ice": 4.25
+    }
+  },
+  "tooltierbytype": {
+    "*-copper": 2,
+    "*-tinbronze": 3,
+    "*-bismuthbronze": 3,
+    "*-blackbronze": 3,
+    "*-iron": 4,
+    "*-meteoriciron": 4,
+    "*-steel": 5
+  },
+  "durabilitybytype": {
+    "*-copper": 350,
+    "*-tinbronze": 500,
+    "*-bismuthbronze": 550,
+    "*-blackbronze": 600,
+    "*-iron": 1100,
+    "*-meteoriciron": 1400,
+    "*-steel": 3000
+  },
+  "attackpowerbytype": {
+    "*-copper": 1.75,
+    "*-bismuthbronze": 2,
+    "*-tinbronze": 2.25,
+    "*-blackbronze": 2.5,
+    "*-iron": 2.75,
+    "*-meteoriciron": 3,
+    "*-steel": 3
+  },
+  "guiTransform": {
+    "translation": {
+      "x": -6,
+      "y": -1,
+      "z": 0
+    },
+    "rotation": {
+      "x": 60,
+      "y": 59,
+      "z": 67
+    },
+    "origin": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "scale": 1.13
+  },
+  "fpHandTransform": {
+    "translation": {
+      "x": -0.2,
+      "y": -0.7,
+      "z": 1
+    },
+    "rotation": {
+      "x": 174,
+      "y": 0,
+      "z": 70
+    },
+    "origin": {
+      "x": 2,
+      "y": 0,
+      "z": 0
+    },
+    "scale": 2.41
+  },
+  "groundTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "scale": 3.4
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": -1.2,
+      "y": 0.5,
+      "z": -0.1
+    },
+    "rotation": {
+      "x": 78,
+      "y": 180,
+      "z": -10
+    },
+    "origin": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "scale": 0.5
+  }
+}

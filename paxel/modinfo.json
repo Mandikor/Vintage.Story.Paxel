@@ -1,0 +1,13 @@
+{
+  "type": "code",
+  "modid": "paxel",
+  "name": "Paxel",
+  "description": "Multitool made of pickaxe, axe and shovel.",
+  "authors": [ "Mandikor" ],
+  "contributors": [],
+  "translators": [ "Macoto Hino", "Frigid Ling" ],
+  "version": "1.4.6",
+  "dependencies": {
+    "game": "1.19.8"
+  }
+}

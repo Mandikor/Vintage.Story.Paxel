@@ -1,0 +1,53 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes/lootListByType/*-tool/-",
+    "value": {
+      "type": "item",
+      "chance": 0.8,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "codes": [ "paxel:paxel-flint" ]
+    },
+    "file": "game:blocktypes/clay/lootvessel.json",
+    "side": "Server",
+    "condition": {
+      "when": "PaxelLootFromCrackedVesselEnabled",
+      "isValue": "true"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/attributes/lootListByType/*-tool/-",
+    "value": {
+      "type": "item",
+      "chance": 0.5,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "codes": [ "paxel:paxel-obsidian" ]
+    },
+    "file": "game:blocktypes/clay/lootvessel.json",
+    "side": "Server",
+    "condition": {
+      "when": "PaxelLootFromCrackedVesselEnabled",
+      "isValue": "true"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/attributes/lootListByType/*-tool/-",
+    "value": {
+      "type": "item",
+      "chance": 0.1,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "codes": [ "paxel:paxel-copper" ]
+    },
+    "file": "game:blocktypes/clay/lootvessel.json",
+    "side": "Server",
+    "condition": {
+      "when": "PaxelLootFromCrackedVesselEnabled",
+      "isValue": "true"
+    }
+  }
+]

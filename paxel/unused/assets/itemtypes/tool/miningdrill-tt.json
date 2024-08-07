@@ -1,0 +1,62 @@
+{
+	code: "drill",
+	tool: "pickaxe",
+	attributes: {
+		handbook: {
+			groupBy: ["drill"]
+		}
+	},
+	class: "drill",
+	shape: { base: "paxel:item/tool/miningdrill-tt" },
+	creativeinventory: { "paxeldev": ["*"] },
+	damagedby: ["blockbreaking", "attacking"],
+	heldTpIdleAnimation: "holdbothhandslarge", heldTpHitAnimation: "twohandplaceblock", heldFpHitAnimation: "spear",
+	miningtierbytype: {
+		"*": 5
+	},
+	miningspeedbytype: {
+		"*": {
+			"stone": 7,
+			"ore": 7,
+			"metal": 7,
+			"ice": 5,
+			"soil": 6,
+			"sand": 6,
+			"gravel": 6,
+			"snow": 6,
+			"ceramic": 4
+		}
+	},
+	attacktierbytype: {
+		"*": 4
+	},
+	attackpowerbytype: {
+		"*": 3
+	},
+	attackRange: 1.5,
+	durabilitybytype: {
+		"*": 1800
+	},
+	fpHandTransform: {
+		translation: { x: -1.09, y: 0.4, z: 0.2 },
+		rotation: { x: 6, y: 0, z: 0 },
+		scale: 2.6
+	},
+		guiTransform: {
+		rotation: { x: -46, y: -137, z: -180 },
+		origin: { x: 0.6, y: 0.1, z: 0.62 },
+		scale: 2.3
+	},
+		tpHandTransform: {
+		translation: { x: -0.3, y: -0.35, z: -0.1 },
+		rotation: { x: -80, y: -172, z: 106 },
+		origin: { x: 0.8, y: -0.6, z: -0.3 },
+		scale: 0.86
+	},
+		groundTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: -180, y: 0, z: -180 },
+		origin: { x: 0.5, y: 0.1, z: 0.5299 },
+		scale: 6
+	}	
+}

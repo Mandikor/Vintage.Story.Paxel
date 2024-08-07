@@ -1,0 +1,41 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes/sharpenable",
+    "value": true,
+    "file": "paxel:itemtypes/tool/paxel-metal.json",
+    "condition": {
+      "when": "PaxelSharpeningEnabled",
+      "isValue": "true"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/onGrindstoneTransform",
+    "value": {
+      "translation": {
+        "x": -0.3,
+        "y": 0.5,
+        "z": 0.3
+      },
+      "rotation": {
+        "x": 35,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.1,
+        "z": 0.5
+      },
+      "scale": 1
+    },
+    "file": "paxel:itemtypes/tool/paxel-metal.json",
+    "condition": {
+      "when": "PaxelSharpeningEnabled",
+      "isValue": "true"
+    },
+    "side": "server"
+  }
+]

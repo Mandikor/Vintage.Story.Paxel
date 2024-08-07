@@ -1,0 +1,120 @@
+{
+  // Japanese localization file for 'Paxel'.
+  // Mod Version: v1.3.0
+  // Translated By: Macoto Hino
+  // Machine translation using PCOT and DeepL.
+
+  // Tab Name for Creative Mode
+  "game:tabname-paxel": "Paxel",
+
+
+  // Claymold
+  "paxel:block-paxelmold-raw": "パクセルの鋳型(未焼成)",
+  "paxel:block-paxelmold-burned": "パクセルの鋳型",
+  "paxel:blockcraftdesc-paxelmold-raw": "溶けた金属から直接パクセルの頭を作るためのもの",
+
+
+  // Stone Age Additions
+  "paxel:item-paxelhead-chert": "パクセルヘッド(チャート)",
+  "paxel:item-paxelhead-granite": "パクセルヘッド(花崗岩)",
+  "paxel:item-paxelhead-andesite": "パクセルヘッド(安山岩)",
+  "paxel:item-paxelhead-basalt": "パクセルヘッド(玄武岩)",
+  "paxel:item-paxelhead-obsidian": "パクセルヘッド(黒曜石)",
+  "paxel:item-paxelhead-peridotite": "パクセルヘッド(かんらん岩)",
+  "paxel:item-paxelhead-flint": "パクセルヘッド(火打石)",
+
+  "paxel:item-paxel-chert": "パクセル(チャート)",
+  "paxel:item-paxel-granite": "パクセル(花崗岩)",
+  "paxel:item-paxel-andesite": "パクセル(安山岩)",
+  "paxel:item-paxel-basalt": "パクセル(玄武岩)",
+  "paxel:item-paxel-obsidian": "パクセル(黒曜石)",
+  "paxel:item-paxel-peridotite": "パクセル(かんらん岩)",
+  "paxel:item-paxel-flint": "パクセル(火打石)",
+
+  "paxel:item-paxel-bone-chert": "パクセル(チャート)",
+  "paxel:item-paxel-bone-granite": "パクセル(花崗岩)",
+  "paxel:item-paxel-bone-andesite": "パクセル(安山岩)",
+  "paxel:item-paxel-bone-basalt": "パクセル(玄武岩)",
+  "paxel:item-paxel-bone-obsidian": "パクセル(黒曜石)",
+  "paxel:item-paxel-bone-peridotite": "パクセル(かんらん岩)",
+  "paxel:item-paxel-bone-flint": "パクセル(火打石)",
+
+  // Mod: Geology Additions 
+  "paxel:item-paxelhead-diorite": "Paxelhead (Diorite)",
+  "paxel:item-paxelhead-gabbro": "Paxelhead (Gabbro)",
+  "paxel:item-paxelhead-quartzite": "Paxelhead (Quartzite)",
+
+  "paxel:item-paxel-diorite": "Paxel (Diorite)",
+  "paxel:item-paxel-gabbro": "Paxel (Gabbro)",
+  "paxel:item-paxel-quartzite": "Paxel (Quartzite)",
+
+  "paxel:item-paxel-bone-diorite": "Paxel (Diorite)",
+  "paxel:item-paxel-bone-gabbro": "Paxel (Gabbro)",
+  "paxel:item-paxel-bone-quartzite": "Paxel (Quartzite)",
+
+
+  // Copper Age Additions
+  "paxel:item-paxel-copper": "パクセル(銅)",
+  "paxel:item-paxel-tinbronze": "パクセル(スズ青銅)",
+  "paxel:item-paxel-bismuthbronze": "パクセル(ビスマス青銅)",
+  "paxel:item-paxel-blackbronze": "パクセル(黒青銅)",
+
+  "paxel:item-paxelhead-copper": "パクセルヘッド(銅)",
+  "paxel:item-paxelhead-tinbronze": "パクセルヘッド(スズ青銅)",
+  "paxel:item-paxelhead-bismuthbronze": "パクセルヘッド(ビスマス青銅)",
+  "paxel:item-paxelhead-blackbronze": "パクセルヘッド(黒青銅)",
+
+
+  // Iron Age Additions
+  "paxel:item-paxel-iron": "パクセル(鉄)",
+  "paxel:item-paxel-meteoriciron": "パクセル(隕鉄)",
+  "paxel:item-paxel-steel": "パクセル(鋼)",
+
+  "paxel:item-paxelhead-iron": "パクセルヘッド(鉄)",
+  "paxel:item-paxelhead-meteoriciron": "パクセルヘッド(隕鉄)",
+  "paxel:item-paxelhead-steel": "パクセルヘッド(鋼)",
+
+
+  // Decoration Paxel
+  "paxel:item-paxel-gold": "パクセル(金)",
+  "paxel:item-paxel-silver": "パクセル(銀)",
+
+  "paxel:item-paxelhead-gold": "パクセルヘッド(金)",
+  "paxel:item-paxelhead-silver": "パクセルヘッド(銀)",
+
+
+  // New Metals
+  "paxel:item-paxel-electrum": "パクセル(エレクトラム)",
+  "paxel:item-paxelhead-electrum": "パクセルヘッド(エレクトラム)",
+
+  "paxel:item-paxel-platinum": "パクセル(白金)",
+  "paxel:item-paxelhead-platinum": "パクセルヘッド(白金)",
+
+  "paxel:item-paxel-cupronickel": "パクセル(白銅)",
+  "paxel:item-paxelhead-cupronickel": "パクセルヘッド(白銅)",
+
+  "paxel:item-paxel-titanium": "パクセル(チタン)",
+  "paxel:item-paxelhead-titanium": "パクセルヘッド(チタン)",
+
+  "paxel:item-paxel-stainlesssteel": "パクセル(ステンレス鋼)",
+  "paxel:item-paxelhead-stainlesssteel": "パクセルヘッド(ステンレス鋼)",
+
+  "paxel:item-paxel-uranium": "パクセル(ウラン)",
+  "paxel:item-paxelhead-uranium": "パクセルヘッド(ウラン)",
+
+
+  // Handbook Additions
+  "paxel:paxel-metal-handbook-title": "",
+  "paxel:paxel-metal-handbook-text": "",
+
+  "paxel:paxelhead-metal-handbook-title": "",
+  "paxel:paxelhead-metal-handbook-text": "",
+
+  "paxel:paxel-stone-handbook-title": "",
+  "paxel:paxel-stone-handbook-text": "",
+
+  "paxel:paxelhead-stone-handbook-title": "",
+  "paxel:paxelhead-stone-handbook-text": ""
+
+
+}

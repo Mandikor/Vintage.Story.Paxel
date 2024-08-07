@@ -1,0 +1,12 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes/helvehammerworkable",
+    "value": true,
+    "file": "paxel:compatibility/legendarymobs/itemtypes/toolhead/paxelhead-legendary.json",
+    "condition": {
+      "when": "PaxelHelveSmithingEnabled",
+      "isValue": "true"
+    }
+  }
+]

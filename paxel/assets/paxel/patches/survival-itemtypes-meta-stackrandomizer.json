@@ -1,0 +1,32 @@
+[
+  {
+    "op": "add",
+    "path": "/attributesByType/*-coppertool/stacks/-",
+    "value": {
+      "type": "item",
+      "code": "paxel:paxel-obsidian",
+      "chance": 15
+    },
+    "file": "game:itemtypes/meta/stackrandomizer.json",
+    "side": "Server",
+    "condition": {
+      "when": "PaxelLootFromRuinsEnabled",
+      "isValue": "true"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/*-coppertool/stacks/-",
+    "value": {
+      "type": "item",
+      "code": "paxel:paxel-copper",
+      "chance": 0.9
+    },
+    "file": "game:itemtypes/meta/stackrandomizer.json",
+    "side": "Server",
+    "condition": {
+      "when": "PaxelLootFromRuinsEnabled",
+      "isValue": "true"
+    }
+  }
+]

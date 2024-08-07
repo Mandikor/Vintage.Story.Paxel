@@ -1,0 +1,13 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes/helvehammerworkable",
+    "value": true,
+    "file": "paxel:itemtypes/toolhead/paxelhead-metal.json",
+    "condition": {
+      "when": "PaxelHelveSmithingEnabled",
+      "isValue": "true"
+    },
+    "side": "server"
+  }
+]

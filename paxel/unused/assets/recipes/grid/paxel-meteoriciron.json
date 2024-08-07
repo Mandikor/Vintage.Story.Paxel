@@ -1,0 +1,79 @@
+[
+  {
+    "ingredientPattern": "AS,LP",
+    "ingredients": {
+      "P": { "type": "item", "code": "game:pickaxe-meteoriciron" },
+      "A": { "type": "item", "code": "game:axe-felling-meteoriciron" },
+      "S": { "type": "item", "code": "game:shovel-meteoriciron" },
+      "L": { "type": "item", "code": "game:ingot-iron", "quantity": 2, "returnedStack": { "type": "item", "code": "game:stick", "quantity": 3 }
+      }
+    },
+    "width": 2,
+    "height": 2,
+    "recipeGroup": 1,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxel-meteoriciron", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "_AS,_TP,T__",
+    "ingredients": {
+      "P": { "type": "item", "code": "game:pickaxehead-meteoriciron" },
+      "A": { "type": "item", "code": "game:axehead-meteoriciron" },
+      "S": { "type": "item", "code": "game:shovelhead-meteoriciron" },
+      "T": { "type": "item", "code": "game:ingot-iron", "quantity": 1 }
+    },
+    "width": 3,
+    "height": 3,
+    "recipeGroup": 2,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxel-meteoriciron", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "__P,_T_,T__",
+    "ingredients": {
+      "P": { "type": "item", "code": "paxel:paxelhead-meteoriciron" },
+      "T": { "type": "item", "code": "game:ingot-iron", "quantity": 1 }
+    },
+    "width": 3,
+    "height": 3,
+    "recipeGroup": 3,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxel-meteoriciron", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "AS,_P",
+    "ingredients": {
+      "P": { "type": "item", "code": "game:pickaxehead-meteoriciron" },
+      "A": { "type": "item", "code": "game:axehead-meteoriciron" },
+      "S": { "type": "item", "code": "game:shovelhead-meteoriciron" }
+    },
+    "width": 2,
+    "height": 2,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxelhead-meteoriciron", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "HCP",
+    "ingredients": {
+      "H": { "type": "item", "code": "game:hammer-*", "allowedVariants": [ "copper", "blackbronze", "tinbronze", "bismuthbronze", "silver", "gold", "iron", "meteoriciron", "steel" ], "isTool": true, "toolDurabilityCost": 30 },
+      "C": { "type": "item", "code": "game:chisel-*", "allowedVariants": [ "copper", "blackbronze", "tinbronze", "bismuthbronze", "iron", "meteoriciron", "steel" ], "isTool": true, "toolDurabilityCost": 30 },
+      "P": { "type": "item", "code": "paxel:paxelhead-meteoriciron", "returnedStack": { "type": "item", "code": "game:pickaxehead-meteoriciron", "quantity": 1 } }
+    },
+    "width": 3,
+    "height": 1,
+    "shapeless": true,
+    "output": { "type": "item", "code": "paxel:axelhead-meteoriciron", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "HCA",
+    "ingredients": {
+      "H": { "type": "item", "code": "game:hammer-*", "allowedVariants": [ "copper", "blackbronze", "tinbronze", "bismuthbronze", "silver", "gold", "iron", "meteoriciron", "steel" ], "isTool": true, "toolDurabilityCost": 30 },
+      "C": { "type": "item", "code": "game:chisel-*", "allowedVariants": [ "copper", "blackbronze", "tinbronze", "bismuthbronze", "iron", "meteoriciron", "steel" ], "isTool": true, "toolDurabilityCost": 30 },
+      "A": { "type": "item", "code": "paxel:axelhead-meteoriciron", "returnedStack": { "type": "item", "code": "game:axehead-meteoriciron", "quantity": 1 } }
+    },
+    "width": 3,
+    "height": 1,
+    "shapeless": true,
+    "output": { "type": "item", "code": "game:shovelhead-meteoriciron", "quantity": 1 }
+  }
+]

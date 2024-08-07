@@ -1,0 +1,268 @@
+{
+  "code": "paxel",
+
+  "class": "ItemPaxel",
+
+  "heldTpHitAnimation": "shoveldig",
+
+  "tool": "shovel",
+
+  "storageFlags": 5,
+
+  "creativeinventory": {
+    "general": [ "*" ],
+    "items": [ "*" ],
+    "tools": [ "*" ],
+    "paxel": [ "*" ]
+  },
+
+  "behaviors": [
+    {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "WallHalves",
+        "wallOffY": 2,
+        "sprintKey": true,
+        "selectionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.1,
+          "z2": 1
+        },
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 0,
+          "y2": 0,
+          "z2": 0
+        }
+      }
+    }
+  ],
+
+  "attributes": {
+
+    "handbook": {
+      "groupBy": [ "paxel-*" ]
+    },
+
+    "rackable": true,
+
+    "toolrackTransform": {
+      "rotation": {
+        "x": 0,
+        "y": 1,
+        "z": -1
+      },
+      "translation": {
+        "x": -0.47,
+        "y": 0.6,
+        "z": 0
+      },
+      "origin": {
+        "x": -0.8,
+        "y": 0.4,
+        "z": 0.5
+      },
+      "scale": 1.25
+    },
+
+    "groundStorageTransform": {
+      "translation": {
+        "x": 0,
+        "y": 0.3,
+        "z": -0.16
+      },
+      "rotation": {
+        "x": 13,
+        "y": 88,
+        "z": -87
+      },
+      "scale": 0.88
+    },
+
+    "slotRefillIdentifier": "paxel"
+
+  },
+
+  "maxstacksize": 1,
+
+  "variantgroups": [
+    {
+      "code": "material",
+      "states": [ "copper", "tinbronze", "bismuthbronze", "blackbronze" ]
+    }
+  ],
+
+  "texturesByType": {
+    "*": {
+      "metal": { "base": "game:block/metal/ingot/{material}" }
+    }
+  },
+
+  "shapeByType": {
+    "*-copper": { "base": "paxel:item/tool/paxel-copper" },
+    "*-tinbronze": { "base": "paxel:item/tool/paxel-copper" },
+    "*-bismuthbronze": { "base": "paxel:item/tool/paxel-copper" },
+    "*-blackbronze": { "base": "paxel:item/tool/paxel-copper" }
+  },
+
+  "damagedby": [ "blockbreaking", "attacking" ],
+
+  "tooltierbytype": {
+    "*-copper": 2,
+    "*-tinbronze": 3,
+    "*-bismuthbronze": 3,
+    "*-blackbronze": 3
+  },
+
+  "miningspeedbytype": {
+    "*-copper": {
+      "soil": 4,
+      "sand": 4,
+      "gravel": 2.6,
+      "snow": 2.6,
+      "ceramic": 1.5,
+      "stone": 4,
+      "ore": 4,
+      "metal": 4,
+      "ice": 1.75,
+      "wood": 5.2,
+      "plant": 2.8,
+      "leaves": 2.4
+    },
+    "*-bismuthbronze": {
+      "soil": 5,
+      "sand": 5,
+      "gravel": 3.2,
+      "snow": 3.2,
+      "ceramic": 2,
+      "stone": 5.5,
+      "ore": 5.5,
+      "metal": 5.5,
+      "ice": 2.2,
+      "wood": 5.8,
+      "plant": 3.5,
+      "leaves": 2.6
+    },
+    "*-tinbronze": {
+      "soil": 5.4,
+      "sand": 5.4,
+      "gravel": 3.6,
+      "snow": 3.6,
+      "ceramic": 2.25,
+      "stone": 6,
+      "ore": 6,
+      "metal": 6,
+      "ice": 2.3,
+      "wood": 6.3,
+      "plant": 3.8,
+      "leaves": 3
+    },
+    "*-blackbronze": {
+      "soil": 5.5,
+      "sand": 5.5,
+      "gravel": 3.7,
+      "snow": 3.7,
+      "ceramic": 2.5,
+      "stone": 6.5,
+      "ore": 6.5,
+      "metal": 6.5,
+      "ice": 2.8,
+      "wood": 6.6,
+      "plant": 4,
+      "leaves": 3.1
+    }
+  },
+
+  "durabilitybytype": {
+    "paxel-copper": 1045, //950
+    "paxel-tinbronze": 1595, //1450
+    "paxel-bismuthbronze": 1815, //1650
+    "paxel-blackbronze": 2035 //1850
+  },
+
+  "attackRange": 1.6,
+
+  "attackpowerbytype": {
+    "paxel-copper": 1.5,
+    "paxel-bismuthbronze": 1.85,
+    "paxel-tinbronze": 2.1,
+    "paxel-blackbronze": 2.35
+  },
+
+  "guiTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": -35,
+      "y": 55,
+      "z": -10
+    },
+    "origin": {
+      "x": 0.4,
+      "y": 0,
+      "z": 0.45
+    },
+    "scale": 1.15
+  },
+
+  "fpHandTransform": {
+    "translation": {
+      "x": 0.0468,
+      "y": -0.2,
+      "z": 0
+    },
+    "rotation": {
+      "x": -15,
+      "y": 15,
+      "z": 100
+    },
+    "scale": 2
+  },
+
+  "groundTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "scale": 3.6
+  },
+
+  "tpHandTransform": {
+    "translation": {
+      "x": -1.04,
+      "y": -0.24,
+      "z": -0.61
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": -10
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.7,
+      "z": 0.5
+    },
+    "scale": 0.8
+  }
+
+  }

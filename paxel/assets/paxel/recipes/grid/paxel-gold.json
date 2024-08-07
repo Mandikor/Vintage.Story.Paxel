@@ -1,0 +1,56 @@
+[
+  {
+    "ingredientPattern": "AS,LP",
+    "ingredients": {
+      "P": { "type": "item", "code": "game:pickaxe-gold" },
+      "A": { "type": "item", "code": "game:axe-felling-gold" },
+      "S": { "type": "item", "code": "game:shovel-gold" },
+      "L": { "type": "item", "code": "game:flaxtwine", "quantity": 4 }
+    },
+    "width": 2,
+    "height": 2,
+    "recipeGroup": 1,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxel-gold", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "_AS,_TP,TL_",
+    "ingredients": {
+      "P": { "type": "item", "code": "game:pickaxehead-gold" },
+      "A": { "type": "item", "code": "game:axehead-gold" },
+      "S": { "type": "item", "code": "game:shovelhead-gold" },
+      "T": { "type": "item", "code": "game:plank-*", "quantity": 2 },
+      "L": { "type": "item", "code": "game:flaxtwine", "quantity": 4 }
+    },
+    "width": 3,
+    "height": 3,
+    "recipeGroup": 2,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxel-gold", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "__P,_T_,TL_",
+    "ingredients": {
+      "P": { "type": "item", "code": "paxel:paxelhead-gold" },
+      "T": { "type": "item", "code": "game:plank-*", "quantity": 2 },
+      "L": { "type": "item", "code": "game:flaxtwine", "quantity": 4 }
+    },
+    "width": 3,
+    "height": 3,
+    "recipeGroup": 3,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxel-gold", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "AS,_P",
+    "ingredients": {
+      "P": { "type": "item", "code": "game:pickaxehead-gold" },
+      "A": { "type": "item", "code": "game:axehead-gold" },
+      "S": { "type": "item", "code": "game:shovelhead-gold" }
+    },
+    "width": 2,
+    "height": 2,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxelhead-gold", "quantity": 1 }
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "ingredientPattern": "__P,_T_,T__",
+    "ingredients": {
+      "P": { "type": "item", "code": "paxel:paxelhead-cupronickel" },
+      "T": { "type": "item", "code": "game:ingot-iron", "quantity": 1 }
+    },
+    "width": 3,
+    "height": 3,
+    "recipeGroup": 3,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxel-cupronickel", "quantity": 1 }
+  }
+]
+

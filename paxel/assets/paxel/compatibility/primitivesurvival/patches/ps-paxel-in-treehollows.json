@@ -1,0 +1,81 @@
+[
+  {
+    "file": "primitivesurvival:blocktypes/wood/treehollowgrown.json",
+    "side": "server",
+    "op": "addeach",
+    "path": "/attributes/primitivesurvival/treeHollowContentsByHollowType/all/-",
+    "value": [
+      {
+        "code": "paxel:item-paxel-flint",
+        "amount": 1
+      },
+      {
+        "code": "paxel:item-paxel-obsidian",
+        "amount": 1
+      },
+      {
+        "code": "paxel:item-paxel-copper",
+        "amount": 1
+      }
+    ],
+    "condition": {
+      "when": "PaxelInTreeHollowEnabled",
+      "isValue": "true"
+    },
+    "dependsOn": [ { "modid": "primitivesurvival" } ]
+  },
+  {
+    "op": "add",
+    "path": "/behaviors/-",
+    "value": {
+      "name": "inTreeHollowTransform",
+      "properties": {
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": -60
+        },
+        "origin": {
+          "x": 0.7,
+          "y": 0.4,
+          "z": 0.5
+        },
+        "scale": 0.5
+      }
+    },
+    "file": "paxel:itemtypes/tool/paxel-metal.json",
+    "condition": {
+      "when": "PaxelJewelryEnabled",
+      "isValue": "true"
+    },
+    "side": "server",
+    "dependsOn": [ { "modid": "primitivesurvival" } ]
+  },
+  {
+    "op": "add",
+    "path": "/behaviors/-",
+    "value": {
+      "name": "inTreeHollowTransform",
+      "properties": {
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": -60
+        },
+        "origin": {
+          "x": 0.7,
+          "y": 0.4,
+          "z": 0.5
+        },
+        "scale": 0.5
+      }
+    },
+    "file": "paxel:itemtypes/tool/paxel-stone.json",
+    "condition": {
+      "when": "PaxelJewelryEnabled",
+      "isValue": "true"
+    },
+    "side": "server",
+    "dependsOn": [ { "modid": "primitivesurvival" } ]
+  }
+]

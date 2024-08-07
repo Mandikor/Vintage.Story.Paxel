@@ -1,0 +1,10 @@
+﻿[
+  {
+    "op": "add",
+    "path": "/0/enabled",
+    "value": false,
+    "file": "paxel:recipes/grid/paxel-electrum.json",
+    "condition": { "when": "PaxelElectrumRecipeEnabled", "isValue": "false" },
+    "side": "server"
+  }
+]

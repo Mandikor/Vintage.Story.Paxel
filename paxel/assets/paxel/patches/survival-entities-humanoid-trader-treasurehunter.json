@@ -1,0 +1,66 @@
+[
+  {
+    "op": "addeach",
+    "path": "/attributes/tradeProps/buying/list/-",
+    "value": [
+      {
+        "code": "paxel:paxel-copper",
+        "type": "item",
+        "stacksize": 1,
+        "stock": {
+          "avg": 1,
+          "var": 0.25
+        },
+        "price": {
+          "avg": 9,
+          "var": 1
+        }
+      },
+      {
+        "code": "paxel:paxel-tinbronze",
+        "type": "item",
+        "stacksize": 1,
+        "stock": {
+          "avg": 1,
+          "var": 0.25
+        },
+        "price": {
+          "avg": 12,
+          "var": 1.25
+        }
+      },
+      {
+        "code": "paxel:paxel-bismuthbronze",
+        "type": "item",
+        "stacksize": 1,
+        "stock": {
+          "avg": 1,
+          "var": 0.25
+        },
+        "price": {
+          "avg": 14,
+          "var": 1.5
+        }
+      },
+      {
+        "code": "paxel:paxel-blackbronze",
+        "type": "item",
+        "stacksize": 1,
+        "stock": {
+          "avg": 1,
+          "var": 0.25
+        },
+        "price": {
+          "avg": 16,
+          "var": 1.75
+        }
+      }
+    ],
+    "file": "game:entities/humanoid/trader-treasurehunter.json",
+    "side": "server",
+    "condition": {
+      "when": "PaxelTraderTreasureHunterEnabled",
+      "isValue": "true"
+    }
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "ingredientPattern": "AS,LP",
+    "ingredients": {
+      "P": { "type": "item", "code": "game:pickaxe-copper" },
+      "A": { "type": "item", "code": "game:axe-felling-copper" },
+      "S": { "type": "item", "code": "game:shovel-copper" },
+      "L": { "type": "item", "code": "game:flaxtwine", "quantity": 4 }
+    },
+    "width": 2,
+    "height": 2,
+    "recipeGroup": 1,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxel-copper", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "_AS,_TP,TL_",
+    "ingredients": {
+      "P": { "type": "item", "code": "game:pickaxehead-copper" },
+      "A": { "type": "item", "code": "game:axehead-copper" },
+      "S": { "type": "item", "code": "game:shovelhead-copper" },
+      "T": { "type": "item", "code": "game:plank-*", "quantity": 2 },
+      "L": { "type": "item", "code": "game:flaxtwine", "quantity": 4 }
+    },
+    "width": 3,
+    "height": 3,
+    "recipeGroup": 2,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxel-copper", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "__P,_T_,TL_",
+    "ingredients": {
+      "P": { "type": "item", "code": "paxel:paxelhead-copper" },
+      "T": { "type": "item", "code": "game:plank-*", "quantity": 2 },
+      "L": { "type": "item", "code": "game:flaxtwine", "quantity": 4 }
+    },
+    "width": 3,
+    "height": 3,
+    "recipeGroup": 3,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxel-copper", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "AS,_P",
+    "ingredients": {
+      "P": { "type": "item", "code": "game:pickaxehead-copper" },
+      "A": { "type": "item", "code": "game:axehead-copper" },
+      "S": { "type": "item", "code": "game:shovelhead-copper" }
+    },
+    "width": 2,
+    "height": 2,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxelhead-copper", "quantity": 1 }
+  }
+]
+

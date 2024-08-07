@@ -1,0 +1,32 @@
+[
+  {
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "file": "paxel:itemtypes/tool/paxel-copper.json",
+    "condition": {
+      "when": "CopperAgeEnabled",
+      "isValue": "false"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "file": "paxel:itemtypes/toolhead/paxelhead-copper.json",
+    "condition": {
+      "when": "CopperAgeEnabled",
+      "isValue": "false"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "file": "paxel:itemtypes/toolhead/axelhead-copper.json",
+    "condition": {
+      "when": "CopperAgeEnabled",
+      "isValue": "false"
+    }
+  }
+]

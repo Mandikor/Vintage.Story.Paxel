@@ -1,0 +1,39 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors/-",
+    "value": { "name": "Encrustable" },
+    "file": "paxel:itemtypes/tool/paxel-metal.json",
+    "condition": {
+      "when": "PaxelJewelryEnabled",
+      "isValue": "true"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/canhavesocketsnumberByType",
+    "value": {
+      "*-copper": 0,
+      "*-tinbronze": 1,
+      "*-bismuthbronze": 1,
+      "*-blackbronze": 1,
+      "*-gold": 1,
+      "*-silver": 1,
+      "*-electrum": 2,
+      "*-platinum": 3,
+      "*-cupronickel": 2,
+      "*-iron": 2,
+      "*-meteoriciron": 2,
+      "*-steel": 3,
+      "*-titanium": 3,
+      "*": 0
+    },
+    "file": "paxel:itemtypes/tool/paxel-metal.json",
+    "condition": {
+      "when": "PaxelJewelryEnabled",
+      "isValue": "true"
+    },
+    "side": "server"
+  }
+]

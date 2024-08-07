@@ -1,0 +1,25 @@
+[
+  {
+    "code": "paxel",
+    "enabled": true,
+    "sealHours": 36,
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "legendarymobs:liquid-fat",
+        "litres": 5,
+        "consumeLitres": 5
+      },
+      {
+        "type": "item",
+        "code": "paxel:paxelhead-legendary-rough",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "item",
+      "code": "paxel:paxelhead-legendary-finished",
+      "stackSize": 1
+    }
+  }
+]

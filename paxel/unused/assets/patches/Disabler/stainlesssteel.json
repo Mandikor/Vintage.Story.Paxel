@@ -1,0 +1,10 @@
+﻿[
+  {
+    "op": "add",
+    "path": "/0/enabled",
+    "value": false,
+    "file": "paxel:recipes/grid/paxel-stainlesssteel.json",
+    "condition": { "when": "PaxelStainlessSteelRecipeEnabled", "isValue": "false" },
+    "side": "server"
+  }
+]

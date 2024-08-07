@@ -1,0 +1,10 @@
+﻿[
+  {
+    "op": "add",
+    "path": "/0/enabled",
+    "value": false,
+    "file": "paxel:recipes/grid/paxel-platinum.json",
+    "condition": { "when": "PaxelPlatinumRecipeEnabled", "isValue": "false" },
+    "side": "server"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "op": "replace",
+    "path": "/enabled",
+    "value": false,
+    "file": "paxel:compatibility/legendarymobs/itemtypes/tool/paxel-legendary.json",
+    "condition": {
+      "when": "PaxelLegendaryRecipeEnabled",
+      "isValue": "false"
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/enabled",
+    "value": false,
+    "file": "paxel:compatibility/legendarymobs/itemtypes/toolhead/paxelhead-legendary.json",
+    "condition": {
+      "when": "PaxelLegendaryRecipeEnabled",
+      "isValue": "false"
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/0/enabled",
+    "value": false,
+    "file": "paxel:compatibility/legendarymobs/recipes/barrel/paxelhead-legendary-finished.json",
+    "condition": {
+      "when": "PaxelLegendaryRecipeEnabled",
+      "isValue": "false"
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/0/enabled",
+    "value": false,
+    "file": "paxel:compatibility/legendarymobs/recipes/grid/paxel-legendary.json",
+    "condition": {
+      "when": "PaxelLegendaryRecipeEnabled",
+      "isValue": "false"
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/enabled",
+    "value": false,
+    "file": "paxel:compatibility/legendarymobs/recipes/smithing/paxelhead-legendary-rough.json",
+    "condition": {
+      "when": "PaxelLegendaryRecipeEnabled",
+      "isValue": "false"
+    }
+  }
+]

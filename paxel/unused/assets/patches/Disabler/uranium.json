@@ -1,0 +1,10 @@
+﻿[
+  {
+    "op": "add",
+    "path": "/0/enabled",
+    "value": false,
+    "file": "paxel:recipes/grid/paxel-uranium.json",
+    "condition": { "when": "PaxelUraniumRecipeEnabled", "isValue": "false" },
+    "side": "server"
+  }
+]
