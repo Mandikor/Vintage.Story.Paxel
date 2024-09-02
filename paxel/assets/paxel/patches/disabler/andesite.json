@@ -1,12 +1,12 @@
 ﻿[
   {
-    "op": "add",
+    "op": "replace",
     "path": "/0/enabled",
     "value": false,
     "file": "paxel:recipes/grid/paxel-andesite.json",
     "condition": {
       "when": "PaxelAndesiteRecipeEnabled",
-      "isValue": "false"
+      "isValue": false
     },
     "side": "server"
   },

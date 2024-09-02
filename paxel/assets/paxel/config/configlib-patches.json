@@ -1,0 +1,229 @@
+{
+  "version": 0,
+  "file": "MandikorsMods/PaxelConfig.json",
+  "patches": {},
+  "settings": [
+    {
+      "type": "separator",
+      "title": "PaxelRecipeSettings",
+      "text": "PaxelRecipeSettingsText"
+    },
+    {
+      "code": "RecipeEnabled/andesite",
+      "comment": "RecipeEnabledAndesiteComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/basalt",
+      "comment": "RecipeEnabledBasaltComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/chert",
+      "comment": "RecipeEnabledChertComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/granite",
+      "comment": "RecipeEnabledGraniteComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/peridotite",
+      "comment": "RecipeEnabledPeridotiteComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/flint",
+      "comment": "RecipeEnabledFlintComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/obsidian",
+      "comment": "RecipeEnabledObsidianComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/copper",
+      "comment": "RecipeEnabledCopperComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/tinbronze",
+      "comment": "RecipeEnabledTinbronzeComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/bismuthbronze",
+      "comment": "RecipeEnabledBismuthbronzeComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/blackbronze",
+      "comment": "RecipeEnabledBlackbronzeComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/silver",
+      "comment": "RecipeEnabledSilverComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/gold",
+      "comment": "RecipeEnabledGoldComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/iron",
+      "comment": "RecipeEnabledIronComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/meteoriciron",
+      "comment": "RecipeEnabledMeteoricironComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/steel",
+      "comment": "RecipeEnabledSteelComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/electrum",
+      "comment": "RecipeEnabledElectrumComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/platinum",
+      "comment": "RecipeEnabledPlatinumComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/cupronickel",
+      "comment": "RecipeEnabledCupronickelComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/titanium",
+      "comment": "RecipeEnabledTitaniumComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/diorite",
+      "comment": "RecipeEnabledDioriteComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/gabbro",
+      "comment": "RecipeEnabledGabbroComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/quartzite",
+      "comment": "RecipeEnabledQuartziteComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "type": "separator",
+      "title": "PaxelLootSettings",
+      "text": "PaxelLootSettingsText"
+    },
+    {
+      "code": "LootEnabled/ruins",
+      "comment": "LootEnabledRuinsComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "LootEnabled/crackedvessel",
+      "comment": "LootEnabledVesselsComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "type": "separator",
+      "title": "PaxelTraderSettings",
+      "text": "PaxelTraderSettingsText"
+    },
+    {
+      "code": "TraderEnabled/buildmaterials",
+      "comment": "TraderEnabledBuildmaterialsComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "TraderEnabled/survivalgoods",
+      "comment": "TraderEnabledSurvivalgoodsComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "TraderEnabled/treasurehunter",
+      "comment": "TraderEnabledTreasurehunterComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "type": "separator",
+      "title": "PaxelModDependenceSettings",
+      "text": "PaxelModDependenceSettingsText"
+    },
+    {
+      "code": "ModDependence/sharpening",
+      "comment": "ModDependenceSharpeningComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "ModDependence/helvesmithing",
+      "comment": "ModDependenceHelvesmithingComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "ModDependence/jewelry",
+      "comment": "ModDependenceJewelryComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "ModDependence/intreehollow",
+      "comment": "ModDependenceIntreehollowComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "type": "separator",
+      "title": "PaxelDebugSettings"
+    },
+    {
+      "code": "DebugOutput",
+      "comment": "DebugOutputComment",
+      "type": "boolean",
+      "default": false
+    }
+  ]
+}

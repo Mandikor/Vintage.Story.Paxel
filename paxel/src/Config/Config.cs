@@ -1,66 +1,160 @@
-namespace Paxel
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Vintagestory.API.Client;
+using Vintagestory.API.Common;
+using Vintagestory.API.Common.Entities;
+using Vintagestory.API.MathTools;
+using Vintagestory.API.Server;
+using Vintagestory.API.Util;
+using static HarmonyLib.Code;
+
+namespace Paxel.Configuration;
+
+public class Config : IModConfig
 {
-    public class Config
+
+    public Dictionary<string, bool> RecipeEnabled = new()
     {
+        { "andesite", true },
+        { "basalt", true },
+        { "chert", true },
+        { "granite", true },
+        { "peridotite", true },
+        { "flint", true },
+        { "obsidian", true },
+        { "copper", true },
+        { "tinbronze", true },
+        { "bismuthbronze", true },
+        { "blackbronze", true },
+        { "silver", true },
+        { "gold", true },
+        { "iron", true },
+        { "meteoriciron", true },
+        { "steel", true },
+        { "electrum", true },
+        { "platinum", true },
+        { "cupronickel", true },
+        { "titanium", true },
+        { "diorite", true },
+        { "gabbro", true },
+        { "quartzite", true }
+    };
 
-        public PaxelData Paxels = new();
+    public Dictionary<string, bool> LootEnabled = new()
+    {
+        { "crackedvessel", true },
+        { "ruins", true }
+    };
 
-        public Config() { }
+    public Dictionary<string, bool> TraderEnabled = new()
+    {
+        { "buildmaterials", true },
+        { "survivalgoods", true },
+        { "treasurehunter", true }
+    };
 
-        public Config(Config previousConfig)
+    public Dictionary<string, bool> ModDependence = new()
+    {
+        { "sharpening", true },
+        { "helvesmithing", true },
+        { "jewelry", true },
+        { "intreehollow", true }
+    };
+
+    public Config(ICoreAPI api, Config previousConfig = null)
+    {
+        if (previousConfig == null)
         {
-            Paxels = previousConfig.Paxels;
+            return;
         }
 
+        //Paxels = previousConfig.Paxels;
+        ModDependence["sharpening"] = previousConfig.ModDependence["sharpening"];
+        ModDependence["helvesmithing"] = previousConfig.ModDependence["helvesmithing"];
+        ModDependence["jewelry"] = previousConfig.ModDependence["jewelry"];
+        ModDependence["intreehollow"] = previousConfig.ModDependence["intreehollow"];
+
+        LootEnabled["crackedvessel"] = previousConfig.LootEnabled["crackedvessel"];
+        LootEnabled["ruins"] = previousConfig.LootEnabled["ruins"];
+
+        TraderEnabled["survivalgoods"] = previousConfig.TraderEnabled["survivalgoods"];
+        TraderEnabled["buildmaterials"] = previousConfig.TraderEnabled["buildmaterials"];
+        TraderEnabled["treasurehunter"] = previousConfig.TraderEnabled["treasurehunter"];
+
+        RecipeEnabled["andesite"] = previousConfig.RecipeEnabled["andesite"];
+        RecipeEnabled["basalt"] = previousConfig.RecipeEnabled["basalt"];
+        RecipeEnabled["chert"] = previousConfig.RecipeEnabled["chert"];
+        RecipeEnabled["granite"] = previousConfig.RecipeEnabled["granite"];
+        RecipeEnabled["peridotite"] = previousConfig.RecipeEnabled["peridotite"];
+        RecipeEnabled["flint"] = previousConfig.RecipeEnabled["flint"];
+        RecipeEnabled["obsidian"] = previousConfig.RecipeEnabled["obsidian"];
+        RecipeEnabled["copper"] = previousConfig.RecipeEnabled["copper"];
+        RecipeEnabled["tinbronze"] = previousConfig.RecipeEnabled["tinbronze"];
+        RecipeEnabled["bismuthbronze"] = previousConfig.RecipeEnabled["bismuthbronze"];
+        RecipeEnabled["blackbronze"] = previousConfig.RecipeEnabled["blackbronze"];
+        RecipeEnabled["silver"] = previousConfig.RecipeEnabled["silver"];
+        RecipeEnabled["gold"] = previousConfig.RecipeEnabled["gold"];
+        RecipeEnabled["iron"] = previousConfig.RecipeEnabled["iron"];
+        RecipeEnabled["meteoriciron"] = previousConfig.RecipeEnabled["meteoriciron"];
+        RecipeEnabled["steel"] = previousConfig.RecipeEnabled["steel"];
+        RecipeEnabled["electrum"] = previousConfig.RecipeEnabled["electrum"];
+        RecipeEnabled["platinum"] = previousConfig.RecipeEnabled["platinum"];
+        RecipeEnabled["cupronickel"] = previousConfig.RecipeEnabled["cupronickel"];
+        RecipeEnabled["titanium"] = previousConfig.RecipeEnabled["titanium"];
+        RecipeEnabled["diorite"] = previousConfig.RecipeEnabled["diorite"];
+        RecipeEnabled["gabbro"] = previousConfig.RecipeEnabled["gabbro"];
+        RecipeEnabled["quartzite"] = previousConfig.RecipeEnabled["quartzite"];
     }
-    public class PaxelData
-    {
-        public Dictionary<string, bool> RecipeEnabled = new()
-        {
-            { "andesite", true },
-            { "basalt", true },
-            { "chert", true },
-            { "granite", true },
-            { "peridotite", true },
-            { "flint", true },
-            { "obsidian", true },
-            { "copper", true },
-            { "tinbronze", true },
-            { "bismuthbronze", true },
-            { "blackbronze", true },
-            { "silver", true },
-            { "gold", true },
-            { "iron", true },
-            { "meteoriciron", true },
-            { "steel", true },
-            { "electrum", true },
-            { "platinum", true },
-            { "cupronickel", true },
-            { "titanium", true },
-            { "diorite", true },
-            { "gabbro", true },
-            { "quartzite", true }
-        };
 
-        public Dictionary<string, bool> LootEnabled = new()
-        {
-            { "crackedvessel", true },
-            { "ruins", true }
-        };
-
-        public Dictionary<string, bool> TraderEnabled = new()
-        {
-            { "buildmaterials", true },
-            { "survivalgoods", true },
-            { "treasurehunter", true }
-        };
-
-        public Dictionary<string, bool> ModDependence = new()
-        {
-            { "sharpening", true },
-            { "helvesmithing", true },
-            { "jewelry", true },
-            { "intreehollow", true }
-        };
-    }
 }
+//public class PaxelData
+//{
+//    public Dictionary<string, bool> RecipeEnabled = new()
+//    {
+//        { "andesite", true },
+//        { "basalt", true },
+//        { "chert", true },
+//        { "granite", true },
+//        { "peridotite", true },
+//        { "flint", true },
+//        { "obsidian", true },
+//        { "copper", true },
+//        { "tinbronze", true },
+//        { "bismuthbronze", true },
+//        { "blackbronze", true },
+//        { "silver", true },
+//        { "gold", true },
+//        { "iron", true },
+//        { "meteoriciron", true },
+//        { "steel", true },
+//        { "electrum", true },
+//        { "platinum", true },
+//        { "cupronickel", true },
+//        { "titanium", true },
+//        { "diorite", true },
+//        { "gabbro", true },
+//        { "quartzite", true }
+//    };
+
+//    public Dictionary<string, bool> LootEnabled = new()
+//    {
+//        { "crackedvessel", true },
+//        { "ruins", true }
+//    };
+
+//    public Dictionary<string, bool> TraderEnabled = new()
+//    {
+//        { "buildmaterials", true },
+//        { "survivalgoods", true },
+//        { "treasurehunter", true }
+//    };
+
+//    public Dictionary<string, bool> ModDependence = new()
+//    {
+//        { "sharpening", true },
+//        { "helvesmithing", true },
+//        { "jewelry", true },
+//        { "intreehollow", true }
+//    };
+//}

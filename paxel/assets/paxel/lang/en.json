@@ -110,7 +110,120 @@
   "paxel:paxel-stone-handbook-text": "",
 
   "paxel:paxelhead-stone-handbook-title": "",
-  "paxel:paxelhead-stone-handbook-text": ""
+  "paxel:paxelhead-stone-handbook-text": "",
 
+
+  // Config lib by Maltiez Additions
+
+  "PaxelRecipeSettings": "Setting for the recipes",
+  "PaxelRecipeSettingsText": "\nIn this section, you can make settings for the recipes of the paxels.\n\n",
+
+  "RecipeEnabled/andesite": "Andesite paxel",
+  "RecipeEnabledAndesiteComment": "Recipe enabled",
+
+  "RecipeEnabled/basalt": "Basalt paxel",
+  "RecipeEnabledBasaltComment": "Recipe enabled",
+
+  "RecipeEnabled/chert": "Chert paxel",
+  "RecipeEnabledChertComment": "Recipe enabled",
+
+  "RecipeEnabled/granite": "Granite paxel",
+  "RecipeEnabledGraniteComment": "Recipe enabled",
+
+  "RecipeEnabled/peridotite": "Peridotite paxel",
+  "RecipeEnabledPeridotiteComment": "Recipe enabled",
+
+  "RecipeEnabled/flint": "Flint paxel",
+  "RecipeEnabledFlintComment": "Recipe enabled",
+
+  "RecipeEnabled/obsidian": "Obsidian paxel",
+  "RecipeEnabledObsidianComment": "Recipe enabled",
+
+  "RecipeEnabled/copper": "Copper paxel",
+  "RecipeEnabledCopperComment": "Recipe enabled",
+
+  "RecipeEnabled/tinbronze": "Tinbronze paxel",
+  "RecipeEnabledTinbronzeComment": "Recipe enabled",
+
+  "RecipeEnabled/bismuthbronze": "Bismuthbronze paxel",
+  "RecipeEnabledBismuthbronzeComment": "Recipe enabled",
+
+  "RecipeEnabled/blackbronze": "Blackbronze paxel",
+  "RecipeEnabledBlackbronzeComment": "Recipe enabled",
+
+  "RecipeEnabled/silver": "Silver paxel",
+  "RecipeEnabledSilverComment": "Recipe enabled",
+
+  "RecipeEnabled/gold": "Gold paxel",
+  "RecipeEnabledGoldComment": "Recipe enabled",
+
+  "RecipeEnabled/iron": "Iron paxel",
+  "RecipeEnabledIronComment": "Recipe enabled",
+
+  "RecipeEnabled/meteoriciron": "Meteoriciron paxel",
+  "RecipeEnabledMeteoricironComment": "Recipe enabled",
+
+  "RecipeEnabled/steel": "Steel paxel",
+  "RecipeEnabledSteelComment": "Recipe enabled",
+
+  "RecipeEnabled/electrum": "Electrum paxel",
+  "RecipeEnabledElectrumComment": "Recipe enabled",
+
+  "RecipeEnabled/platinum": "Platinum paxel",
+  "RecipeEnabledPlatinumComment": "Recipe enabled",
+
+  "RecipeEnabled/cupronickel": "Cupronickel paxel",
+  "RecipeEnabledCupronickelComment": "Recipe enabled",
+
+  "RecipeEnabled/titanium": "Titanium paxel",
+  "RecipeEnabledTitaniumComment": "Recipe enabled",
+
+  "RecipeEnabled/diorite": "Diorite paxel",
+  "RecipeEnabledDioriteComment": "Recipe enabled",
+
+  "RecipeEnabled/gabbro": "Gabbro paxel",
+  "RecipeEnabledGabbroComment": "Recipe enabled",
+
+  "RecipeEnabled/quartzite": "Quartzite paxel\n\n",
+  "RecipeEnabledQuartziteComment": "Recipe enabled",
+
+
+  "PaxelLootSettings": "Settings for the loot locations",
+  "PaxelLootSettingsText": "\nIn this section, you can make settings for the loot locations for the paxels.\n\n",
+
+  "LootEnabled/ruins": "Found paxel in ruins?",
+  "LootEnabledRuinsComment": "Activate this so that you can find the paxel in old ruins.",
+
+  "LootEnabled/crackedvessel": "Found paxel in cracked tool vessel?\n\n",
+  "LootEnabledVesselsComment": "Activate this to find the paxel in the tool vessel.",
+
+
+  "PaxelTraderSettings": "Settings for traders",
+  "PaxelTraderSettingsText": "\nIn this section, you can make settings for the traders.\n\n",
+
+  "TraderEnabled/buildmaterials": "Building material trader",
+  "TraderEnabledBuildmaterialsComment": "Activate to sell paxels to the trader.",
+
+  "TraderEnabled/survivalgoods": "Survival goods trader",
+  "TraderEnabledSurvivalgoodsComment": "Activate to sell paxels to the trader.",
+
+  "TraderEnabled/treasurehunter": "Treasure hunter trader\n\n",
+  "TraderEnabledTreasurehunterComment": "Activate to buy paxels from the trader.",
+
+
+  "PaxelModDependenceSettings": "Settings for other mods",
+  "PaxelModDependenceSettingsText": "\nIn this section, you can make settings for other mods.\n\n",
+
+  "ModDependence/sharpening": "Still Necessaries \/ Necessaries Fix \/ Necessaries",
+  "ModDependenceSharpeningComment": "Should the paxel be sharpened on the grindstone of these mods?",
+
+  "ModDependence/helvesmithing": "Helve Hammer Extensions",
+  "ModDependenceHelvesmithingComment": "Should the paxel head be able to be forged automatically on the anvil?",
+
+  "ModDependence/jewelry": "CAN Jewelry",
+  "ModDependenceJewelryComment": "Should metal paxels be improved with gemstones?",
+
+  "ModDependence/intreehollow": "Primitive Survival\n\n",
+  "ModDependenceIntreehollowComment": "Want to find some paxels in tree hollows?"
 
 }

@@ -54,19 +54,15 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </Content>
   <Compile Remove="assets\paxel\sounds\**" />
-  <Compile Remove="assets\paxel\textures\**" />
   <Compile Remove="src\Block\**" />
   <Compile Remove="src\HarmonyPatches\**" />
   <Compile Remove="unused\**" />
   <Content Remove="assets\paxel\sounds\**" />
-  <Content Remove="assets\paxel\textures\**" />
   <EmbeddedResource Remove="assets\paxel\sounds\**" />
-  <EmbeddedResource Remove="assets\paxel\textures\**" />
   <EmbeddedResource Remove="src\Block\**" />
   <EmbeddedResource Remove="src\HarmonyPatches\**" />
   <EmbeddedResource Remove="unused\**" />
   <None Remove="assets\paxel\sounds\**" />
-  <None Remove="assets\paxel\textures\**" />
   <None Remove="src\Block\**" />
   <None Remove="src\HarmonyPatches\**" />
   <None Remove="unused\**" />
@@ -115,6 +111,7 @@
   <None Remove="assets\paxel\compatibility\geoaddons\recipes\grid\paxel-geoaddons-quartzite.json" />
   <None Remove="assets\paxel\compatibility\primitivesurvival\patches\paxel-in-treehollows.json" />
   <None Remove="assets\paxel\compatibility\primitivesurvival\patches\paxel-itemtypes-tool-paxel.json" />
+  <None Remove="assets\paxel\config\configlib-patches.json" />
   <None Remove="assets\paxel\itemtypes\tool\diamondpick.json" />
   <None Remove="assets\paxel\itemtypes\tool\miningdrill-qpt.json" />
   <None Remove="assets\paxel\itemtypes\tool\miningdrill-tt.json" />
@@ -151,6 +148,10 @@
   <Content Include="modicon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </Content>
+</ItemGroup>
+
+<ItemGroup>
+  <Folder Include="assets\paxel\textures\block\stone\rock\" />
 </ItemGroup>
 
 </Project>

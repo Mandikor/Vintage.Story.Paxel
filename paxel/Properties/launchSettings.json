@@ -4,10 +4,7 @@
       "commandName": "Executable",
       "executablePath": "$(VINTAGE_STORY)/Vintagestory.exe",
       "commandLineArgs": "--tracelog --addModPath $(ProjectDir)/bin/$(Configuration)/Mods --openWorld net7paxel --playStyle creativebuilding",
-      "workingDirectory": "$(VINTAGE_STORY)",
-      "environmentVariables": {
-        "VINTAGE_STORY": "C:\\Users\\mandi\\AppData\\Roaming\\Vintagestory\\"
-      }
+      "workingDirectory": "$(VINTAGE_STORY)"
     },
     "Server": {
       "commandName": "Executable",

@@ -1,5 +1,6 @@
 [
   {
+    "enabled": true,
     "ingredientPattern": "_AS,ROP",
     "ingredients": {
       "P": { "type": "item", "code": "game:hoe-andesite" },
