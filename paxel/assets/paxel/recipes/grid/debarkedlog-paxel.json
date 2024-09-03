@@ -1,5 +1,6 @@
 [
 	{
+    "enabled": true,
 		"ingredientPattern": "AHL",
 		"ingredients": {
 			"A": { "type": "item", "code": "paxel:paxel-*", "isTool": true  },

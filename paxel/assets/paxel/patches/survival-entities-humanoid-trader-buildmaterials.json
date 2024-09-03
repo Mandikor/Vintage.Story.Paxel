@@ -59,7 +59,7 @@
     "file": "game:entities/humanoid/trader-buildmaterials.json",
     "side": "server",
     "condition": {
-      "when": "PaxelTraderBuildMaterialsEnabled",
+      "when": "Paxel.Trader.Buy.BuildMaterials.Enabled",
       "isValue": "true"
     }
   }

@@ -1,11 +1,6 @@
 {
-	"ingredient": {
-		"type": "item",
-		"code": "game:clay-*",
-		"name": "type",
-		"allowedVariants": [ "blue", "fire" ]
-	},
-
+	"enabled": true,
+	"ingredient": {	"type": "item",	"code": "game:clay-*", "name": "type",	"allowedVariants": [ "blue", "fire" ]	},
 	"pattern": [
 		[
 			"##############",
@@ -56,11 +51,6 @@
 			"##############"
 		]
 	],
-
 	"name": "Paxelhead Mold",
-	"output": {
-		"type": "block",
-		"code": "paxel:paxelmold-raw"
-	}
-
+	"output": {	"type": "block", "code": "paxel:paxelmold-raw"	}
 }

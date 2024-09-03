@@ -19,7 +19,7 @@
       }
     ],
     "condition": {
-      "when": "PaxelInTreeHollowEnabled",
+      "when": "Paxel.InTreeHollow.Enabled",
       "isValue": "true"
     },
     "dependsOn": [ { "modid": "primitivesurvival" } ]
@@ -45,7 +45,7 @@
     },
     "file": "paxel:itemtypes/tool/paxel-metal.json",
     "condition": {
-      "when": "PaxelJewelryEnabled",
+      "when": "Paxel.InTreeHollow.Enabled",
       "isValue": "true"
     },
     "side": "server",
@@ -72,7 +72,7 @@
     },
     "file": "paxel:itemtypes/tool/paxel-stone.json",
     "condition": {
-      "when": "PaxelJewelryEnabled",
+      "when": "Paxel.InTreeHollow.Enabled",
       "isValue": "true"
     },
     "side": "server",

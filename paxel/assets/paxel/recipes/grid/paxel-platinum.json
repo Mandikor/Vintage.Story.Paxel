@@ -1,5 +1,6 @@
 [
   {
+    "enabled": true,
     "ingredientPattern": "__P,_T_,T__",
     "ingredients": {
       "P": { "type": "item", "code": "paxel:paxelhead-platinum" },

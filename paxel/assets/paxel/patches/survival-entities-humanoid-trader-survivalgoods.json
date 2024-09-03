@@ -59,7 +59,7 @@
     "file": "game:entities/humanoid/trader-survivalgoods.json",
     "side": "server",
     "condition": {
-      "when": "PaxelTraderSurvivalGoodsEnabled",
+      "when": "Paxel.Trader.Sell.SurvivalGoods.Enabled",
       "isValue": "true"
     }
   }

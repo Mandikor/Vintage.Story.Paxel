@@ -1,5 +1,6 @@
 [
   {
+    "enabled": true,
     "ingredientPattern": "__P,_T_,TL_",
     "ingredients": {
       "P": { "type": "item", "code": "paxel:paxelhead-electrum" },

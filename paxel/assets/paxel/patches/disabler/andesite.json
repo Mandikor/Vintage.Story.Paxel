@@ -1,68 +1,8 @@
 ﻿[
-  {
-    "op": "replace",
-    "path": "/0/enabled",
-    "value": false,
-    "file": "paxel:recipes/grid/paxel-andesite.json",
-    "condition": {
-      "when": "PaxelAndesiteRecipeEnabled",
-      "isValue": false
-    },
-    "side": "server"
-  },
-  {
-    "op": "add",
-    "path": "/1/enabled",
-    "value": false,
-    "file": "paxel:recipes/grid/paxel-andesite.json",
-    "condition": {
-      "when": "PaxelAndesiteRecipeEnabled",
-      "isValue": "false"
-    },
-    "side": "server"
-  },
-  {
-    "op": "add",
-    "path": "/2/enabled",
-    "value": false,
-    "file": "paxel:recipes/grid/paxel-andesite.json",
-    "condition": {
-      "when": "PaxelAndesiteRecipeEnabled",
-      "isValue": "false"
-    },
-    "side": "server"
-  },
-  {
-    "op": "add",
-    "path": "/3/enabled",
-    "value": false,
-    "file": "paxel:recipes/grid/paxel-andesite.json",
-    "condition": {
-      "when": "PaxelAndesiteRecipeEnabled",
-      "isValue": "false"
-    },
-    "side": "server"
-  },
-  {
-    "op": "add",
-    "path": "/4/enabled",
-    "value": false,
-    "file": "paxel:recipes/grid/paxel-andesite.json",
-    "condition": {
-      "when": "PaxelAndesiteRecipeEnabled",
-      "isValue": "false"
-    },
-    "side": "server"
-  },
-  {
-    "op": "add",
-    "path": "/5/enabled",
-    "value": false,
-    "file": "paxel:recipes/grid/paxel-andesite.json",
-    "condition": {
-      "when": "PaxelAndesiteRecipeEnabled",
-      "isValue": "false"
-    },
-    "side": "server"
-  }
+  { "op": "replace", "path": "/0/enabled", "value": false, "file": "paxel:recipes/grid/paxel-andesite.json", "condition": { "when": "Paxel.Andesite.Recipe.Enabled", "isValue": "false" }, "side": "server" },
+  { "op": "replace", "path": "/1/enabled", "value": false, "file": "paxel:recipes/grid/paxel-andesite.json", "condition": { "when": "Paxel.Andesite.Recipe.Enabled", "isValue": "false" }, "side": "server" },
+  { "op": "replace", "path": "/2/enabled", "value": false, "file": "paxel:recipes/grid/paxel-andesite.json", "condition": { "when": "Paxel.Andesite.Recipe.Enabled", "isValue": "false" }, "side": "server" },
+  { "op": "replace", "path": "/3/enabled", "value": false, "file": "paxel:recipes/grid/paxel-andesite.json", "condition": { "when": "Paxel.Andesite.Recipe.Enabled", "isValue": "false" }, "side": "server" },
+  { "op": "replace", "path": "/4/enabled", "value": false, "file": "paxel:recipes/grid/paxel-andesite.json", "condition": { "when": "Paxel.Andesite.Recipe.Enabled", "isValue": "false" }, "side": "server" },
+  { "op": "replace", "path": "/5/enabled", "value": false, "file": "paxel:recipes/grid/paxel-andesite.json", "condition": { "when": "Paxel.Andesite.Recipe.Enabled", "isValue": "false" }, "side": "server" }
 ]

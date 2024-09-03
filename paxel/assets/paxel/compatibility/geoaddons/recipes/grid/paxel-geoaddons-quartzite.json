@@ -1,5 +1,6 @@
 [
   {
+    "enabled": true,
     "ingredientPattern": "_AS,ROP",
     "ingredients": {
       "P": { "type": "item", "code": "game:hoe-quartzite" },
@@ -15,6 +16,7 @@
     "output": { "type": "item", "code": "paxel:paxel-quartzite", "quantity": 1 }
   },
   {
+    "enabled": true,
     "ingredientPattern": "_AS,RTP,TO_",
     "ingredients": {
       "P": { "type": "item", "code": "game:hoehead-quartzite" },
@@ -31,6 +33,7 @@
     "output": { "type": "item", "code": "paxel:paxel-quartzite", "quantity": 1 }
   },
   {
+    "enabled": true,
     "ingredientPattern": "__P,_S_,SO_",
     "ingredients": {
       "P": { "type": "item", "code": "paxel:paxelhead-quartzite" },
@@ -44,6 +47,7 @@
     "output": { "type": "item", "code": "paxel:paxel-quartzite", "quantity": 1 }
   },
   {
+    "enabled": true,
     "ingredientPattern": "AS,RP",
     "ingredients": {
       "P": { "type": "item", "code": "game:hoehead-quartzite" },
@@ -57,6 +61,7 @@
     "output": { "type": "item", "code": "paxel:paxelhead-quartzite", "quantity": 1 }
   },
   {
+    "enabled": true,
     "ingredientPattern": "_AS,RTP,TO_",
     "ingredients": {
       "P": { "type": "item", "code": "game:hoehead-quartzite" },
@@ -73,6 +78,7 @@
     "output": { "type": "item", "code": "paxel:paxel-bone-quartzite", "quantity": 1 }
   },
   {
+    "enabled": true,
     "ingredientPattern": "__P,_S_,SO_",
     "ingredients": {
       "P": { "type": "item", "code": "paxel:paxelhead-quartzite" },

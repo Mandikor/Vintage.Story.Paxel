@@ -1,5 +1,6 @@
 [
   {
+    "enabled": true,
     "ingredientPattern": "_AS,ROP",
     "ingredients": {
       "P": { "type": "item", "code": "game:hoe-diorite" },
@@ -15,6 +16,7 @@
     "output": { "type": "item", "code": "paxel:paxel-diorite", "quantity": 1 }
   },
   {
+    "enabled": true,
     "ingredientPattern": "_AS,RTP,TO_",
     "ingredients": {
       "P": { "type": "item", "code": "game:hoehead-diorite" },
@@ -31,6 +33,7 @@
     "output": { "type": "item", "code": "paxel:paxel-diorite", "quantity": 1 }
   },
   {
+    "enabled": true,
     "ingredientPattern": "__P,_S_,SO_",
     "ingredients": {
       "P": { "type": "item", "code": "paxel:paxelhead-diorite" },
@@ -44,6 +47,7 @@
     "output": { "type": "item", "code": "paxel:paxel-diorite", "quantity": 1 }
   },
   {
+    "enabled": true,
     "ingredientPattern": "AS,RP",
     "ingredients": {
       "P": { "type": "item", "code": "game:hoehead-diorite" },
@@ -57,6 +61,7 @@
     "output": { "type": "item", "code": "paxel:paxelhead-diorite", "quantity": 1 }
   },
   {
+    "enabled": true,
     "ingredientPattern": "_AS,RTP,TO_",
     "ingredients": {
       "P": { "type": "item", "code": "game:hoehead-diorite" },
@@ -73,6 +78,7 @@
     "output": { "type": "item", "code": "paxel:paxel-bone-diorite", "quantity": 1 }
   },
   {
+    "enabled": true,
     "ingredientPattern": "__P,_S_,SO_",
     "ingredients": {
       "P": { "type": "item", "code": "paxel:paxelhead-diorite" },

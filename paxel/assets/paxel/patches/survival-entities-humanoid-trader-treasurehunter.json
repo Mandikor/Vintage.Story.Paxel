@@ -59,7 +59,7 @@
     "file": "game:entities/humanoid/trader-treasurehunter.json",
     "side": "server",
     "condition": {
-      "when": "PaxelTraderTreasureHunterEnabled",
+      "when": "Paxel.Trader.Buy.TreasureHunter.Enabled",
       "isValue": "true"
     }
   }

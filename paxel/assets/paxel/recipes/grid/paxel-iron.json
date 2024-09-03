@@ -1,5 +1,6 @@
 [
   {
+    "enabled": true,
     "ingredientPattern": "AS,LP",
     "ingredients": {
       "P": { "type": "item", "code": "game:pickaxe-iron" },
@@ -15,6 +16,7 @@
     "output": { "type": "item", "code": "paxel:paxel-iron", "quantity": 1 }
   },
   {
+    "enabled": true,
     "ingredientPattern": "_AS,_TP,T__",
     "ingredients": {
       "P": { "type": "item", "code": "game:pickaxehead-iron" },
@@ -29,6 +31,7 @@
     "output": { "type": "item", "code": "paxel:paxel-iron", "quantity": 1 }
   },
   {
+    "enabled": true,
     "ingredientPattern": "__P,_T_,T__",
     "ingredients": {
       "P": { "type": "item", "code": "paxel:paxelhead-iron" },
@@ -41,6 +44,7 @@
     "output": { "type": "item", "code": "paxel:paxel-iron", "quantity": 1 }
   },
   {
+    "enabled": true,
     "ingredientPattern": "AS,_P",
     "ingredients": {
       "P": { "type": "item", "code": "game:pickaxehead-iron" },

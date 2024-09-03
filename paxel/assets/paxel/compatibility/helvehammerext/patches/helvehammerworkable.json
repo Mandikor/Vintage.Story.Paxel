@@ -1,13 +1,14 @@
 [
   {
+    "file": "paxel:itemtypes/toolhead/paxelhead-metal.json",
+    "side": "server",
     "op": "add",
     "path": "/attributes/helvehammerworkable",
     "value": true,
-    "file": "paxel:itemtypes/toolhead/paxelhead-metal.json",
     "condition": {
-      "when": "PaxelHelveSmithingEnabled",
+      "when": "Paxel.HelveSmithing.Enabled",
       "isValue": "true"
     },
-    "side": "server"
+    "dependsOn": [ { "modid": "helvehammerext" } ]
   }
 ]

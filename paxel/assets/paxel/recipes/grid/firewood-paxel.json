@@ -1,5 +1,6 @@
 [
 	{
+    "enabled": true,
 		"ingredientPattern": "A,L",
 		"ingredients": {
 			"A": { "type": "item", "code": "paxel:paxel-*", "isTool": true  },
@@ -9,8 +10,8 @@
 		"height": 2,
 		"output": { "type": "item", "code": "game:firewood", "quantity": 4  }
 	},
-	
 	{
+    "enabled": true,
 		"ingredientPattern": "A,L",
 		"ingredients": {
 			"A": { "type": "item", "code": "paxel:paxel-*", "isTool": true  },
@@ -20,8 +21,8 @@
 		"height": 2,
 		"output": { "type": "item", "code": "game:firewood", "quantity": 4  }
 	},
-
 	{
+    "enabled": true,
 		"ingredientPattern": "A,L",
 		"ingredients": {
 			"A": { "type": "item", "code": "paxel:paxel-*", "isTool": true  },
