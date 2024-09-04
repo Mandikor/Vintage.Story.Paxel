@@ -23,10 +23,21 @@ public class Core : ModSystem
         Config = ModConfig.ReadConfig<Config>(api, "MandikorsMods/PaxelConfig.json");
 
         #region Mods
-        api.World.Config.SetBool("Paxel.Sharpening.Enabled", Config.ModDependence["sharpening"]);
+
+        if (api.ModLoader.IsModEnabled("necessaries") || api.ModLoader.IsModEnabled("necessariesfix") || api.ModLoader.IsModEnabled("stillnecessaries"))
+        {
+            api.World.Config.SetBool("Paxel.Sharpening.Enabled", Config.ModDependence["sharpening"]);
+        }
+        else
+        {
+            api.World.Config.SetBool("Paxel.Sharpening.Enabled", false );
+        }
+
         api.World.Config.SetBool("Paxel.HelveSmithing.Enabled", Config.ModDependence["helvesmithing"]);
         api.World.Config.SetBool("Paxel.Jewelry.Enabled", Config.ModDependence["jewelry"]);
         api.World.Config.SetBool("Paxel.InTreeHollow.Enabled", Config.ModDependence["intreehollow"]);
+        api.World.Config.SetBool("Paxel.KRPGEnchantment.Enabled", Config.ModDependence["krpgenchantment"]);
+        api.World.Config.SetBool("Paxel.ToolsExtended.Enabled", Config.ModDependence["toolsextended"]);
         #endregion
 
         #region Loot
@@ -69,6 +80,8 @@ public class Core : ModSystem
         api.World.Config.SetBool("Paxel.Diorite.Recipe.Enabled", Config.RecipeEnabled["diorite"]);
         api.World.Config.SetBool("Paxel.Gabbro.Recipe.Enabled", Config.RecipeEnabled["gabbro"]);
         api.World.Config.SetBool("Paxel.Quartzite.Recipe.Enabled", Config.RecipeEnabled["quartzite"]);
+
+        api.World.Config.SetBool("Paxel.StainlessSteel.Recipe.Enabled", Config.RecipeEnabled["stainlesssteel"]);
         #endregion
 
     }

@@ -111,6 +111,11 @@
   <None Remove="assets\paxel\compatibility\geoaddons\recipes\grid\paxel-geoaddons-quartzite.json" />
   <None Remove="assets\paxel\compatibility\primitivesurvival\patches\paxel-in-treehollows.json" />
   <None Remove="assets\paxel\compatibility\primitivesurvival\patches\paxel-itemtypes-tool-paxel.json" />
+  <None Remove="assets\paxel\compatibility\toolsextended\itemtypes\toolhead\paxelhead-stainlesssteel.json" />
+  <None Remove="assets\paxel\compatibility\toolsextended\itemtypes\tool\paxel-stainlesssteel.json" />
+  <None Remove="assets\paxel\compatibility\toolsextended\patches\disabler\stainlesssteel.json" />
+  <None Remove="assets\paxel\compatibility\toolsextended\recipes\grid\paxel-stainlesssteel.json" />
+  <None Remove="assets\paxel\compatibility\toolsextended\recipes\smithing\paxelhead-stainlesssteel.json" />
   <None Remove="assets\paxel\config\configlib-patches.json" />
   <None Remove="assets\paxel\itemtypes\tool\diamondpick.json" />
   <None Remove="assets\paxel\itemtypes\tool\miningdrill-qpt.json" />
@@ -139,6 +144,7 @@
   <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-metal.json" />
   <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-metal2-shiny.json" />
   <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-metal2.json" />
+  <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-stainlesssteel-shiny.json" />
   <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-stone-shiny.json" />
   <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-stone.json" />
   <None Remove="assets\paxel\shapes\item\tool\worldeater.json" />

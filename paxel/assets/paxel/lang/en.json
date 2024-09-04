@@ -187,6 +187,9 @@
   "RecipeEnabled/quartzite": "Quartzite paxel\n\n",
   "RecipeEnabledQuartziteComment": "Recipe enabled",
 
+  "RecipeEnabled/stainlesssteel": "Stainless steel paxel\n\n",
+  "RecipeEnabledStainlessSteelComment": "Recipe enabled",
+
 
   "PaxelLootSettings": "Settings for the loot locations",
   "PaxelLootSettingsText": "\nIn this section, you can make settings for the loot locations for the paxels.\n\n",
@@ -224,6 +227,12 @@
   "ModDependenceJewelryComment": "Should metal paxels be improved with gemstones?",
 
   "ModDependence/intreehollow": "Primitive Survival\n\n",
-  "ModDependenceIntreehollowComment": "Want to find some paxels in tree hollows?"
+  "ModDependenceIntreehollowComment": "Want to find some paxels in tree hollows?",
+
+  "ModDependence/krpgenchantment": "KRPG Enchantment\n\n",
+  "ModDependenceKRPGEnchantmentComment": "Do you want to enchant your paxel?",
+
+  "ModDependence/toolsextended": "Tools Extended\n\n",
+  "ModDependenceToolsExtendedComment": "A paxel made of stainless steel and extended recipes for the titanium paxel."
 
 }

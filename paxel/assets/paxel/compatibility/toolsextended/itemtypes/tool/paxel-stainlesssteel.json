@@ -1,0 +1,220 @@
+{
+  "code": "paxel",
+
+  "class": "ItemPaxel",
+
+  "heldTpHitAnimation": "smithingwide",
+
+  "tool": "shovel",
+
+  "storageFlags": 5,
+
+  "creativeinventory": {
+    "general": [ "*" ],
+    "items": [ "*" ],
+    "tools": [ "*" ],
+    "paxel": [ "*" ]
+  },
+
+  "behaviors": [
+    {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "WallHalves",
+        "wallOffY": 2,
+        "sprintKey": true,
+        "selectionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.1,
+          "z2": 1
+        },
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 0,
+          "y2": 0,
+          "z2": 0
+        }
+      }
+    }
+  ],
+
+  "attributes": {
+
+    "handbook": {
+      "groupBy": [ "paxel-*" ],
+      "extraSections": [
+        {
+          "title": "paxel:paxel-metal-handbook-title",
+          "text": "paxel:paxel-metal-handbook-text"
+        }
+      ]
+    },
+
+    "rackable": true,
+
+    "toolrackTransform": {
+      "rotation": {
+        "x": 0,
+        "y": 1,
+        "z": -1
+      },
+      "translation": {
+        "x": -0.47,
+        "y": 0.6,
+        "z": 0
+      },
+      "origin": {
+        "x": -0.8,
+        "y": 0.4,
+        "z": 0.5
+      },
+      "scale": 1.25
+    },
+
+    "groundStorageTransform": {
+      "translation": {
+        "x": 0,
+        "y": 0.3,
+        "z": -0.16
+      },
+      "rotation": {
+        "x": 13,
+        "y": 88,
+        "z": -87
+      },
+      "scale": 0.88
+    },
+
+    "slotRefillIdentifier": "paxel"
+
+  },
+
+  "maxstacksize": 1,
+
+  "variantgroups": [
+    {
+      "code": "material",
+      "states": [ "stainlesssteel" ]
+    }
+  ],
+
+  "texturesByType": {
+    "*": {
+      "metal": { "base": "game:block/metal/ingot/{material}" }
+    }
+  },
+
+  "shapeByType": {
+    "paxel-stainlesssteel": { "base": "paxel:item/tool/paxel/paxel-{material}-shiny" }
+  },
+
+  "damagedby": [ "blockbreaking", "attacking" ],
+
+  "tooltierbytype": {
+    "*-stainlesssteel": 5
+  },
+
+  "miningspeedbytype": {
+    "*-stainlesssteel": {
+      "soil": 7.5,
+      "sand": 7.5,
+      "gravel": 4.6,
+      "snow": 4.6,
+      "ceramic": 3.5,
+      "stone": 9.5,
+      "ore": 9.5,
+      "metal": 9.5,
+      "ice": 4.5,
+      "wood": 12.2,
+      "plant": 6.5,
+      "leaves": 4.4
+    }
+  },
+
+  "durabilitybytype": {
+    "paxel-stainlesssteel": 11440 //8300 + 2100 from iron ingots + 10% from all
+  },
+
+  "attackRange": 1.6,
+
+  "attackpowerbytype": {
+    "paxel-stainlesssteel": 3.9
+  },
+
+  "guiTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": -35,
+      "y": 55,
+      "z": -10
+    },
+    "origin": {
+      "x": 0.4,
+      "y": 0,
+      "z": 0.45
+    },
+    "scale": 1.15
+  },
+
+  "fpHandTransform": {
+    "translation": {
+      "x": 0.0468,
+      "y": -0.2,
+      "z": 0
+    },
+    "rotation": {
+      "x": -15,
+      "y": 15,
+      "z": 100
+    },
+    "scale": 2
+  },
+
+  "groundTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "scale": 3.6
+  },
+
+  "tpHandTransform": {
+    "translation": {
+      "x": -1.04,
+      "y": -0.24,
+      "z": -0.61
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": -10
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.7,
+      "z": 0.5
+    },
+    "scale": 0.8
+  }
+
+}

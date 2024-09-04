@@ -307,18 +307,18 @@
       "leaves": 3.2
     },
     "*-titanium": {
-      "soil": 9,
-      "sand": 9,
-      "gravel": 6,
-      "snow": 6,
-      "ceramic": 4.5,
-      "stone": 11.5,
-      "ore": 11.5,
-      "metal": 11.5,
-      "ice": 5.7,
-      "wood": 14.6,
-      "plant": 8,
-      "leaves": 5.1
+      "soil": 8,
+      "sand": 8,
+      "gravel": 4.8,
+      "snow": 4.8,
+      "ceramic": 4,
+      "stone": 10,
+      "ore": 10,
+      "metal": 10,
+      "ice": 5,
+      "wood": 13.6,
+      "plant": 7,
+      "leaves": 4.8
     }
   },
 
@@ -336,7 +336,7 @@
     "paxel-electrum": 660, //600
     "paxel-platinum": 5885, //3250 + 2100 from iron ingots + 10% from all
     "paxel-cupronickel": 6160, //3500 + 2100 from iron ingots + 10% from all
-    "paxel-titanium": 12760 //9500 + 2100 from iron ingots + 10% from all
+    "paxel-titanium": 13530 //10200 + 2100 from iron ingots + 10% from all
   },
 
   "attackRange": 1.6,

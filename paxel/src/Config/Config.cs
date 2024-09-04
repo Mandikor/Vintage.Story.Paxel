@@ -38,7 +38,8 @@ public class Config : IModConfig
         { "titanium", true },
         { "diorite", true },
         { "gabbro", true },
-        { "quartzite", true }
+        { "quartzite", true },
+        { "stainlesssteel", true }
     };
 
     public Dictionary<string, bool> LootEnabled = new()
@@ -59,7 +60,9 @@ public class Config : IModConfig
         { "sharpening", true },
         { "helvesmithing", true },
         { "jewelry", true },
-        { "intreehollow", true }
+        { "intreehollow", true },
+        { "krpgenchantment", true },
+        { "toolsextended", true }
     };
 
     public Config(ICoreAPI api, Config previousConfig = null)
@@ -73,6 +76,8 @@ public class Config : IModConfig
         ModDependence["helvesmithing"] = previousConfig.ModDependence["helvesmithing"];
         ModDependence["jewelry"] = previousConfig.ModDependence["jewelry"];
         ModDependence["intreehollow"] = previousConfig.ModDependence["intreehollow"];
+        ModDependence["krpgenchantment"] = previousConfig.ModDependence["krpgenchantment"];
+        ModDependence["toolsextended"] = previousConfig.ModDependence["toolsextended"];
 
         LootEnabled["crackedvessel"] = previousConfig.LootEnabled["crackedvessel"];
         LootEnabled["ruins"] = previousConfig.LootEnabled["ruins"];
@@ -104,6 +109,7 @@ public class Config : IModConfig
         RecipeEnabled["diorite"] = previousConfig.RecipeEnabled["diorite"];
         RecipeEnabled["gabbro"] = previousConfig.RecipeEnabled["gabbro"];
         RecipeEnabled["quartzite"] = previousConfig.RecipeEnabled["quartzite"];
+        RecipeEnabled["stainlesssteel"] = previousConfig.RecipeEnabled["stainlesssteel"];
     }
 
 }

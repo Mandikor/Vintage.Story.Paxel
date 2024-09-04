@@ -147,6 +147,12 @@
       "default": true
     },
     {
+      "code": "RecipeEnabled/stainlesssteel",
+      "comment": "RecipeEnabledStainlessSteelComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
       "type": "separator",
       "title": "PaxelLootSettings",
       "text": "PaxelLootSettingsText"
@@ -212,6 +218,18 @@
     {
       "code": "ModDependence/intreehollow",
       "comment": "ModDependenceIntreehollowComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "ModDependence/krpgenchantment",
+      "comment": "ModDependenceKRPGEnchantmentComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "ModDependence/toolsextended",
+      "comment": "ModDependenceToolsExtendedComment",
       "type": "boolean",
       "default": true
     },
