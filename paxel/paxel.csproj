@@ -93,7 +93,6 @@
   <Content Remove="assets\paxel\shapes\item\tool\miningdrill-tt.json" />
   <Content Remove="assets\paxel\shapes\item\tool\miningexcavator.json" />
   <Content Remove="assets\paxel\shapes\item\tool\mininghammer.json" />
-  <Content Remove="assets\paxel\shapes\item\tool\paxel\paxel-legendary.json" />
   <Content Remove="assets\paxel\shapes\item\tool\paxel\paxel-metal-shiny.json" />
   <Content Remove="assets\paxel\shapes\item\tool\paxel\paxel-metal.json" />
   <Content Remove="assets\paxel\shapes\item\tool\paxel\paxel-metal2-shiny.json" />
@@ -136,6 +135,7 @@
   <None Remove="assets\paxel\shapes\item\tool\miningdrill-tt.json" />
   <None Remove="assets\paxel\shapes\item\tool\miningexcavator.json" />
   <None Remove="assets\paxel\shapes\item\tool\mininghammer.json" />
+  <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-.json" />
   <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-bone-diorite.json" />
   <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-bone-gabbro.json" />
   <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-bone-quartzite.json" />
@@ -147,6 +147,7 @@
   <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-stainlesssteel-shiny.json" />
   <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-stone-shiny.json" />
   <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-stone.json" />
+  <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-uranium.json" />
   <None Remove="assets\paxel\shapes\item\tool\worldeater.json" />
   <Content Include="modinfo.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

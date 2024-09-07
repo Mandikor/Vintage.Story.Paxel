@@ -75,13 +75,40 @@ public class Core : ModSystem
         api.World.Config.SetBool("Paxel.Electrum.Recipe.Enabled", Config.RecipeEnabled["electrum"]);
         api.World.Config.SetBool("Paxel.Platinum.Recipe.Enabled", Config.RecipeEnabled["platinum"]);
         api.World.Config.SetBool("Paxel.Cupronickel.Recipe.Enabled", Config.RecipeEnabled["cupronickel"]);
-        api.World.Config.SetBool("Paxel.Titanium.Recipe.Enabled", Config.RecipeEnabled["titanium"]);
+        api.World.Config.SetBool("Paxel.Uranium.Recipe.Enabled", Config.RecipeEnabled["uranium"]);
 
-        api.World.Config.SetBool("Paxel.Diorite.Recipe.Enabled", Config.RecipeEnabled["diorite"]);
-        api.World.Config.SetBool("Paxel.Gabbro.Recipe.Enabled", Config.RecipeEnabled["gabbro"]);
-        api.World.Config.SetBool("Paxel.Quartzite.Recipe.Enabled", Config.RecipeEnabled["quartzite"]);
+        if (api.ModLoader.IsModEnabled("geoaddons"))
+        {
+            api.World.Config.SetBool("Paxel.Diorite.Recipe.Enabled", Config.RecipeEnabled["diorite"]);
+            api.World.Config.SetBool("Paxel.Gabbro.Recipe.Enabled", Config.RecipeEnabled["gabbro"]);
+            api.World.Config.SetBool("Paxel.Quartzite.Recipe.Enabled", Config.RecipeEnabled["quartzite"]);
+        }
+        else
+        {
+            api.World.Config.SetBool("Paxel.Diorite.Recipe.Enabled", false);
+            api.World.Config.SetBool("Paxel.Gabbro.Recipe.Enabled", false);
+            api.World.Config.SetBool("Paxel.Quartzite.Recipe.Enabled", false);
+        }
 
-        api.World.Config.SetBool("Paxel.StainlessSteel.Recipe.Enabled", Config.RecipeEnabled["stainlesssteel"]);
+        if (api.ModLoader.IsModEnabled("toolsextended"))
+        {
+            api.World.Config.SetBool("Paxel.StainlessSteel.Recipe.Enabled", Config.RecipeEnabled["stainlesssteel"]);
+            api.World.Config.SetBool("Paxel.Titanium.Recipe.Enabled", Config.RecipeEnabled["titanium"]);
+        }
+        else
+        {
+            api.World.Config.SetBool("Paxel.StainlessSteel.Recipe.Enabled", false);
+            api.World.Config.SetBool("Paxel.Titanium.Recipe.Enabled", false);
+        }
+
+        if (api.ModLoader.IsModEnabled("legendarymobs"))
+        {
+            api.World.Config.SetBool("Paxel.Legendary.Recipe.Enabled", Config.RecipeEnabled["legendary"]);
+        }
+        else
+        {
+            api.World.Config.SetBool("Paxel.Legendary.Recipe.Enabled", false);
+        }
         #endregion
 
     }

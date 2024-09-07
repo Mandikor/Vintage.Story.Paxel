@@ -42,8 +42,8 @@
       "groupBy": [ "paxelhead-*" ],
       "extraSections": [
         {
-          "title": "paxel:paxelhead-metal-handbook-title",
-          "text": "paxel:paxelhead-metal-handbook-text"
+          "title": "paxel:paxelhead-toolsextended-handbook-title",
+          "text": "paxel:paxelhead-toolsextended-handbook-text"
         }
       ]
     },
@@ -65,7 +65,7 @@
   "variantgroups": [
     {
       "code": "material",
-      "states": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel", "electrum", "cupronickel", "platinum", "uranium" ]
+      "states": [ "stainlesssteel", "titanium" ]
     }
   ],
 
@@ -78,20 +78,8 @@
   },
 
   "shapeByType": {
-    "*-copper": { "base": "paxel:item/tool/paxelhead" },
-    "*-tinbronze": { "base": "paxel:item/tool/paxelhead" },
-    "*-bismuthbronze": { "base": "paxel:item/tool/paxelhead" },
-    "*-blackbronze": { "base": "paxel:item/tool/paxelhead" },
-    "*-silver": { "base": "paxel:item/tool/paxelhead-shiny" },
-    "*-gold": { "base": "paxel:item/tool/paxelhead-shiny" },
-    "*-iron": { "base": "paxel:item/tool/paxelhead" },
-    "*-meteoriciron": { "base": "paxel:item/tool/paxelhead" },
-    "*-steel": { "base": "paxel:item/tool/paxelhead" },
-
-    "*-electrum": { "base": "paxel:item/tool/paxelhead-shiny" },
-    "*-platinum": { "base": "paxel:item/tool/paxelhead" },
-    "*-cupronickel": { "base": "paxel:item/tool/paxelhead" },
-    "*-uranium": { "base": "paxel:item/tool/paxelhead" }
+    "*-stainlesssteel": { "base": "paxel:item/tool/paxelhead-shiny" },
+    "*-titanium": { "base": "paxel:item/tool/paxelhead" }
   },
 
   "guiTransform": {

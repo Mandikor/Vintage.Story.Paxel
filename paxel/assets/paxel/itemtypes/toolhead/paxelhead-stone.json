@@ -65,12 +65,12 @@
   "variantgroups": [
     {
       "code": "material",
-      "states": [ "chert", "granite", "andesite", "basalt", "obsidian", "peridotite", "flint" ]
+      "states": [ "andesite", "basalt", "chert", "flint", "granite",  "obsidian", "peridotite" ]
     }
   ],
 
   "texturesByType": {
-    "@paxelhead-(chert|granite|andesite|basalt|obsidian|peridotite)": {
+    "@paxelhead-(andesite|basalt|chert|granite|obsidian|peridotite)": {
       "material": { "base": "game:block/stone/rock/{material}1" },
       "string": { "base": "game:block/transparent" },
       "handle": { "base": "game:block/transparent" }

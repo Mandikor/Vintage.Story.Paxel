@@ -49,8 +49,8 @@
       "groupBy": [ "paxel-*" ],
       "extraSections": [
         {
-          "title": "paxel:paxel-stone-handbook-title",
-          "text": "paxel:paxel-stone-handbook-text"
+          "title": "paxel:paxel-toolsextended-handbook-title",
+          "text": "paxel:paxel-toolsextended-handbook-text"
         }
       ]
     },
@@ -99,103 +99,69 @@
   "variantgroups": [
     {
       "code": "material",
-      "states": [ "andesite", "basalt", "chert", "flint", "granite", "obsidian", "peridotite", "bone-andesite", "bone-basalt", "bone-chert", "bone-flint", "bone-granite", "bone-obsidian", "bone-peridotite" ]
+      "states": [ "stainlesssteel", "titanium" ]
     }
   ],
 
   //"texturesByType": {
-	//	"@paxel-bone-(andesite|basalt|chert|granite|obsidian|peridotite)": {
-  //    "material": { "base": "game:block/stone/rock/{material}1" },
-	//		"handle": { "base": "game:block/creature/bone-yellow" }
-	//	},
-	//	"paxel-bone-flint": {
-  //    "material": { "base": "game:block/stone/{material}" },
-	//		"handle": { "base": "game:block/creature/bone-yellow" }
-	//	},
-  //  "@paxel-(andesite|basalt|chert|granite|obsidian|peridotite)": {
-  //    "material": { "base": "game:block/stone/rock/{material}1" }
-  //  },
-  //  "paxel-flint": {
-  //    "material": { "base": "game:block/stone/{material}" }
+  //  "*": {
+  //    "metal": { "base": "game:block/metal/ingot/{material}" }
   //  }
   //},
 
   "shapeByType": {
-    "*-bone-obsidian": { "base": "paxel:item/tool/paxel/paxel-bone-obsidian-shiny" },
-    "*-obsidian": { "base": "paxel:item/tool/paxel/paxel-obsidian-shiny" },
-    "*": { "base": "paxel:item/tool/paxel/paxel-{material}" }
+    "paxel-stainlesssteel": { "base": "paxel:item/tool/paxel/paxel-{material}-shiny" },
+    "paxel-titanium": { "base": "paxel:item/tool/paxel/paxel-{material}" }
   },
 
   "damagedby": [ "blockbreaking", "attacking" ],
 
-  "tooltier": 2,
+  "tooltierbytype": {
+    "*-stainlesssteel": 5,
+    "*-titanium": 6
+  },
 
   "miningspeedbytype": {
-    "@paxel-(andesite|basalt|chert|granite|peridotite|bone-andesite|bone-basalt|bone-chert|bone-granite|bone-peridotite)": {
-      "soil": 2.2,
-      "sand": 2.2,
-      "gravel": 1.9,
-      "snow": 1.9,
-      "ceramic": 1,
-      "stone": 2,
-      "ice": 1.25,
-      "wood": 2.6,
-      "plant": 2.2,
-      "leaves": 1.7
+    "*-stainlesssteel": {
+      "soil": 7.5,
+      "sand": 7.5,
+      "gravel": 4.6,
+      "snow": 4.6,
+      "ceramic": 3.5,
+      "stone": 9.5,
+      "ore": 9.5,
+      "metal": 9.5,
+      "ice": 4.5,
+      "wood": 12.2,
+      "plant": 6.5,
+      "leaves": 4.4
     },
-    "@paxel-(flint|bone-flint)": {
-      "soil": 2.5,
-      "sand": 2.5,
-      "gravel": 2.1,
-      "snow": 2.1,
-      "ceramic": 1.1,
-      "stone": 2.4,
-      "ice": 1.5,
-      "wood": 2.8,
-      "plant": 2.3,
-      "leaves": 1.8
-    },
-    "@paxel-(obsidian|bone-obsidian)": {
-      "soil": 3,
-      "sand": 3,
-      "gravel": 2.2,
-      "snow": 2.2,
-      "ceramic": 1.2,
-      "stone": 2.6,
-      "ice": 1.6,
-      "wood": 3,
-      "plant": 2.5,
-      "leaves": 2,
-      "ore": 2.5 // only the obsidian paxel can mine ores
+    "*-titanium": {
+      "soil": 8,
+      "sand": 8,
+      "gravel": 4.8,
+      "snow": 4.8,
+      "ceramic": 4,
+      "stone": 10,
+      "ore": 10,
+      "metal": 10,
+      "ice": 5,
+      "wood": 13.6,
+      "plant": 7,
+      "leaves": 4.8
     }
   },
 
   "durabilitybytype": {
-    "paxel-bone-flint": 285, //260
-    "paxel-bone-obsidian": 350, //320
-    "paxel-bone-*": 220, //200
-    "paxel-flint": 255, //230
-    "paxel-obsidian": 320, //290
-    "paxel-*": 190 //170
+    "paxel-stainlesssteel": 11440, //8300 + 2100 from iron ingots + 10% from all
+    "paxel-titanium": 13530 //10200 + 2100 from iron ingots + 10% from all
   },
 
-  "attackRange": 1.5,
+  "attackRange": 1.6,
 
   "attackpowerbytype": {
-    "paxel-andesite": 0.75,
-    "paxel-bone-andesite": 0.8,
-    "paxel-basalt": 0.75,
-    "paxel-bone-basalt": 0.8,
-    "paxel-chert": 0.75,
-    "paxel-bone-chert": 0.8,
-    "paxel-granite": 0.75,
-    "paxel-bone-granite": 0.8,
-    "paxel-peridotite": 0.75,
-    "paxel-bone-peridotite": 0.8,
-    "paxel-flint": 1.15,
-    "paxel-bone-flint": 1.2,
-    "paxel-obsidian": 1.4,
-    "paxel-bone-obsidian": 1.45
+    "paxel-stainlesssteel": 3.9,
+    "paxel-titanium": 4.2
   },
 
   "guiTransform": {

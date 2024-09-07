@@ -1,0 +1,217 @@
+{
+  "code": "paxel",
+
+  "class": "ItemPaxel",
+
+  "heldTpHitAnimation": "smithingwide",
+
+  "tool": "shovel",
+
+  "storageFlags": 5,
+
+  "creativeinventory": {
+    "general": [ "*" ],
+    "items": [ "*" ],
+    "tools": [ "*" ],
+    "paxel": [ "*" ]
+  },
+
+  "behaviors": [
+    {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "WallHalves",
+        "wallOffY": 2,
+        "sprintKey": true,
+        "selectionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.1,
+          "z2": 1
+        },
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 0,
+          "y2": 0,
+          "z2": 0
+        }
+      }
+    }
+  ],
+
+  "attributes": {
+
+    "handbook": {
+      "groupBy": [ "paxel-*" ],
+      "extraSections": [
+        {
+          "title": "paxel:paxel-legendarymobs-handbook-title",
+          "text": "paxel:paxel-legendarymobs-handbook-text"
+        }
+      ]
+    },
+
+    "rackable": true,
+
+    "toolrackTransform": {
+      "rotation": {
+        "x": 0,
+        "y": 1,
+        "z": -1
+      },
+      "translation": {
+        "x": -0.47,
+        "y": 0.6,
+        "z": 0
+      },
+      "origin": {
+        "x": -0.8,
+        "y": 0.4,
+        "z": 0.5
+      },
+      "scale": 1.25
+    },
+
+    "groundStorageTransform": {
+      "translation": {
+        "x": 0,
+        "y": 0.3,
+        "z": -0.16
+      },
+      "rotation": {
+        "x": 13,
+        "y": 88,
+        "z": -87
+      },
+      "scale": 0.88
+    },
+
+    "slotRefillIdentifier": "paxel"
+
+  },
+
+  "maxstacksize": 1,
+
+  "variantgroups": [
+    {
+      "code": "metal",
+      "states": [ "legendary" ]
+    }
+  ],
+
+  "textures": {
+    "metal": { "base": "paxel:block/metal/ingot/{metal}-finished" },
+    "string": { "base": "game:block/transparent" }
+  },
+
+  "shape": { "base": "paxel:item/tool/paxel/paxel-legendary" },
+
+  "damagedby": [ "blockbreaking", "attacking" ],
+
+  "tooltierbytype": {
+    "*-legendary": 7
+  },
+
+  "miningspeedbytype": {
+    "*-legendary": {
+      "soil": 10,
+      "sand": 10,
+      "gravel": 6,
+      "snow": 6,
+      "ceramic": 5,
+      "stone": 12,
+      "ore": 12,
+      "metal": 12,
+      "ice": 6.5,
+      "wood": 15.6,
+      "plant": 8.4,
+      "leaves": 6.2
+    }
+  },
+
+  "durabilitybytype": {
+    "paxel-legendary": 20000
+  },
+
+  "attackRange": 1.6,
+
+  "attackpowerbytype": {
+    "paxel-legendary": 5
+  },
+
+  "guiTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": -35,
+      "y": 55,
+      "z": -10
+    },
+    "origin": {
+      "x": 0.4,
+      "y": 0,
+      "z": 0.45
+    },
+    "scale": 1.15
+  },
+
+  "fpHandTransform": {
+    "translation": {
+      "x": 0.0468,
+      "y": -0.2,
+      "z": 0
+    },
+    "rotation": {
+      "x": -15,
+      "y": 15,
+      "z": 100
+    },
+    "scale": 2
+  },
+
+  "groundTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "scale": 3.6
+  },
+
+  "tpHandTransform": {
+    "translation": {
+      "x": -1.04,
+      "y": -0.24,
+      "z": -0.61
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": -10
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.7,
+      "z": 0.5
+    },
+    "scale": 0.8
+  }
+
+}

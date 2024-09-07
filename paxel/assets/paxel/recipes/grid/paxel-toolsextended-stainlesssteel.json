@@ -1,0 +1,64 @@
+[
+  {
+    "dependsOn": [ { "modid": "toolsextended" } ],
+    "enabled": true,
+    "ingredientPattern": "AS,LP",
+    "ingredients": {
+      "P": { "type": "item", "code": "game:pickaxe-stainlesssteel" },
+      "A": { "type": "item", "code": "game:axe-felling-stainlesssteel" },
+      "S": { "type": "item", "code": "game:shovel-stainlesssteel" },
+      "L": { "type": "item", "code": "game:ingot-iron", "quantity": 2, "returnedStack": { "type": "item", "code": "game:stick", "quantity": 3 }
+      }
+    },
+    "width": 2,
+    "height": 2,
+    "recipeGroup": 1,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxel-stainlesssteel", "quantity": 1 }
+  },
+  {
+    "dependsOn": [ { "modid": "toolsextended" } ],
+    "enabled": true,
+    "ingredientPattern": "_AS,_TP,T__",
+    "ingredients": {
+      "P": { "type": "item", "code": "toolsextended:pickaxehead-stainlesssteel" },
+      "A": { "type": "item", "code": "toolsextended:axehead-stainlesssteel" },
+      "S": { "type": "item", "code": "toolsextended:shovelhead-stainlesssteel" },
+      "T": { "type": "item", "code": "game:ingot-iron", "quantity": 1 }
+    },
+    "width": 3,
+    "height": 3,
+    "recipeGroup": 2,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxel-stainlesssteel", "quantity": 1 }
+  },
+  {
+    "dependsOn": [ { "modid": "toolsextended" } ],
+    "enabled": true,
+    "ingredientPattern": "__P,_T_,T__",
+    "ingredients": {
+      "P": { "type": "item", "code": "paxel:paxelhead-stainlesssteel" },
+      "T": { "type": "item", "code": "game:ingot-iron", "quantity": 1 }
+    },
+    "width": 3,
+    "height": 3,
+    "recipeGroup": 3,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxel-stainlesssteel", "quantity": 1 }
+  },
+  {
+    "dependsOn": [ { "modid": "toolsextended" } ],
+    "enabled": true,
+    "ingredientPattern": "AS,_P",
+    "ingredients": {
+      "P": { "type": "item", "code": "toolsextended:pickaxehead-stainlesssteel" },
+      "A": { "type": "item", "code": "toolsextended:axehead-stainlesssteel" },
+      "S": { "type": "item", "code": "toolsextended:shovelhead-stainlesssteel" }
+    },
+    "width": 2,
+    "height": 2,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxelhead-stainlesssteel", "quantity": 1 }
+  }
+]
+

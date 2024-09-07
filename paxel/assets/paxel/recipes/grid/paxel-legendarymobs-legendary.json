@@ -1,0 +1,15 @@
+[
+  {
+    "enabled": true,
+    "ingredientPattern": "__P,_T_,T__",
+    "ingredients": {
+      "P": { "type": "item", "code": "paxel:paxelhead-legendary-finished", "quantity": 1 },
+      "T": { "type": "item", "code": "legendarymobs:toolrod", "quantity": 1 }
+    },
+    "width": 3,
+    "height": 3,
+    "shapeless": false,
+    "output": { "type": "item", "code": "paxel:paxel-legendary", "quantity": 1 }
+  }
+]
+

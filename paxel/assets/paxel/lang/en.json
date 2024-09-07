@@ -1,105 +1,80 @@
 {
-
-  // Tab Name for Creative Mode
+  // === Tab Name for Creative Mode ===
   "game:tabname-paxel": "Paxel",
 
+
+  // === Item descriptions ===
 
   // Claymold
   "paxel:block-paxelmold-raw": "Raw paxel mold",
   "paxel:block-paxelmold-burned": "Paxel mold",
   "paxel:blockcraftdesc-paxelmold-raw": "To create paxel heads directly from molten metal",
 
-
   // Stone Age Additions
-  "paxel:item-paxelhead-chert": "Paxelhead (Chert)",
-  "paxel:item-paxelhead-granite": "Paxelhead (Granite)",
   "paxel:item-paxelhead-andesite": "Paxelhead (Andesite)",
   "paxel:item-paxelhead-basalt": "Paxelhead (Basalt)",
+  "paxel:item-paxelhead-chert": "Paxelhead (Chert)",
+  "paxel:item-paxelhead-flint": "Paxelhead (Flint)",
+  "paxel:item-paxelhead-granite": "Paxelhead (Granite)",
   "paxel:item-paxelhead-obsidian": "Paxelhead (Obsidian)",
   "paxel:item-paxelhead-peridotite": "Paxelhead (Peridotite)",
-  "paxel:item-paxelhead-flint": "Paxelhead (Flint)",
 
-  "paxel:item-paxel-chert": "Paxel (Chert)",
-  "paxel:item-paxel-granite": "Paxel (Granite)",
   "paxel:item-paxel-andesite": "Paxel (Andesite)",
   "paxel:item-paxel-basalt": "Paxel (Basalt)",
+  "paxel:item-paxel-chert": "Paxel (Chert)",
+  "paxel:item-paxel-flint": "Paxel (Flint)",
+  "paxel:item-paxel-granite": "Paxel (Granite)",
   "paxel:item-paxel-obsidian": "Paxel (Obsidian)",
   "paxel:item-paxel-peridotite": "Paxel (Peridotite)",
-  "paxel:item-paxel-flint": "Paxel (Flint)",
 
-  "paxel:item-paxel-bone-chert": "Paxel (Chert, Bone)",
-  "paxel:item-paxel-bone-granite": "Paxel (Granite, Bone)",
   "paxel:item-paxel-bone-andesite": "Paxel (Andesite, Bone)",
   "paxel:item-paxel-bone-basalt": "Paxel (Basalt, Bone)",
+  "paxel:item-paxel-bone-chert": "Paxel (Chert, Bone)",
+  "paxel:item-paxel-bone-flint": "Paxel (Flint, Bone)",
+  "paxel:item-paxel-bone-granite": "Paxel (Granite, Bone)",
   "paxel:item-paxel-bone-obsidian": "Paxel (Obsidian, Bone)",
   "paxel:item-paxel-bone-peridotite": "Paxel (Peridotite, Bone)",
-  "paxel:item-paxel-bone-flint": "Paxel (Flint, Bone)",
 
-  // Mod: Geology Additions 
-  "paxel:item-paxelhead-diorite": "Paxelhead (Diorite)",
-  "paxel:item-paxelhead-gabbro": "Paxelhead (Gabbro)",
-  "paxel:item-paxelhead-quartzite": "Paxelhead (Quartzite)",
-
-  "paxel:item-paxel-diorite": "Paxel (Diorite)",
-  "paxel:item-paxel-gabbro": "Paxel (Gabbro)",
-  "paxel:item-paxel-quartzite": "Paxel (Quartzite)",
-
-  "paxel:item-paxel-bone-diorite": "Paxel (Diorite, Bone)",
-  "paxel:item-paxel-bone-gabbro": "Paxel (Gabbro, Bone)",
-  "paxel:item-paxel-bone-quartzite": "Paxel (Quartzite, Bone)",
-
-
-  // Copper Age Additions
-  "paxel:item-paxel-copper": "Paxel (Copper)",
-  "paxel:item-paxel-tinbronze": "Paxel (Tin bronze)",
-  "paxel:item-paxel-bismuthbronze": "Paxel (Bismuth bronze)",
-  "paxel:item-paxel-blackbronze": "Paxel (Black bronze)",
-
+  // Copper + Bronze Age Additions
   "paxel:item-paxelhead-copper": "Paxelhead (Copper)",
   "paxel:item-paxelhead-tinbronze": "Paxelhead (Tin bronze)",
   "paxel:item-paxelhead-bismuthbronze": "Paxelhead (Bismuth bronze)",
   "paxel:item-paxelhead-blackbronze": "Paxelhead (Black bronze)",
 
+  "paxel:item-paxel-copper": "Paxel (Copper)",
+  "paxel:item-paxel-tinbronze": "Paxel (Tin bronze)",
+  "paxel:item-paxel-bismuthbronze": "Paxel (Bismuth bronze)",
+  "paxel:item-paxel-blackbronze": "Paxel (Black bronze)",
 
   // Iron Age Additions
-  "paxel:item-paxel-iron": "Paxel (Iron)",
-  "paxel:item-paxel-meteoriciron": "Paxel (Meteoric iron)",
-  "paxel:item-paxel-steel": "Paxel (Steel)",
-
   "paxel:item-paxelhead-iron": "Paxelhead (Iron)",
   "paxel:item-paxelhead-meteoriciron": "Paxelhead (Meteoric iron)",
   "paxel:item-paxelhead-steel": "Paxelhead (Steel)",
 
+  "paxel:item-paxel-iron": "Paxel (Iron)",
+  "paxel:item-paxel-meteoriciron": "Paxel (Meteoric iron)",
+  "paxel:item-paxel-steel": "Paxel (Steel)",
 
   // Decoration Paxel
-  "paxel:item-paxel-gold": "Paxel (Gold)",
-  "paxel:item-paxel-silver": "Paxel (Silver)",
-
   "paxel:item-paxelhead-gold": "Paxelhead (Gold)",
   "paxel:item-paxelhead-silver": "Paxelhead (Silver)",
 
+  "paxel:item-paxel-gold": "Paxel (Gold)",
+  "paxel:item-paxel-silver": "Paxel (Silver)",
 
   // New Metals
-  "paxel:item-paxel-electrum": "Paxel (Electrum)",
   "paxel:item-paxelhead-electrum": "Paxelhead (Electrum)",
-
-  "paxel:item-paxel-platinum": "Paxel (Platinum)",
   "paxel:item-paxelhead-platinum": "Paxelhead (Platinum)",
-
-  "paxel:item-paxel-cupronickel": "Paxel (Cupronickel)",
   "paxel:item-paxelhead-cupronickel": "Paxelhead (Cupronickel)",
-
-  "paxel:item-paxel-titanium": "Paxel (Titanium)",
-  "paxel:item-paxelhead-titanium": "Paxelhead (Titanium)",
-
-  "paxel:item-paxel-stainlesssteel": "Paxel (Stainless steel)",
-  "paxel:item-paxelhead-stainlesssteel": "Paxelhead (Stainless steel)",
-
-  "paxel:item-paxel-uranium": "Paxel (Uranium)",
   "paxel:item-paxelhead-uranium": "Paxelhead (Uranium)",
 
+  "paxel:item-paxel-electrum": "Paxel (Electrum)",
+  "paxel:item-paxel-platinum": "Paxel (Platinum)",
+  "paxel:item-paxel-cupronickel": "Paxel (Cupronickel)",
+  "paxel:item-paxel-uranium": "Paxel (Uranium)",
 
-  // Handbook Additions
+
+  // === Handbook Descriptions ===
   "paxel:paxel-metal-handbook-title": "",
   "paxel:paxel-metal-handbook-text": "",
 
@@ -113,7 +88,67 @@
   "paxel:paxelhead-stone-handbook-text": "",
 
 
-  // Config lib by Maltiez Additions
+
+  // === Mod: Geology Additions ===
+
+  // Item descriptions
+  "paxel:item-paxelhead-diorite": "Paxelhead (Diorite)",
+  "paxel:item-paxelhead-gabbro": "Paxelhead (Gabbro)",
+  "paxel:item-paxelhead-quartzite": "Paxelhead (Quartzite)",
+
+  "paxel:item-paxel-diorite": "Paxel (Diorite)",
+  "paxel:item-paxel-gabbro": "Paxel (Gabbro)",
+  "paxel:item-paxel-quartzite": "Paxel (Quartzite)",
+
+  "paxel:item-paxel-bone-diorite": "Paxel (Diorite, Bone)",
+  "paxel:item-paxel-bone-gabbro": "Paxel (Gabbro, Bone)",
+  "paxel:item-paxel-bone-quartzite": "Paxel (Quartzite, Bone)",
+
+  // Handbook descriptions
+  "paxel:paxel-geoaddons-handbook-title": "",
+  "paxel:paxel-geoaddons-handbook-text": "",
+
+  "paxel:paxelhead-geoaddons-handbook-title": "",
+  "paxel:paxelhead-geoaddons-handbook-text": "",
+
+
+
+  // === Mod: Tools Extended ===
+
+  // Item descriptions
+  "paxel:item-paxelhead-stainlesssteel": "Paxelhead (Stainless steel)",
+  "paxel:item-paxelhead-titanium": "Paxelhead (Titanium)",
+
+  "paxel:item-paxel-stainlesssteel": "Paxel (Stainless steel)",
+  "paxel:item-paxel-titanium": "Paxel (Titanium)",
+
+  // Handbook descriptions
+  "paxel:paxel-toolsextended-handbook-title": "",
+  "paxel:paxel-toolsextended-handbook-text": "",
+
+  "paxel:paxelhead-toolsextended-handbook-title": "",
+  "paxel:paxelhead-toolsextended-handbook-text": "",
+
+
+
+  // === Mod: Legendary Mobs ===
+
+  // Item descriptions
+  "paxel:item-paxelhead-legendary-rough": "Paxelhead (Legendary, rough)",
+  "paxel:item-paxelhead-legendary-finished": "Paxelhead (Legendary, finished)",
+
+  "paxel:item-paxel-legendary": "Paxel (Legendary)",
+
+  // Handbook descriptions
+  "paxel:paxel-legendarymobs-handbook-title": "The legendary Paxel (?)",
+  "paxel:paxel-legendarymobs-handbook-text": "<strong>Legendary mobs</strong> mod by <i>FunnyBunnyofDOOM</i> adds a new metal, legendary ore. This paxel is made from it.<br>It is noticeably stronger than the steel paxel. You can't sharpen it (repair it) and you can't split it.",
+
+  "paxel:paxelhead-legendarymobs-handbook-title": "The legendary Paxel (?)",
+  "paxel:paxelhead-legendarymobs-handbook-text": "The rough Paxelhead is forged from 3 ingots of legendary ore. To make it a finished Paxelhead, they put the rough Paxelhead into a barrel of melted fat. After 36 hours the paxelhead is finished and can be used to make the legendary paxel.",
+
+
+
+  // === Mod: Config lib by Maltiez ===
 
   "PaxelRecipeSettings": "Setting for the recipes",
   "PaxelRecipeSettingsText": "\nIn this section, you can make settings for the recipes of the paxels.\n\n",
@@ -189,6 +224,12 @@
 
   "RecipeEnabled/stainlesssteel": "Stainless steel paxel\n\n",
   "RecipeEnabledStainlessSteelComment": "Recipe enabled",
+
+  "RecipeEnabled/legendary": "Legendary paxel",
+  "RecipeEnabledLegendaryComment": "Recipe enabled",
+
+  "RecipeEnabled/uranium": "Uranium paxel",
+  "RecipeEnabledUraniumComment": "Recipe enabled",
 
 
   "PaxelLootSettings": "Settings for the loot locations",

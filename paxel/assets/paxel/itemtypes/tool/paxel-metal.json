@@ -99,15 +99,15 @@
   "variantgroups": [
     {
       "code": "material",
-      "states": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "silver", "gold", "iron", "meteoriciron", "steel", "electrum", "cupronickel", "platinum", "titanium" ]
+      "states": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "silver", "gold", "iron", "meteoriciron", "steel", "electrum", "cupronickel", "platinum", "uranium" ]
     }
   ],
 
-  "texturesByType": {
-    "*": {
-      "metal": { "base": "game:block/metal/ingot/{material}" }
-    }
-  },
+  //"texturesByType": {
+  //  "*": {
+  //    "metal": { "base": "game:block/metal/ingot/{material}" }
+  //  }
+  //},
 
   "shapeByType": {
     "@paxel-(silver|gold|electrum|platinum)": { "base": "paxel:item/tool/paxel/paxel-{material}-shiny" },
@@ -133,7 +133,7 @@
 
     "*-steel": 5,
 
-    "*-titanium": 6
+    "*-uranium": 6
   },
 
   "miningspeedbytype": {
@@ -306,19 +306,19 @@
       "plant": 4.8,
       "leaves": 3.2
     },
-    "*-titanium": {
-      "soil": 8,
-      "sand": 8,
-      "gravel": 4.8,
-      "snow": 4.8,
-      "ceramic": 4,
-      "stone": 10,
-      "ore": 10,
-      "metal": 10,
-      "ice": 5,
-      "wood": 13.6,
-      "plant": 7,
-      "leaves": 4.8
+    "*-uranium": {
+      "soil": 9,
+      "sand": 9,
+      "gravel": 5.2,
+      "snow": 5.2,
+      "ceramic": 4.4,
+      "stone": 11,
+      "ore": 11,
+      "metal": 11,
+      "ice": 5.5,
+      "wood": 14.8,
+      "plant": 7.6,
+      "leaves": 5.6
     }
   },
 
@@ -336,7 +336,7 @@
     "paxel-electrum": 660, //600
     "paxel-platinum": 5885, //3250 + 2100 from iron ingots + 10% from all
     "paxel-cupronickel": 6160, //3500 + 2100 from iron ingots + 10% from all
-    "paxel-titanium": 13530 //10200 + 2100 from iron ingots + 10% from all
+    "paxel-uranium": 15410 //12000 + 2100 from iron ingots + 10% from all
   },
 
   "attackRange": 1.6,
@@ -355,7 +355,7 @@
     "paxel-electrum": 2.1,
     "paxel-platinum": 2.6,
     "paxel-cupronickel": 2.7,
-    "paxel-titanium": 4.2
+    "paxel-uranium": 4.6
   },
 
   "guiTransform": {

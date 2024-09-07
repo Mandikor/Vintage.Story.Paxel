@@ -34,12 +34,14 @@ public class Config : IModConfig
         { "steel", true },
         { "electrum", true },
         { "platinum", true },
+        { "uranium", true },
         { "cupronickel", true },
-        { "titanium", true },
         { "diorite", true },
         { "gabbro", true },
         { "quartzite", true },
-        { "stainlesssteel", true }
+        { "stainlesssteel", true },
+        { "titanium", true },
+        { "legendary", true }
     };
 
     public Dictionary<string, bool> LootEnabled = new()
@@ -105,11 +107,13 @@ public class Config : IModConfig
         RecipeEnabled["electrum"] = previousConfig.RecipeEnabled["electrum"];
         RecipeEnabled["platinum"] = previousConfig.RecipeEnabled["platinum"];
         RecipeEnabled["cupronickel"] = previousConfig.RecipeEnabled["cupronickel"];
-        RecipeEnabled["titanium"] = previousConfig.RecipeEnabled["titanium"];
+        RecipeEnabled["uranium"] = previousConfig.RecipeEnabled["uranium"];
         RecipeEnabled["diorite"] = previousConfig.RecipeEnabled["diorite"];
         RecipeEnabled["gabbro"] = previousConfig.RecipeEnabled["gabbro"];
         RecipeEnabled["quartzite"] = previousConfig.RecipeEnabled["quartzite"];
         RecipeEnabled["stainlesssteel"] = previousConfig.RecipeEnabled["stainlesssteel"];
+        RecipeEnabled["titanium"] = previousConfig.RecipeEnabled["titanium"];
+        RecipeEnabled["legendary"] = previousConfig.RecipeEnabled["legendary"];
     }
 
 }
