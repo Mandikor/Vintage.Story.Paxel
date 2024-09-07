@@ -1,6 +1,6 @@
 {
   "enabled": true,
-	"ingredient": { "type": "item", "code": "game:ingot-*", "name": "metal", "allowedVariants": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "silver", "gold", "iron", "meteoriciron", "steel", "electrum", "cupronickel", "platinum", "titanium"] },
+	"ingredient": { "type": "item", "code": "game:ingot-*", "name": "metal", "allowedVariants": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "silver", "gold", "iron", "meteoriciron", "steel", "electrum", "cupronickel", "platinum", "uranium"] },
 	"name": "paxelhead",
 	"pattern": [
 		[

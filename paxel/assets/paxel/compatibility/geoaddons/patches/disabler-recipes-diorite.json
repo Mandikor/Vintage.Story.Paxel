@@ -1,0 +1,8 @@
+﻿[
+  { "op": "replace", "path": "/0/enabled", "value": false, "file": "paxel:compatibility/geoaddons/recipes/grid/paxel-geoaddons-diorite.json", "condition": { "when": "Paxel.Diorite.Recipe.Enabled", "isValue": "false" }, "side": "server" },
+  { "op": "replace", "path": "/1/enabled", "value": false, "file": "paxel:compatibility/geoaddons/recipes/grid/paxel-geoaddons-diorite.json", "condition": { "when": "Paxel.Diorite.Recipe.Enabled", "isValue": "false" }, "side": "server" },
+  { "op": "replace", "path": "/2/enabled", "value": false, "file": "paxel:compatibility/geoaddons/recipes/grid/paxel-geoaddons-diorite.json", "condition": { "when": "Paxel.Diorite.Recipe.Enabled", "isValue": "false" }, "side": "server" },
+  { "op": "replace", "path": "/3/enabled", "value": false, "file": "paxel:compatibility/geoaddons/recipes/grid/paxel-geoaddons-diorite.json", "condition": { "when": "Paxel.Diorite.Recipe.Enabled", "isValue": "false" }, "side": "server" },
+  { "op": "replace", "path": "/4/enabled", "value": false, "file": "paxel:compatibility/geoaddons/recipes/grid/paxel-geoaddons-diorite.json", "condition": { "when": "Paxel.Diorite.Recipe.Enabled", "isValue": "false" }, "side": "server" },
+  { "op": "replace", "path": "/5/enabled", "value": false, "file": "paxel:compatibility/geoaddons/recipes/grid/paxel-geoaddons-diorite.json", "condition": { "when": "Paxel.Diorite.Recipe.Enabled", "isValue": "false" }, "side": "server" }
+]

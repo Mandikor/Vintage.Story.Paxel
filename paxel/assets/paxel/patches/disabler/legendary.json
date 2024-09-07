@@ -1,5 +1,0 @@
-[
-  { "op": "replace", "path": "/0/enabled", "value": false, "file": "paxel:recipes/barrel/paxelhead-legendarymobs-legendary-finished.json", "condition": { "when": "Paxel.Legendary.Recipe.Enabled", "isValue": "false" }, "side": "server" },
-  { "op": "replace", "path": "/0/enabled", "value": false, "file": "paxel:recipes/grid/paxel-legendarymobs-legendary.json", "condition": { "when": "Paxel.Legendary.Recipe.Enabled", "isValue": "false" }, "side": "server" },
-  { "op": "replace", "path": "/enabled", "value": false, "file": "paxel:recipes/smithing/paxelhead-legendarymobs-legendary-rough.json", "condition": { "when": "Paxel.Legendary.Recipe.Enabled", "isValue": "false" }, "side": "server" }
-]

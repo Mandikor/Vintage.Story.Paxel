@@ -1,6 +1,5 @@
 [
   {
-    "dependsOn": [ { "modid": "toolsextended" } ],
     "enabled": true,
     "ingredientPattern": "AS,LP",
     "ingredients": {
@@ -17,7 +16,6 @@
     "output": { "type": "item", "code": "paxel:paxel-stainlesssteel", "quantity": 1 }
   },
   {
-    "dependsOn": [ { "modid": "toolsextended" } ],
     "enabled": true,
     "ingredientPattern": "_AS,_TP,T__",
     "ingredients": {
@@ -33,7 +31,6 @@
     "output": { "type": "item", "code": "paxel:paxel-stainlesssteel", "quantity": 1 }
   },
   {
-    "dependsOn": [ { "modid": "toolsextended" } ],
     "enabled": true,
     "ingredientPattern": "__P,_T_,T__",
     "ingredients": {
@@ -47,7 +44,6 @@
     "output": { "type": "item", "code": "paxel:paxel-stainlesssteel", "quantity": 1 }
   },
   {
-    "dependsOn": [ { "modid": "toolsextended" } ],
     "enabled": true,
     "ingredientPattern": "AS,_P",
     "ingredients": {

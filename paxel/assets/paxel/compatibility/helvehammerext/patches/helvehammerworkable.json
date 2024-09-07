@@ -8,19 +8,6 @@
     "condition": {
       "when": "Paxel.HelveSmithing.Enabled",
       "isValue": "true"
-    },
-    "dependsOn": [ { "modid": "helvehammerext" } ]
-  },
-  {
-    "file": "paxel:compatibility/toolsextended/itemtypes/toolhead/paxelhead-stainlesssteel.json",
-    "side": "server",
-    "op": "add",
-    "path": "/attributes/helvehammerworkable",
-    "value": true,
-    "condition": {
-      "when": "Paxel.HelveSmithing.Enabled",
-      "isValue": "true"
-    },
-    "dependsOn": [ { "modid": "helvehammerext" }, { "modid": "toolsextended" } ]
+    }
   }
 ]

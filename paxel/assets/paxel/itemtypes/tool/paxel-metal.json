@@ -103,11 +103,11 @@
     }
   ],
 
-  //"texturesByType": {
-  //  "*": {
-  //    "metal": { "base": "game:block/metal/ingot/{material}" }
-  //  }
-  //},
+  "texturesByType": {
+    "paxel-platinum": {
+      "string": { "base": "game:block/transparent" }
+    }
+  },
 
   "shapeByType": {
     "@paxel-(silver|gold|electrum|platinum)": { "base": "paxel:item/tool/paxel/paxel-{material}-shiny" },

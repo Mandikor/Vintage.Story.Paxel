@@ -103,11 +103,14 @@
     }
   ],
 
-  //"texturesByType": {
-  //  "*": {
-  //    "metal": { "base": "game:block/metal/ingot/{material}" }
-  //  }
-  //},
+  "texturesByType": {
+    "paxel-stainlesssteel": {
+      "string": { "base": "game:block/transparent" }
+    },
+    "paxel-titanium": {
+      "string": { "base": "game:block/transparent" }
+    }
+  },
 
   "shapeByType": {
     "paxel-stainlesssteel": { "base": "paxel:item/tool/paxel/paxel-{material}-shiny" },

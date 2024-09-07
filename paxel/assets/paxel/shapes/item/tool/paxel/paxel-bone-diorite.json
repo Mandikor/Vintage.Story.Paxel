@@ -9,7 +9,7 @@
 	},
 	"textures": {
 		"string": "game:item/resource/rope",
-		"material": "game:block/stone/rock/diorite1",
+		"material": "paxel:block/stone/rock/diorite1",
 		"handle": "game:block/creature/bone-yellow"
 	},
 	"elements": [

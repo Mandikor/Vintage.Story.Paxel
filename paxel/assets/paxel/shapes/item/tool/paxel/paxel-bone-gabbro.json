@@ -9,7 +9,7 @@
 	},
 	"textures": {
 		"string": "game:item/resource/rope",
-		"material": "game:block/stone/rock/gabbro1",
+		"material": "paxel:block/stone/rock/gabbro1",
 		"handle": "game:block/creature/bone-yellow"
 	},
 	"elements": [
