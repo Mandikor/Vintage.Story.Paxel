@@ -1,82 +1,46 @@
 [
   {
+    "condition": { "when": "Paxel.Mod.Enabled.Necessaries", "isValue": "true" },
+    "side": "server",
+    "file": "paxel:itemtypes/tool/paxel-metal.json",
     "op": "add",
     "path": "/attributes/sharpenable",
-    "value": true,
-    "file": "paxel:itemtypes/tool/paxel-metal.json",
-    "condition": {
-      "when": "Paxel.Sharpening.Enabled",
-      "isValue": "true"
-    },
-    "side": "server"
+    "value": true
   },
   {
+    "condition": { "when": "Paxel.Mod.Enabled.Necessaries", "isValue": "true" },
+    "side": "server",
+    "file": "paxel:itemtypes/tool/paxel-metal.json",
     "op": "add",
     "path": "/attributes/onGrindstoneTransform",
     "value": {
-      "translation": {
-        "x": -0.3,
-        "y": 0.5,
-        "z": 0.3
-      },
-      "rotation": {
-        "x": 35,
-        "y": 0,
-        "z": 0
-      },
-      "origin": {
-        "x": 0.5,
-        "y": 0.1,
-        "z": 0.5
-      },
+      "translation": { "x": -0.3, "y": 0.5, "z": 0.3 },
+      "rotation": { "x": 35, "y": 0, "z": 0 },
+      "origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
       "scale": 1
-    },
-    "file": "paxel:itemtypes/tool/paxel-metal.json",
-    "condition": {
-      "when": "Paxel.Sharpening.Enabled",
-      "isValue": "true"
-    },
-    "side": "server"
+    }
   },
   {
     "dependsOn": [ { "modid": "toolsextended" } ],
+    "condition": { "when": "Paxel.Mod.Enabled.Necessaries", "isValue": "true" },
+    "side": "server",
+    "file": "paxel:itemtypes/tool/paxel-toolsextended.json",
     "op": "add",
     "path": "/attributes/sharpenable",
-    "value": true,
-    "file": "paxel:compatibility/toolsextended/itemtypes/tool/paxel-stainlesssteel.json",
-    "condition": {
-      "when": "Paxel.Sharpening.Enabled",
-      "isValue": "true"
-    },
-    "side": "server"
+    "value": true
   },
   {
     "dependsOn": [ { "modid": "toolsextended" } ],
+    "condition": { "when": "Paxel.Mod.Enabled.Necessaries", "isValue": "true" },
+    "file": "paxel:itemtypes/tool/paxel-toolsextended.json",
+    "side": "server",
     "op": "add",
     "path": "/attributes/onGrindstoneTransform",
     "value": {
-      "translation": {
-        "x": -0.3,
-        "y": 0.5,
-        "z": 0.3
-      },
-      "rotation": {
-        "x": 35,
-        "y": 0,
-        "z": 0
-      },
-      "origin": {
-        "x": 0.5,
-        "y": 0.1,
-        "z": 0.5
-      },
+      "translation": { "x": -0.3, "y": 0.5, "z": 0.3 },
+      "rotation": { "x": 35, "y": 0, "z": 0 },
+      "origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
       "scale": 1
-    },
-    "file": "paxel:compatibility/toolsextended/itemtypes/tool/paxel-stainlesssteel.json",
-    "condition": {
-      "when": "Paxel.Sharpening.Enabled",
-      "isValue": "true"
-    },
-    "side": "server"
+    }
   }
 ]

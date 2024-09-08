@@ -1,5 +1,8 @@
 [
   {
+    "condition": { "when": "Paxel.Trader.Enabled.BuildMaterials", "isValue": "true" },
+    "side": "server",
+    "file": "game:entities/humanoid/trader-buildmaterials.json",
     "op": "addeach",
     "path": "/attributes/tradeProps/buying/list/-",
     "value": [
@@ -55,12 +58,6 @@
           "var": 1.75
         }
       }
-    ],
-    "file": "game:entities/humanoid/trader-buildmaterials.json",
-    "side": "server",
-    "condition": {
-      "when": "Paxel.Trader.Buy.BuildMaterials.Enabled",
-      "isValue": "true"
-    }
+    ]
   }
 ]

@@ -1,13 +1,11 @@
 [
   {
+    "dependsOn": [ { "modid": "helvehammerext" } ],
+    "condition": { "when": "Paxel.Mod.Enabled.HelveHammerExtensions", "isValue": "true" },
+    "side": "Server",
+    "file": "paxel:itemtypes/toolhead/paxelhead-legendary.json",
     "op": "add",
     "path": "/attributes/helvehammerworkable",
-    "value": true,
-    "file": "paxel:itemtypes/toolhead/paxelhead-legendary.json",
-    "condition": {
-      "when": "Paxel.HelveSmithing.Enabled",
-      "isValue": "true"
-    },
-    "dependsOn": [ { "modid": "helvehammerext" } ]
+    "value": true
   }
 ]

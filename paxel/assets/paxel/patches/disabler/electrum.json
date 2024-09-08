@@ -1,3 +1,3 @@
 ﻿[
-  { "op": "replace", "path": "/0/enabled", "value": false, "file": "paxel:recipes/grid/paxel-electrum.json", "condition": { "when": "Paxel.Electrum.Recipe.Enabled", "isValue": "false" }, "side": "server" }
+  { "op": "replace", "path": "/0/enabled", "value": false, "file": "paxel:recipes/grid/paxel-electrum.json", "condition": { "when": "Paxel.Recipe.Enabled.Electrum", "isValue": "false" }, "side": "server" }
 ]

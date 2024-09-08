@@ -1,6 +1,6 @@
 ﻿[
-  { "op": "replace", "path": "/0/enabled", "value": false, "file": "paxel:recipes/grid/paxel-silver.json", "condition": { "when": "Paxel.Silver.Recipe.Enabled", "isValue": "false" }, "side": "server" },
-  { "op": "replace", "path": "/1/enabled", "value": false, "file": "paxel:recipes/grid/paxel-silver.json", "condition": { "when": "Paxel.Silver.Recipe.Enabled", "isValue": "false" }, "side": "server" },
-  { "op": "replace", "path": "/2/enabled", "value": false, "file": "paxel:recipes/grid/paxel-silver.json", "condition": { "when": "Paxel.Silver.Recipe.Enabled", "isValue": "false" }, "side": "server" },
-  { "op": "replace", "path": "/3/enabled", "value": false, "file": "paxel:recipes/grid/paxel-silver.json", "condition": { "when": "Paxel.Silver.Recipe.Enabled", "isValue": "false" }, "side": "server" }
+  { "op": "replace", "path": "/0/enabled", "value": false, "file": "paxel:recipes/grid/paxel-silver.json", "condition": { "when": "Paxel.Recipe.Enabled.Silver", "isValue": "false" }, "side": "server" },
+  { "op": "replace", "path": "/1/enabled", "value": false, "file": "paxel:recipes/grid/paxel-silver.json", "condition": { "when": "Paxel.Recipe.Enabled.Silver", "isValue": "false" }, "side": "server" },
+  { "op": "replace", "path": "/2/enabled", "value": false, "file": "paxel:recipes/grid/paxel-silver.json", "condition": { "when": "Paxel.Recipe.Enabled.Silver", "isValue": "false" }, "side": "server" },
+  { "op": "replace", "path": "/3/enabled", "value": false, "file": "paxel:recipes/grid/paxel-silver.json", "condition": { "when": "Paxel.Recipe.Enabled.Silver", "isValue": "false" }, "side": "server" }
 ]

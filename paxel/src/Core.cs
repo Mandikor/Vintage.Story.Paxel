@@ -24,91 +24,121 @@ public class Core : ModSystem
 
         #region Mods
 
+        // MOD [Still]Necessaries[fix] - sharpening the paxel on the grindstone
         if (api.ModLoader.IsModEnabled("necessaries") || api.ModLoader.IsModEnabled("necessariesfix") || api.ModLoader.IsModEnabled("stillnecessaries"))
         {
-            api.World.Config.SetBool("Paxel.Sharpening.Enabled", Config.ModDependence["sharpening"]);
+            api.World.Config.SetBool("Paxel.Mod.Enabled.Necessaries", Config.ModDependence["sharpening"]);
         }
         else
         {
-            api.World.Config.SetBool("Paxel.Sharpening.Enabled", false );
+            api.World.Config.SetBool("Paxel.Mod.Enabled.Necessaries", false );
         }
 
-        api.World.Config.SetBool("Paxel.HelveSmithing.Enabled", Config.ModDependence["helvesmithing"]);
-        api.World.Config.SetBool("Paxel.Jewelry.Enabled", Config.ModDependence["jewelry"]);
-        api.World.Config.SetBool("Paxel.InTreeHollow.Enabled", Config.ModDependence["intreehollow"]);
-        api.World.Config.SetBool("Paxel.KRPGEnchantment.Enabled", Config.ModDependence["krpgenchantment"]);
-        api.World.Config.SetBool("Paxel.ToolsExtended.Enabled", Config.ModDependence["toolsextended"]);
+        // MOD Helve Hammer Extensions - automatic smithing of the paxelhead
+        api.World.Config.SetBool("Paxel.Mod.Enabled.HelveHammerExtensions", Config.ModDependence["helvesmithing"]);
+
+        // MOD Tools Extended - recipes for titanium and stainless steel paxel
+        api.World.Config.SetBool("Paxel.Mod.Enabled.ToolsExtended", Config.ModDependence["toolsextended"]);
+
+        // MOD CAN Jewlry - improve paxels with buffs through gemstones
+        api.World.Config.SetBool("Paxel.Mod.Enabled.CANJewelry", Config.ModDependence["jewelry"]);
+
+        // MOD KRPG Enchantment - improve paxels with enchantments
+        api.World.Config.SetBool("Paxel.Mod.Enabled.KRPGEnchantment", Config.ModDependence["krpgenchantment"]);
+
         #endregion
 
         #region Loot
-        api.World.Config.SetBool("Paxel.Loot.CrackedVessel.Enabled", Config.LootEnabled["crackedvessel"]);
-        api.World.Config.SetBool("Paxel.Loot.Ruins.Enabled", Config.LootEnabled["ruins"]);
+
+        // Vanilla - flint, obsidian and copper paxel in cracked tool vessel
+        api.World.Config.SetBool("Paxel.Loot.Enabled.CrackedVessel", Config.LootEnabled["crackedvessel"]);
+
+        // Vanilla - obsidian and copper paxel in old chest
+        api.World.Config.SetBool("Paxel.Loot.Enabled.Ruins", Config.LootEnabled["ruins"]);
+
+        // MOD Primitive Survival - flint, obsidian and copper paxel in tree hollows
+        api.World.Config.SetBool("Paxel.Mod.Enabled.PrimitiveSurvival", Config.ModDependence["intreehollow"]);
+
+        // MOD Battle Towers - paxel for each loot tier
+        api.World.Config.SetBool("Paxel.Loot.Enabled.BattleTowers", Config.LootEnabled["battletowers"]);
+
         #endregion
 
         #region Traders
-        api.World.Config.SetBool("Paxel.Trader.Sell.SurvivalGoods.Enabled", Config.TraderEnabled["survivalgoods"]);
-        api.World.Config.SetBool("Paxel.Trader.Buy.BuildMaterials.Enabled", Config.TraderEnabled["buildmaterials"]);
-        api.World.Config.SetBool("Paxel.Trader.Buy.TreasureHunter.Enabled", Config.TraderEnabled["treasurehunter"]);
+
+        // Vanilla - selling copper, tinbronze, bismuthbronze and blackbronze paxel to trader
+        api.World.Config.SetBool("Paxel.Trader.Enabled.SurvivalGoods", Config.TraderEnabled["survivalgoods"]);
+
+        // Vanilla - buying copper, tinbronze, bismuthbronze and blackbronze paxel from trader
+        api.World.Config.SetBool("Paxel.Trader.Enabled.BuildMaterials", Config.TraderEnabled["buildmaterials"]);
+
+        // Vanilla - buying copper, tinbronze, bismuthbronze and blackbronze paxel from trader
+        api.World.Config.SetBool("Paxel.Trader.Enabled.TreasureHunter", Config.TraderEnabled["treasurehunter"]);
+
         #endregion
 
         #region Paxels
-        api.World.Config.SetBool("Paxel.Andesite.Recipe.Enabled", Config.RecipeEnabled["andesite"]);
-        api.World.Config.SetBool("Paxel.Basalt.Recipe.Enabled", Config.RecipeEnabled["basalt"]);
-        api.World.Config.SetBool("Paxel.Chert.Recipe.Enabled", Config.RecipeEnabled["chert"]);
-        api.World.Config.SetBool("Paxel.Flint.Recipe.Enabled", Config.RecipeEnabled["flint"]);
-        api.World.Config.SetBool("Paxel.Granite.Recipe.Enabled", Config.RecipeEnabled["granite"]);
-        api.World.Config.SetBool("Paxel.Obsidian.Recipe.Enabled", Config.RecipeEnabled["obsidian"]);
-        api.World.Config.SetBool("Paxel.Peridotite.Recipe.Enabled", Config.RecipeEnabled["peridotite"]);
 
-        api.World.Config.SetBool("Paxel.Copper.Recipe.Enabled", Config.RecipeEnabled["copper"]);
-        api.World.Config.SetBool("Paxel.Tinbronze.Recipe.Enabled", Config.RecipeEnabled["tinbronze"]);
-        api.World.Config.SetBool("Paxel.Bismuthbronze.Recipe.Enabled", Config.RecipeEnabled["bismuthbronze"]);
-        api.World.Config.SetBool("Paxel.Blackbronze.Recipe.Enabled", Config.RecipeEnabled["blackbronze"]);
+        // Vanilla - recipes for all standard paxels
+        api.World.Config.SetBool("Paxel.Recipe.Enabled.Andesite", Config.RecipeEnabled["andesite"]);
+        api.World.Config.SetBool("Paxel.Recipe.Enabled.Basalt", Config.RecipeEnabled["basalt"]);
+        api.World.Config.SetBool("Paxel.Recipe.Enabled.Chert", Config.RecipeEnabled["chert"]);
+        api.World.Config.SetBool("Paxel.Recipe.Enabled.Flint", Config.RecipeEnabled["flint"]);
+        api.World.Config.SetBool("Paxel.Recipe.Enabled.Granite", Config.RecipeEnabled["granite"]);
+        api.World.Config.SetBool("Paxel.Recipe.Enabled.Obsidian", Config.RecipeEnabled["obsidian"]);
+        api.World.Config.SetBool("Paxel.Recipe.Enabled.Peridotite", Config.RecipeEnabled["peridotite"]);
+        api.World.Config.SetBool("Paxel.Recipe.Enabled.Copper", Config.RecipeEnabled["copper"]);
+        api.World.Config.SetBool("Paxel.Recipe.Enabled.Tinbronze", Config.RecipeEnabled["tinbronze"]);
+        api.World.Config.SetBool("Paxel.Recipe.Enabled.Bismuthbronze", Config.RecipeEnabled["bismuthbronze"]);
+        api.World.Config.SetBool("Paxel.Recipe.Enabled.Blackbronze", Config.RecipeEnabled["blackbronze"]);
+        api.World.Config.SetBool("Paxel.Recipe.Enabled.Silver", Config.RecipeEnabled["silver"]);
+        api.World.Config.SetBool("Paxel.Recipe.Enabled.Gold", Config.RecipeEnabled["gold"]);
+        api.World.Config.SetBool("Paxel.Recipe.Enabled.Electrum", Config.RecipeEnabled["electrum"]);
+        api.World.Config.SetBool("Paxel.Recipe.Enabled.Iron", Config.RecipeEnabled["iron"]);
+        api.World.Config.SetBool("Paxel.Recipe.Enabled.Meteoriciron", Config.RecipeEnabled["meteoriciron"]);
+        api.World.Config.SetBool("Paxel.Recipe.Enabled.Steel", Config.RecipeEnabled["steel"]);
+        api.World.Config.SetBool("Paxel.Recipe.Enabled.Cupronickel", Config.RecipeEnabled["cupronickel"]);
 
-        api.World.Config.SetBool("Paxel.Silver.Recipe.Enabled", Config.RecipeEnabled["silver"]);
-        api.World.Config.SetBool("Paxel.Gold.Recipe.Enabled", Config.RecipeEnabled["gold"]);
+        // Vanilla - recipes for future standard paxels, currently not yet producible
+        api.World.Config.SetBool("Paxel.Recipe.Enabled.Platinum", Config.RecipeEnabled["platinum"]); // Anvil tier 5
+        api.World.Config.SetBool("Paxel.Recipe.Enabled.Uranium", Config.RecipeEnabled["uranium"]); // Anvil tier 7
 
-        api.World.Config.SetBool("Paxel.Iron.Recipe.Enabled", Config.RecipeEnabled["iron"]);
-        api.World.Config.SetBool("Paxel.Meteoriciron.Recipe.Enabled", Config.RecipeEnabled["meteoriciron"]);
-        api.World.Config.SetBool("Paxel.Steel.Recipe.Enabled", Config.RecipeEnabled["steel"]);
-
-        api.World.Config.SetBool("Paxel.Electrum.Recipe.Enabled", Config.RecipeEnabled["electrum"]);
-        api.World.Config.SetBool("Paxel.Platinum.Recipe.Enabled", Config.RecipeEnabled["platinum"]);
-        api.World.Config.SetBool("Paxel.Cupronickel.Recipe.Enabled", Config.RecipeEnabled["cupronickel"]);
-        api.World.Config.SetBool("Paxel.Uranium.Recipe.Enabled", Config.RecipeEnabled["uranium"]);
-
+        // MOD Geology Additions - recipes for diorite, gabbro and quartzite paxel
         if (api.ModLoader.IsModEnabled("geoaddons"))
         {
-            api.World.Config.SetBool("Paxel.Diorite.Recipe.Enabled", Config.RecipeEnabled["diorite"]);
-            api.World.Config.SetBool("Paxel.Gabbro.Recipe.Enabled", Config.RecipeEnabled["gabbro"]);
-            api.World.Config.SetBool("Paxel.Quartzite.Recipe.Enabled", Config.RecipeEnabled["quartzite"]);
+            api.World.Config.SetBool("Paxel.Recipe.Enabled.Diorite", Config.RecipeEnabled["diorite"]);
+            api.World.Config.SetBool("Paxel.Recipe.Enabled.Gabbro", Config.RecipeEnabled["gabbro"]);
+            api.World.Config.SetBool("Paxel.Recipe.Enabled.Quartzite", Config.RecipeEnabled["quartzite"]);
         }
         else
         {
-            api.World.Config.SetBool("Paxel.Diorite.Recipe.Enabled", false);
-            api.World.Config.SetBool("Paxel.Gabbro.Recipe.Enabled", false);
-            api.World.Config.SetBool("Paxel.Quartzite.Recipe.Enabled", false);
+            api.World.Config.SetBool("Paxel.Recipe.Enabled.Diorite", false);
+            api.World.Config.SetBool("Paxel.Recipe.Enabled.Gabbro", false);
+            api.World.Config.SetBool("Paxel.Recipe.Enabled.Quartzite", false);
         }
 
+        // MOD Tools Extended - recipes for titanium and stainless steel paxel
         if (api.ModLoader.IsModEnabled("toolsextended"))
         {
-            api.World.Config.SetBool("Paxel.StainlessSteel.Recipe.Enabled", Config.RecipeEnabled["stainlesssteel"]);
-            api.World.Config.SetBool("Paxel.Titanium.Recipe.Enabled", Config.RecipeEnabled["titanium"]);
+            api.World.Config.SetBool("Paxel.Recipe.Enabled.StainlessSteel", Config.RecipeEnabled["stainlesssteel"]);
+            api.World.Config.SetBool("Paxel.Recipe.Enabled.Titanium", Config.RecipeEnabled["titanium"]);
         }
         else
         {
-            api.World.Config.SetBool("Paxel.StainlessSteel.Recipe.Enabled", false);
-            api.World.Config.SetBool("Paxel.Titanium.Recipe.Enabled", false);
+            api.World.Config.SetBool("Paxel.Recipe.Enabled.StainlessSteel", false);
+            api.World.Config.SetBool("Paxel.Recipe.Enabled.Titanium", false);
         }
 
+        // MOD Legendary Mobs - recipes for legendary paxel
         if (api.ModLoader.IsModEnabled("legendarymobs"))
         {
-            api.World.Config.SetBool("Paxel.Legendary.Recipe.Enabled", Config.RecipeEnabled["legendary"]);
+            api.World.Config.SetBool("Paxel.Recipe.Enabled.Legendary", Config.RecipeEnabled["legendary"]);
         }
         else
         {
-            api.World.Config.SetBool("Paxel.Legendary.Recipe.Enabled", false);
+            api.World.Config.SetBool("Paxel.Recipe.Enabled.Legendary", false);
         }
+
         #endregion
 
     }

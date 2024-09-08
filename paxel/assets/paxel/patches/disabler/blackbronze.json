@@ -1,6 +1,6 @@
 ﻿[
- { "op": "replace", "path": "/0/enabled", "value": false, "file": "paxel:recipes/grid/paxel-blackbronze.json", "condition": { "when": "Paxel.Blackbronze.Recipe.Enabled", "isValue": "false" }, "side": "server" },
- { "op": "replace", "path": "/1/enabled", "value": false, "file": "paxel:recipes/grid/paxel-blackbronze.json", "condition": { "when": "Paxel.Blackbronze.Recipe.Enabled", "isValue": "false" }, "side": "server" },
- { "op": "replace", "path": "/2/enabled", "value": false, "file": "paxel:recipes/grid/paxel-blackbronze.json", "condition": { "when": "Paxel.Blackbronze.Recipe.Enabled", "isValue": "false" }, "side": "server" },
- { "op": "replace", "path": "/3/enabled", "value": false, "file": "paxel:recipes/grid/paxel-blackbronze.json", "condition": { "when": "Paxel.Blackbronze.Recipe.Enabled", "isValue": "false" }, "side": "server" }
+ { "op": "replace", "path": "/0/enabled", "value": false, "file": "paxel:recipes/grid/paxel-blackbronze.json", "condition": { "when": "Paxel.Recipe.Enabled.Blackbronze", "isValue": "false" }, "side": "server" },
+ { "op": "replace", "path": "/1/enabled", "value": false, "file": "paxel:recipes/grid/paxel-blackbronze.json", "condition": { "when": "Paxel.Recipe.Enabled.Blackbronze", "isValue": "false" }, "side": "server" },
+ { "op": "replace", "path": "/2/enabled", "value": false, "file": "paxel:recipes/grid/paxel-blackbronze.json", "condition": { "when": "Paxel.Recipe.Enabled.Blackbronze", "isValue": "false" }, "side": "server" },
+ { "op": "replace", "path": "/3/enabled", "value": false, "file": "paxel:recipes/grid/paxel-blackbronze.json", "condition": { "when": "Paxel.Recipe.Enabled.Blackbronze", "isValue": "false" }, "side": "server" }
 ]

@@ -41,13 +41,14 @@ public class Config : IModConfig
         { "quartzite", true },
         { "stainlesssteel", true },
         { "titanium", true },
-        { "legendary", true }
+        { "legendary", false }
     };
 
     public Dictionary<string, bool> LootEnabled = new()
     {
         { "crackedvessel", true },
-        { "ruins", true }
+        { "ruins", true },
+        { "battletowers", true }
     };
 
     public Dictionary<string, bool> TraderEnabled = new()
@@ -73,7 +74,7 @@ public class Config : IModConfig
         {
             return;
         }
-
+        
         ModDependence["sharpening"] = previousConfig.ModDependence["sharpening"];
         ModDependence["helvesmithing"] = previousConfig.ModDependence["helvesmithing"];
         ModDependence["jewelry"] = previousConfig.ModDependence["jewelry"];
@@ -83,6 +84,7 @@ public class Config : IModConfig
 
         LootEnabled["crackedvessel"] = previousConfig.LootEnabled["crackedvessel"];
         LootEnabled["ruins"] = previousConfig.LootEnabled["ruins"];
+        LootEnabled["battletowers"] = previousConfig.LootEnabled["battletowers"];
 
         TraderEnabled["survivalgoods"] = previousConfig.TraderEnabled["survivalgoods"];
         TraderEnabled["buildmaterials"] = previousConfig.TraderEnabled["buildmaterials"];

@@ -1,0 +1,20 @@
+[
+  {
+    "condition": { "when": "Paxel.Loot.Enabled.BattleTowers", "isValue": "true" },
+    "side": "server",
+    "file": "battletowers:blocktypes/loot-treasures.json",
+    "op": "addmerge",
+    "path": "/attributes/lootListByType/*-tier3/-",
+    "value": [
+      {
+        "type": "item",
+        "chance": 1,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "codes": [
+          "paxel:paxel-tinbronze"
+        ]
+      }
+    ]
+  }
+]
