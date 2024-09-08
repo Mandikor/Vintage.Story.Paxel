@@ -2,7 +2,7 @@
   {
     "condition": { "when": "Paxel.Loot.Enabled.BattleTowers", "isValue": "true" },
     "side": "server",
-    "file": "battletowers:blocktypes/loot-treasures.json",
+    "file": "battletowers:blocktypes/loottreasures.json",
     "op": "addmerge",
     "path": "/attributes/lootListByType/*-tier1/-",
     "value": [
