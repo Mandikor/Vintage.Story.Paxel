@@ -87,6 +87,12 @@
       "default": true
     },
     {
+      "code": "RecipeEnabled/electrum",
+      "comment": "RecipeEnabledElectrumComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
       "code": "RecipeEnabled/iron",
       "comment": "RecipeEnabledIronComment",
       "type": "boolean",
@@ -105,8 +111,8 @@
       "default": true
     },
     {
-      "code": "RecipeEnabled/electrum",
-      "comment": "RecipeEnabledElectrumComment",
+      "code": "RecipeEnabled/cupronickel",
+      "comment": "RecipeEnabledCupronickelComment",
       "type": "boolean",
       "default": true
     },
@@ -117,14 +123,8 @@
       "default": true
     },
     {
-      "code": "RecipeEnabled/cupronickel",
-      "comment": "RecipeEnabledCupronickelComment",
-      "type": "boolean",
-      "default": true
-    },
-    {
-      "code": "RecipeEnabled/titanium",
-      "comment": "RecipeEnabledTitaniumComment",
+      "code": "RecipeEnabled/uranium",
+      "comment": "RecipeEnabledUraniumComment",
       "type": "boolean",
       "default": true
     },
@@ -153,14 +153,14 @@
       "default": true
     },
     {
-      "code": "RecipeEnabled/legendary",
-      "comment": "RecipeEnabledLegendaryComment",
+      "code": "RecipeEnabled/titanium",
+      "comment": "RecipeEnabledTitaniumComment",
       "type": "boolean",
       "default": true
     },
     {
-      "code": "RecipeEnabled/uranium",
-      "comment": "RecipeEnabledUraniumComment",
+      "code": "RecipeEnabled/legendary",
+      "comment": "RecipeEnabledLegendaryComment",
       "type": "boolean",
       "default": true
     },
@@ -178,6 +178,18 @@
     {
       "code": "LootEnabled/crackedvessel",
       "comment": "LootEnabledVesselsComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "LootEnabled/primitivesurvival",
+      "comment": "LootEnabledPrimitiveSurvivalComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "LootEnabled/battletowers",
+      "comment": "LootEnabledBattleTowersComment",
       "type": "boolean",
       "default": true
     },
@@ -210,26 +222,20 @@
       "text": "PaxelModDependenceSettingsText"
     },
     {
-      "code": "ModDependence/sharpening",
-      "comment": "ModDependenceSharpeningComment",
+      "code": "ModDependence/necessaries",
+      "comment": "ModDependenceNecessariesComment",
       "type": "boolean",
       "default": true
     },
     {
-      "code": "ModDependence/helvesmithing",
-      "comment": "ModDependenceHelvesmithingComment",
+      "code": "ModDependence/helvehammerextensions",
+      "comment": "ModDependenceHelvehammerExtensionsComment",
       "type": "boolean",
       "default": true
     },
     {
-      "code": "ModDependence/jewelry",
-      "comment": "ModDependenceJewelryComment",
-      "type": "boolean",
-      "default": true
-    },
-    {
-      "code": "ModDependence/intreehollow",
-      "comment": "ModDependenceIntreehollowComment",
+      "code": "ModDependence/canjewelry",
+      "comment": "ModDependenceCANJewelryComment",
       "type": "boolean",
       "default": true
     },

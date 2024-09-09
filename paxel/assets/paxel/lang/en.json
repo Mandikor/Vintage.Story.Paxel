@@ -241,6 +241,13 @@
   "LootEnabled/crackedvessel": "Found paxel in cracked tool vessel?\n\n",
   "LootEnabledVesselsComment": "Activate this to find the paxel in the tool vessel.",
 
+  "LootEnabled/primitivesurvival": "Primitive Survival\n\n",
+  "LootEnabledPrimitiveSurvivalComment": "Want to find some paxels in tree hollows?",
+
+  "LootEnabled/battletowers": "Battle Towers\n\n",
+  "LootEnabledBattleTowersComment": "Want to find some paxels in treasure vessels?",
+
+
 
   "PaxelTraderSettings": "Settings for traders",
   "PaxelTraderSettingsText": "\nIn this section, you can make settings for the traders.\n\n",
@@ -255,20 +262,18 @@
   "TraderEnabledTreasurehunterComment": "Activate to buy paxels from the trader.",
 
 
+
   "PaxelModDependenceSettings": "Settings for other mods",
   "PaxelModDependenceSettingsText": "\nIn this section, you can make settings for other mods.\n\n",
 
-  "ModDependence/sharpening": "Still Necessaries \/ Necessaries Fix \/ Necessaries",
-  "ModDependenceSharpeningComment": "Should the paxel be sharpened on the grindstone of these mods?",
+  "ModDependence/necessaries": "Still Necessaries \/ Necessaries Fix \/ Necessaries",
+  "ModDependenceNecessariesComment": "Should the paxel be sharpened on the grindstone of these mods?",
 
-  "ModDependence/helvesmithing": "Helve Hammer Extensions",
-  "ModDependenceHelvesmithingComment": "Should the paxel head be able to be forged automatically on the anvil?",
+  "ModDependence/helvehammerextensions": "Helve Hammer Extensions",
+  "ModDependenceHelvehammerExtensionsComment": "Should the paxel head be able to be forged automatically on the anvil?",
 
-  "ModDependence/jewelry": "CAN Jewelry",
-  "ModDependenceJewelryComment": "Should metal paxels be improved with gemstones?",
-
-  "ModDependence/intreehollow": "Primitive Survival\n\n",
-  "ModDependenceIntreehollowComment": "Want to find some paxels in tree hollows?",
+  "ModDependence/canjewelry": "CAN Jewelry",
+  "ModDependenceCANJewelryComment": "Should metal paxels be improved with gemstones?",
 
   "ModDependence/krpgenchantment": "KRPG Enchantment\n\n",
   "ModDependenceKRPGEnchantmentComment": "Do you want to enchant your paxel?",

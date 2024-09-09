@@ -27,7 +27,7 @@ public class Core : ModSystem
         // MOD [Still]Necessaries[fix] - sharpening the paxel on the grindstone
         if (api.ModLoader.IsModEnabled("necessaries") || api.ModLoader.IsModEnabled("necessariesfix") || api.ModLoader.IsModEnabled("stillnecessaries"))
         {
-            api.World.Config.SetBool("Paxel.Mod.Enabled.Necessaries", Config.ModDependence["sharpening"]);
+            api.World.Config.SetBool("Paxel.Mod.Enabled.Necessaries", Config.ModDependence["necessaries"]);
         }
         else
         {
@@ -35,13 +35,13 @@ public class Core : ModSystem
         }
 
         // MOD Helve Hammer Extensions - automatic smithing of the paxelhead
-        api.World.Config.SetBool("Paxel.Mod.Enabled.HelveHammerExtensions", Config.ModDependence["helvesmithing"]);
+        api.World.Config.SetBool("Paxel.Mod.Enabled.HelveHammerExtensions", Config.ModDependence["helvehammerextensions"]);
 
         // MOD Tools Extended - recipes for titanium and stainless steel paxel
         api.World.Config.SetBool("Paxel.Mod.Enabled.ToolsExtended", Config.ModDependence["toolsextended"]);
 
         // MOD CAN Jewlry - improve paxels with buffs through gemstones
-        api.World.Config.SetBool("Paxel.Mod.Enabled.CANJewelry", Config.ModDependence["jewelry"]);
+        api.World.Config.SetBool("Paxel.Mod.Enabled.CANJewelry", Config.ModDependence["canjewelry"]);
 
         // MOD KRPG Enchantment - improve paxels with enchantments
         api.World.Config.SetBool("Paxel.Mod.Enabled.KRPGEnchantment", Config.ModDependence["krpgenchantment"]);
@@ -57,7 +57,7 @@ public class Core : ModSystem
         api.World.Config.SetBool("Paxel.Loot.Enabled.Ruins", Config.LootEnabled["ruins"]);
 
         // MOD Primitive Survival - flint, obsidian and copper paxel in tree hollows
-        api.World.Config.SetBool("Paxel.Mod.Enabled.PrimitiveSurvival", Config.ModDependence["intreehollow"]);
+        api.World.Config.SetBool("Paxel.Loot.Enabled.PrimitiveSurvival", Config.LootEnabled["primitivesurvival"]);
 
         // MOD Battle Towers - paxel for each loot tier
         api.World.Config.SetBool("Paxel.Loot.Enabled.BattleTowers", Config.LootEnabled["battletowers"]);

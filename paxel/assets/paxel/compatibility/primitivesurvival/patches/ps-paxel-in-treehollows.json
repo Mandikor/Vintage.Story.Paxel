@@ -1,6 +1,6 @@
 [
   {
-    "condition": { "when": "Paxel.Mod.Enabled.PrimitiveSurvival", "isValue": "true" },
+    "condition": { "when": "Paxel.Loot.Enabled.PrimitiveSurvival", "isValue": "true" },
     "side": "server",
     "file": "primitivesurvival:blocktypes/wood/treehollowgrown.json",
     "op": "addeach",
@@ -12,7 +12,7 @@
     ]
   },
   {
-    "condition": { "when": "Paxel.Mod.Enabled.PrimitiveSurvival", "isValue": "true" },
+    "condition": { "when": "Paxel.Loot.Enabled.PrimitiveSurvival", "isValue": "true" },
     "side": "server",
     "file": "paxel:itemtypes/tool/paxel-metal.json",
     "op": "add",
@@ -27,7 +27,7 @@
     }
   },
   {
-    "condition": { "when": "Paxel.Mod.Enabled.PrimitiveSurvival", "isValue": "true" },
+    "condition": { "when": "Paxel.Loot.Enabled.PrimitiveSurvival", "isValue": "true" },
     "side": "server",
     "file": "paxel:itemtypes/tool/paxel-stone.json",
     "op": "add",

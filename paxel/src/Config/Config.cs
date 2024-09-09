@@ -48,6 +48,7 @@ public class Config : IModConfig
     {
         { "crackedvessel", true },
         { "ruins", true },
+        { "primitivesurvival", true },
         { "battletowers", true }
     };
 
@@ -60,10 +61,9 @@ public class Config : IModConfig
 
     public Dictionary<string, bool> ModDependence = new()
     {
-        { "sharpening", true },
-        { "helvesmithing", true },
-        { "jewelry", true },
-        { "intreehollow", true },
+        { "necessaries", true },
+        { "helvehammerextensions", true },
+        { "canjewelry", true },
         { "krpgenchantment", true },
         { "toolsextended", true }
     };
@@ -75,15 +75,15 @@ public class Config : IModConfig
             return;
         }
         
-        ModDependence["sharpening"] = previousConfig.ModDependence["sharpening"];
-        ModDependence["helvesmithing"] = previousConfig.ModDependence["helvesmithing"];
-        ModDependence["jewelry"] = previousConfig.ModDependence["jewelry"];
-        ModDependence["intreehollow"] = previousConfig.ModDependence["intreehollow"];
+        ModDependence["necessaries"] = previousConfig.ModDependence["necessaries"];
+        ModDependence["helvehammerextensions"] = previousConfig.ModDependence["helvehammerextensions"];
+        ModDependence["canjewelry"] = previousConfig.ModDependence["canjewelry"];
         ModDependence["krpgenchantment"] = previousConfig.ModDependence["krpgenchantment"];
         ModDependence["toolsextended"] = previousConfig.ModDependence["toolsextended"];
 
         LootEnabled["crackedvessel"] = previousConfig.LootEnabled["crackedvessel"];
         LootEnabled["ruins"] = previousConfig.LootEnabled["ruins"];
+        LootEnabled["primitivesurvival"] = previousConfig.LootEnabled["primitivesurvival"];
         LootEnabled["battletowers"] = previousConfig.LootEnabled["battletowers"];
 
         TraderEnabled["survivalgoods"] = previousConfig.TraderEnabled["survivalgoods"];
