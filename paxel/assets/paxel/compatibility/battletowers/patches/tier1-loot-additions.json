@@ -4,11 +4,11 @@
     "side": "server",
     "file": "battletowers:blocktypes/loottreasures.json",
     "op": "addmerge",
-    "path": "/attributes/lootListByType/*-tier1/-",
+    "path": "/attributes/lootListByType/*-tier1",
     "value": [
       {
         "type": "item",
-        "chance": 1,
+        "chance": 0.5,
         "minQuantity": 1,
         "maxQuantity": 1,
         "codes": [

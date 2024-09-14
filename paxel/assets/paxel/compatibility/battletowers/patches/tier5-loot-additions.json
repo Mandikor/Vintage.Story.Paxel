@@ -4,15 +4,34 @@
     "side": "server",
     "file": "battletowers:blocktypes/loottreasures.json",
     "op": "addmerge",
-    "path": "/attributes/lootListByType/*-tier5/-",
+    "path": "/attributes/lootListByType/*-tier5",
     "value": [
       {
         "type": "item",
-        "chance": 1,
+        "chance": 0.3,
         "minQuantity": 1,
         "maxQuantity": 1,
         "codes": [
           "paxel:paxel-steel"
+        ]
+      }
+    ]
+  },
+  {
+    "condition": { "when": "Paxel.Loot.Enabled.BattleTowers", "isValue": "true" },
+    "dependsOn": [{ "modid": "toolsextended"}],
+    "side": "server",
+    "file": "battletowers:blocktypes/loottreasures.json",
+    "op": "addmerge",
+    "path": "/attributes/lootListByType/*-tier5",
+    "value": [
+      {
+        "type": "item",
+        "chance": 0.2,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "codes": [
+          "paxel:paxel-titanium"
         ]
       }
     ]
