@@ -6,7 +6,8 @@
     {
       "type": "separator",
       "title": "PaxelRecipeSettings",
-      "text": "PaxelRecipeSettingsText"
+      "text": "PaxelRecipeSettingsText",
+      "collapsible": true
     },
     {
       "code": "RecipeEnabled/andesite",

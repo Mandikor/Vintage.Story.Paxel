@@ -105,7 +105,12 @@
   <None Remove="assets\paxel\compatibility\battletowers\patches\tier3-loot-additions.json" />
   <None Remove="assets\paxel\compatibility\battletowers\patches\tier4-loot-additions.json" />
   <None Remove="assets\paxel\compatibility\battletowers\patches\tier5-loot-additions.json" />
-  <None Remove="assets\paxel\compatibility\krpgenchantment\patches\toolsextended-add-enchantment-behavior.json" />
+  <None Remove="assets\paxel\compatibility\krpgenchantment\patches\paxel-recipes-enchantingtable-tier1.json" />
+  <None Remove="assets\paxel\compatibility\krpgenchantment\patches\paxel-recipes-enchantingtable-tier2.json" />
+  <None Remove="assets\paxel\compatibility\krpgenchantment\patches\paxel-recipes-enchantingtable-tier3.json" />
+  <None Remove="assets\paxel\compatibility\krpgenchantment\patches\paxel-recipes-enchantingtable-tier4.json" />
+  <None Remove="assets\paxel\compatibility\krpgenchantment\patches\paxel-toolsextended-add-enchantment-behavior.json" />
+  <None Remove="assets\paxel\compatibility\krpgenchantment\recipes\enchanting-table\paxel-toolsextended-add-tiers.json" />
   <None Remove="assets\paxel\compatibility\primitivesurvival\patches\paxel-in-treehollows.json" />
   <None Remove="assets\paxel\compatibility\primitivesurvival\patches\paxel-itemtypes-tool-paxel.json" />
   <None Remove="assets\paxel\compatibility\toolsextended\patches\helvehammerworkable-toolsextended.json" />
