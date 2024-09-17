@@ -148,6 +148,13 @@
   <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-stone.json" />
   <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-uranium.json" />
   <None Remove="assets\paxel\shapes\item\tool\worldeater.json" />
+  <None Remove="assets\paxel\textures\icons\1x1.svg" />
+  <None Remove="assets\paxel\textures\icons\1x2.svg" />
+  <None Remove="assets\paxel\textures\icons\1x3.svg" />
+  <None Remove="assets\paxel\textures\icons\3x3.svg" />
+  <None Remove="assets\paxel\textures\icons\5x5.svg" />
+  <None Remove="assets\paxel\textures\icons\chess.svg" />
+  <None Remove="assets\paxel\textures\icons\vein.svg" />
   <Content Include="modinfo.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </Content>

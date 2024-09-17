@@ -88,6 +88,18 @@
   "paxel:paxelhead-stone-handbook-text": "",
 
 
+  // === Toolmodes ===
+  "paxel:1x1": "1x1 pattern",
+  "paxel:1x2": "1x2 pattern",
+  "paxel:1x3": "1x3 pattern",
+  "paxel:3x3": "3x3 pattern",
+  "paxel:5x5": "5x5 pattern",
+  "paxel:chessboard": "Chessboard pattern",
+  "paxel:veinmining": "Veinminer",
+
+  "paxel:heldhelp-settoolmode": "Paxel Toolmodes",
+
+
 
   // === Mod: Geology Additions ===
 
