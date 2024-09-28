@@ -97,7 +97,7 @@
   "paxel:chessboard": "Chessboard pattern",
   "paxel:veinmining": "Veinminer",
 
-  "paxel:heldhelp-settoolmode": "Paxel Toolmodes",
+  "paxel:heldhelp-settoolmode": "Select Paxel Toolmode",
 
 
 
@@ -165,70 +165,70 @@
   "PaxelRecipeSettings": "Setting for the recipes",
   "PaxelRecipeSettingsText": "\nIn this section, you can make settings for the recipes of the paxels.\n\n",
 
-  "RecipeEnabled/andesite": "Andesite paxel",
+  "RecipeEnabled/andesite": "Andesite paxel\n\n",
   "RecipeEnabledAndesiteComment": "Recipe enabled",
 
-  "RecipeEnabled/basalt": "Basalt paxel",
+  "RecipeEnabled/basalt": "Basalt paxel\n\n",
   "RecipeEnabledBasaltComment": "Recipe enabled",
 
-  "RecipeEnabled/chert": "Chert paxel",
+  "RecipeEnabled/chert": "Chert paxel\n\n",
   "RecipeEnabledChertComment": "Recipe enabled",
 
-  "RecipeEnabled/granite": "Granite paxel",
+  "RecipeEnabled/granite": "Granite paxel\n\n",
   "RecipeEnabledGraniteComment": "Recipe enabled",
 
-  "RecipeEnabled/peridotite": "Peridotite paxel",
+  "RecipeEnabled/peridotite": "Peridotite paxel\n\n",
   "RecipeEnabledPeridotiteComment": "Recipe enabled",
 
-  "RecipeEnabled/flint": "Flint paxel",
+  "RecipeEnabled/flint": "Flint paxel\n\n",
   "RecipeEnabledFlintComment": "Recipe enabled",
 
-  "RecipeEnabled/obsidian": "Obsidian paxel",
+  "RecipeEnabled/obsidian": "Obsidian paxel\n\n",
   "RecipeEnabledObsidianComment": "Recipe enabled",
 
-  "RecipeEnabled/copper": "Copper paxel",
+  "RecipeEnabled/copper": "Copper paxel\n\n",
   "RecipeEnabledCopperComment": "Recipe enabled",
 
-  "RecipeEnabled/tinbronze": "Tinbronze paxel",
+  "RecipeEnabled/tinbronze": "Tinbronze paxel\n\n",
   "RecipeEnabledTinbronzeComment": "Recipe enabled",
 
-  "RecipeEnabled/bismuthbronze": "Bismuthbronze paxel",
+  "RecipeEnabled/bismuthbronze": "Bismuthbronze paxel\n\n",
   "RecipeEnabledBismuthbronzeComment": "Recipe enabled",
 
-  "RecipeEnabled/blackbronze": "Blackbronze paxel",
+  "RecipeEnabled/blackbronze": "Blackbronze paxel\n\n",
   "RecipeEnabledBlackbronzeComment": "Recipe enabled",
 
-  "RecipeEnabled/silver": "Silver paxel",
+  "RecipeEnabled/silver": "Silver paxel\n\n",
   "RecipeEnabledSilverComment": "Recipe enabled",
 
-  "RecipeEnabled/gold": "Gold paxel",
+  "RecipeEnabled/gold": "Gold paxel\n\n",
   "RecipeEnabledGoldComment": "Recipe enabled",
 
-  "RecipeEnabled/iron": "Iron paxel",
+  "RecipeEnabled/iron": "Iron paxel\n\n",
   "RecipeEnabledIronComment": "Recipe enabled",
 
-  "RecipeEnabled/meteoriciron": "Meteoriciron paxel",
+  "RecipeEnabled/meteoriciron": "Meteoriciron paxel\n\n",
   "RecipeEnabledMeteoricironComment": "Recipe enabled",
 
-  "RecipeEnabled/steel": "Steel paxel",
+  "RecipeEnabled/steel": "Steel paxel\n\n",
   "RecipeEnabledSteelComment": "Recipe enabled",
 
-  "RecipeEnabled/electrum": "Electrum paxel",
+  "RecipeEnabled/electrum": "Electrum paxel\n\n",
   "RecipeEnabledElectrumComment": "Recipe enabled",
 
-  "RecipeEnabled/platinum": "Platinum paxel",
+  "RecipeEnabled/platinum": "Platinum paxel\n\n",
   "RecipeEnabledPlatinumComment": "Recipe enabled",
 
-  "RecipeEnabled/cupronickel": "Cupronickel paxel",
+  "RecipeEnabled/cupronickel": "Cupronickel paxel\n\n",
   "RecipeEnabledCupronickelComment": "Recipe enabled",
 
-  "RecipeEnabled/titanium": "Titanium paxel",
+  "RecipeEnabled/titanium": "Titanium paxel\n\n",
   "RecipeEnabledTitaniumComment": "Recipe enabled",
 
-  "RecipeEnabled/diorite": "Diorite paxel",
+  "RecipeEnabled/diorite": "Diorite paxel\n\n",
   "RecipeEnabledDioriteComment": "Recipe enabled",
 
-  "RecipeEnabled/gabbro": "Gabbro paxel",
+  "RecipeEnabled/gabbro": "Gabbro paxel\n\n",
   "RecipeEnabledGabbroComment": "Recipe enabled",
 
   "RecipeEnabled/quartzite": "Quartzite paxel\n\n",
@@ -237,60 +237,48 @@
   "RecipeEnabled/stainlesssteel": "Stainless steel paxel\n\n",
   "RecipeEnabledStainlessSteelComment": "Recipe enabled",
 
-  "RecipeEnabled/legendary": "Legendary paxel",
+  "RecipeEnabled/legendary": "Legendary paxel\n\n",
   "RecipeEnabledLegendaryComment": "Recipe enabled",
 
-  "RecipeEnabled/uranium": "Uranium paxel",
+  "RecipeEnabled/uranium": "Uranium paxel\n\n",
   "RecipeEnabledUraniumComment": "Recipe enabled",
 
 
   "PaxelLootSettings": "Settings for the loot locations",
   "PaxelLootSettingsText": "\nIn this section, you can make settings for the loot locations for the paxels.\n\n",
 
-  "LootEnabled/ruins": "Found paxel in ruins?",
-  "LootEnabledRuinsComment": "Activate this so that you can find the paxel in old ruins.",
+  "LootEnabled/ruins": "Vanilla - found paxel in ruins?\n\nActivate this so that you can find the paxel in old ruins.\n\n",
 
-  "LootEnabled/crackedvessel": "Found paxel in cracked tool vessel?\n\n",
-  "LootEnabledVesselsComment": "Activate this to find the paxel in the tool vessel.",
+  "LootEnabled/crackedvessel": "Vanilla - found paxel in cracked tool vessel?\n\nActivate this to find the paxel in the tool vessel.\n\n",
 
-  "LootEnabled/primitivesurvival": "Primitive Survival\n\n",
-  "LootEnabledPrimitiveSurvivalComment": "Want to find some paxels in tree hollows?",
+  "LootEnabled/primitivesurvival": "MOD Primitive Survival\n\nWant to find some paxels in tree hollows?\n\n",
 
-  "LootEnabled/battletowers": "Battle Towers\n\n",
-  "LootEnabledBattleTowersComment": "Want to find some paxels in treasure vessels?",
+  "LootEnabled/battletowers": "MOD Battle Towers\n\nWant to find some paxels in treasure vessels?\n\n",
 
 
 
   "PaxelTraderSettings": "Settings for traders",
   "PaxelTraderSettingsText": "\nIn this section, you can make settings for the traders.\n\n",
 
-  "TraderEnabled/buildmaterials": "Building material trader",
-  "TraderEnabledBuildmaterialsComment": "Activate to sell paxels to the trader.",
+  "TraderEnabled/buildmaterials": "Building material trader\n\nActivate to sell paxels to the trader.\n\n",
 
-  "TraderEnabled/survivalgoods": "Survival goods trader",
-  "TraderEnabledSurvivalgoodsComment": "Activate to sell paxels to the trader.",
+  "TraderEnabled/survivalgoods": "Survival goods trader\n\nActivate to sell paxels to the trader.\n\n",
 
-  "TraderEnabled/treasurehunter": "Treasure hunter trader\n\n",
-  "TraderEnabledTreasurehunterComment": "Activate to buy paxels from the trader.",
+  "TraderEnabled/treasurehunter": "Treasure hunter trader\n\nActivate to buy paxels from the trader.\n\n",
 
 
 
   "PaxelModDependenceSettings": "Settings for other mods",
   "PaxelModDependenceSettingsText": "\nIn this section, you can make settings for other mods.\n\n",
 
-  "ModDependence/necessaries": "Still Necessaries \/ Necessaries Fix \/ Necessaries",
-  "ModDependenceNecessariesComment": "Should the paxel be sharpened on the grindstone of these mods?",
+  "ModDependence/necessaries": "Still Necessaries \/ Necessaries Fix \/ Necessaries\n\nShould the paxel be sharpened on the grindstone of these mods?\n\n",
 
-  "ModDependence/helvehammerextensions": "Helve Hammer Extensions",
-  "ModDependenceHelvehammerExtensionsComment": "Should the paxel head be able to be forged automatically on the anvil?",
+  "ModDependence/helvehammerextensions": "Helve Hammer Extensions\n\nShould the paxel head be able to be forged automatically on the anvil?\n\n",
 
-  "ModDependence/canjewelry": "CAN Jewelry",
-  "ModDependenceCANJewelryComment": "Should metal paxels be improved with gemstones?",
+  "ModDependence/canjewelry": "CAN Jewelry\n\nShould metal paxels be improved with gemstones?\n\n",
 
-  "ModDependence/krpgenchantment": "KRPG Enchantment\n\n",
-  "ModDependenceKRPGEnchantmentComment": "Do you want to enchant your paxel?",
+  "ModDependence/krpgenchantment": "KRPG Enchantment\n\nDo you want to enchant your paxel?\n\n",
 
-  "ModDependence/toolsextended": "Tools Extended\n\n",
-  "ModDependenceToolsExtendedComment": "A paxel made of stainless steel and extended recipes for the titanium paxel."
+  "ModDependence/toolsextended": "Tools Extended\n\nA paxel made of stainless steel and extended recipes for the titanium paxel.\n\n"
 
 }

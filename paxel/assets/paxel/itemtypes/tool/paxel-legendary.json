@@ -90,21 +90,25 @@
       "scale": 0.88
     },
 
-    "slotRefillIdentifier": "paxel"
+    "slotRefillIdentifier": "paxel",
 
+    "toolModesByType": {
+      "*-legendary": 6,
+      "*": 0
+    }
   },
 
   "maxstacksize": 1,
 
   "variantgroups": [
     {
-      "code": "metal",
+      "code": "material",
       "states": [ "legendary" ]
     }
   ],
 
   "textures": {
-    "metal": { "base": "paxel:block/metal/ingot/{metal}-finished" },
+    "metal": { "base": "paxel:block/metal/ingot/{material}-finished" },
     "string": { "base": "game:block/transparent" }
   },
 

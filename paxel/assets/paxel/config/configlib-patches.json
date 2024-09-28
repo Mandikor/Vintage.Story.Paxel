@@ -94,6 +94,12 @@
       "default": true
     },
     {
+      "code": "RecipeEnabled/cupronickel",
+      "comment": "RecipeEnabledCupronickelComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
       "code": "RecipeEnabled/iron",
       "comment": "RecipeEnabledIronComment",
       "type": "boolean",
@@ -108,12 +114,6 @@
     {
       "code": "RecipeEnabled/steel",
       "comment": "RecipeEnabledSteelComment",
-      "type": "boolean",
-      "default": true
-    },
-    {
-      "code": "RecipeEnabled/cupronickel",
-      "comment": "RecipeEnabledCupronickelComment",
       "type": "boolean",
       "default": true
     },
@@ -168,99 +168,80 @@
     {
       "type": "separator",
       "title": "PaxelLootSettings",
-      "text": "PaxelLootSettingsText"
+      "text": "PaxelLootSettingsText",
+      "collapsible": true
     },
     {
       "code": "LootEnabled/ruins",
-      "comment": "LootEnabledRuinsComment",
       "type": "boolean",
       "default": true
     },
     {
       "code": "LootEnabled/crackedvessel",
-      "comment": "LootEnabledVesselsComment",
       "type": "boolean",
       "default": true
     },
     {
       "code": "LootEnabled/primitivesurvival",
-      "comment": "LootEnabledPrimitiveSurvivalComment",
       "type": "boolean",
       "default": true
     },
     {
       "code": "LootEnabled/battletowers",
-      "comment": "LootEnabledBattleTowersComment",
       "type": "boolean",
       "default": true
     },
     {
       "type": "separator",
       "title": "PaxelTraderSettings",
-      "text": "PaxelTraderSettingsText"
+      "text": "PaxelTraderSettingsText",
+      "collapsible": true
     },
     {
       "code": "TraderEnabled/buildmaterials",
-      "comment": "TraderEnabledBuildmaterialsComment",
       "type": "boolean",
       "default": true
     },
     {
       "code": "TraderEnabled/survivalgoods",
-      "comment": "TraderEnabledSurvivalgoodsComment",
       "type": "boolean",
       "default": true
     },
     {
       "code": "TraderEnabled/treasurehunter",
-      "comment": "TraderEnabledTreasurehunterComment",
       "type": "boolean",
       "default": true
     },
     {
       "type": "separator",
       "title": "PaxelModDependenceSettings",
-      "text": "PaxelModDependenceSettingsText"
+      "text": "PaxelModDependenceSettingsText",
+      "collapsible": true
     },
     {
       "code": "ModDependence/necessaries",
-      "comment": "ModDependenceNecessariesComment",
       "type": "boolean",
       "default": true
     },
     {
       "code": "ModDependence/helvehammerextensions",
-      "comment": "ModDependenceHelvehammerExtensionsComment",
-      "type": "boolean",
-      "default": true
-    },
-    {
-      "code": "ModDependence/canjewelry",
-      "comment": "ModDependenceCANJewelryComment",
-      "type": "boolean",
-      "default": true
-    },
-    {
-      "code": "ModDependence/krpgenchantment",
-      "comment": "ModDependenceKRPGEnchantmentComment",
       "type": "boolean",
       "default": true
     },
     {
       "code": "ModDependence/toolsextended",
-      "comment": "ModDependenceToolsExtendedComment",
       "type": "boolean",
       "default": true
     },
     {
-      "type": "separator",
-      "title": "PaxelDebugSettings"
+      "code": "ModDependence/canjewelry",
+      "type": "boolean",
+      "default": true
     },
     {
-      "code": "DebugOutput",
-      "comment": "DebugOutputComment",
+      "code": "ModDependence/krpgenchantment",
       "type": "boolean",
-      "default": false
+      "default": true
     }
   ]
 }
