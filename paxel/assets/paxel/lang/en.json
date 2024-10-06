@@ -75,8 +75,8 @@
 
 
   // === Handbook Descriptions ===
-  "paxel:paxel-metal-handbook-title": "",
-  "paxel:paxel-metal-handbook-text": "",
+  "paxel:paxelhead-stone-handbook-title": "",
+  "paxel:paxelhead-stone-handbook-text": "",
 
   "paxel:paxelhead-metal-handbook-title": "",
   "paxel:paxelhead-metal-handbook-text": "",
@@ -84,20 +84,8 @@
   "paxel:paxel-stone-handbook-title": "",
   "paxel:paxel-stone-handbook-text": "",
 
-  "paxel:paxelhead-stone-handbook-title": "",
-  "paxel:paxelhead-stone-handbook-text": "",
-
-
-  // === Toolmodes ===
-  "paxel:1x1": "1x1 pattern",
-  "paxel:1x2": "1x2 pattern",
-  "paxel:1x3": "1x3 pattern",
-  "paxel:3x3": "3x3 pattern",
-  "paxel:5x5": "5x5 pattern",
-  "paxel:chessboard": "Chessboard pattern",
-  "paxel:veinmining": "Veinminer",
-
-  "paxel:heldhelp-settoolmode": "Select Paxel Toolmode",
+  "paxel:paxel-metal-handbook-title": "",
+  "paxel:paxel-metal-handbook-text": "",
 
 
 
@@ -117,11 +105,11 @@
   "paxel:item-paxel-bone-quartzite": "Paxel (Quartzite, Bone)",
 
   // Handbook descriptions
-  "paxel:paxel-geoaddons-handbook-title": "",
-  "paxel:paxel-geoaddons-handbook-text": "",
-
   "paxel:paxelhead-geoaddons-handbook-title": "",
   "paxel:paxelhead-geoaddons-handbook-text": "",
+
+  "paxel:paxel-geoaddons-handbook-title": "",
+  "paxel:paxel-geoaddons-handbook-text": "",
 
 
 
@@ -135,11 +123,11 @@
   "paxel:item-paxel-titanium": "Paxel (Titanium)",
 
   // Handbook descriptions
-  "paxel:paxel-toolsextended-handbook-title": "",
-  "paxel:paxel-toolsextended-handbook-text": "",
-
   "paxel:paxelhead-toolsextended-handbook-title": "",
   "paxel:paxelhead-toolsextended-handbook-text": "",
+
+  "paxel:paxel-toolsextended-handbook-title": "",
+  "paxel:paxel-toolsextended-handbook-text": "",
 
 
 
@@ -152,11 +140,11 @@
   "paxel:item-paxel-legendary": "Paxel (Legendary)",
 
   // Handbook descriptions
-  "paxel:paxel-legendarymobs-handbook-title": "The legendary Paxel (?)",
-  "paxel:paxel-legendarymobs-handbook-text": "<strong>Legendary mobs</strong> mod by <i>FunnyBunnyofDOOM</i> adds a new metal, legendary ore. This paxel is made from it.<br>It is noticeably stronger than the steel paxel. You can't sharpen it (repair it) and you can't split it.",
-
-  "paxel:paxelhead-legendarymobs-handbook-title": "The legendary Paxel (?)",
+  "paxel:paxelhead-legendarymobs-handbook-title": "The legendary Paxel",
   "paxel:paxelhead-legendarymobs-handbook-text": "The rough Paxelhead is forged from 3 ingots of legendary ore. To make it a finished Paxelhead, they put the rough Paxelhead into a barrel of melted fat. After 36 hours the paxelhead is finished and can be used to make the legendary paxel.",
+
+  "paxel:paxel-legendarymobs-handbook-title": "The legendary Paxel",
+  "paxel:paxel-legendarymobs-handbook-text": "<strong>Legendary mobs</strong> mod by <i>FunnyBunnyofDOOM</i> adds a new metal, legendary ore. This paxel is made from it.<br>It is noticeably stronger than the steel paxel. You can't sharpen it (repair it) and you can't enchant them.",
 
 
 

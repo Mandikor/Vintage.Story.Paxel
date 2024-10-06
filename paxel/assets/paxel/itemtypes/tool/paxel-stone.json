@@ -90,13 +90,8 @@
       "scale": 0.88
     },
 
-    "slotRefillIdentifier": "paxel",
+    "slotRefillIdentifier": "paxel"
 
-    "toolModesByType": {
-      "*-flint": 1,
-      "*-obsidian": 1,
-      "*": 0
-    }
   },
 
   "maxstacksize": 1,

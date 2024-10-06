@@ -90,24 +90,8 @@
       "scale": 0.88
     },
 
-    "slotRefillIdentifier": "paxel",
+    "slotRefillIdentifier": "paxel"
 
-    "toolModesByType": {
-      "*-copper": 2,
-      "*-silver": 2,
-      "*-gold": 2,
-      "*-electrum": 2,
-      "*-tinbronze": 3,
-      "*-bismuthbronze": 3,
-      "*-blackbronze": 3,
-      "*-cupronickel": 4,
-      "*-platinum": 4,
-      "*-iron": 5,
-      "*-meteoriciron": 5,
-      "*-steel": 6,
-      "*-uranium": 6,
-      "*": 0
-    }
   },
 
   "maxstacksize": 1,

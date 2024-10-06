@@ -90,12 +90,8 @@
       "scale": 0.88
     },
 
-    "slotRefillIdentifier": "paxel",
+    "slotRefillIdentifier": "paxel"
 
-    "toolModesByType": {
-      "*-legendary": 6,
-      "*": 0
-    }
   },
 
   "maxstacksize": 1,

@@ -1,41 +1,98 @@
 {
 
-  // Tab Name for Creative Mode
+  // === Tab Name for Creative Mode ===
   "game:tabname-paxel": "多用工具",
 
+
+  // === Item descriptions ===
 
   // Claymold
   "paxel:block-paxelmold-raw": "未烧制的多用工具模具",
   "paxel:block-paxelmold-burned": "多用工具模具",
   "paxel:blockcraftdesc-paxelmold-raw": "直接用融化的金属制作多用工具头",
 
-
   // Stone Age Additions
-  "paxel:item-paxelhead-chert": "多用工具头 (角岩)",
-  "paxel:item-paxelhead-granite": "多用工具头 (花岗岩)",
   "paxel:item-paxelhead-andesite": "多用工具头 (安山岩)",
   "paxel:item-paxelhead-basalt": "多用工具头 (玄武岩)",
+  "paxel:item-paxelhead-chert": "多用工具头 (角岩)",
+  "paxel:item-paxelhead-flint": "多用工具头 (燧石)",
+  "paxel:item-paxelhead-granite": "多用工具头 (花岗岩)",
   "paxel:item-paxelhead-obsidian": "多用工具头 (黑曜石)",
   "paxel:item-paxelhead-peridotite": "多用工具头 (橄榄岩)",
-  "paxel:item-paxelhead-flint": "多用工具头 (燧石)",
 
-  "paxel:item-paxel-chert": "多用工具 (角岩)",
-  "paxel:item-paxel-granite": "多用工具 (花岗岩)",
   "paxel:item-paxel-andesite": "多用工具 (安山岩)",
   "paxel:item-paxel-basalt": "多用工具 (玄武岩)",
+  "paxel:item-paxel-chert": "多用工具 (角岩)",
+  "paxel:item-paxel-flint": "多用工具 (燧石)",
+  "paxel:item-paxel-granite": "多用工具 (花岗岩)",
   "paxel:item-paxel-obsidian": "多用工具 (黑曜石)",
   "paxel:item-paxel-peridotite": "多用工具 (橄榄岩)",
-  "paxel:item-paxel-flint": "多用工具 (燧石)",
 
-  "paxel:item-paxel-bone-chert": "多用工具 (角岩, 骨头)",
-  "paxel:item-paxel-bone-granite": "多用工具 (花岗岩, 骨头)",
   "paxel:item-paxel-bone-andesite": "多用工具 (安山岩, 骨头)",
   "paxel:item-paxel-bone-basalt": "多用工具 (玄武岩, 骨头)",
+  "paxel:item-paxel-bone-chert": "多用工具 (角岩, 骨头)",
+  "paxel:item-paxel-bone-flint": "多用工具 (燧石, 骨头)",
+  "paxel:item-paxel-bone-granite": "多用工具 (花岗岩, 骨头)",
   "paxel:item-paxel-bone-obsidian": "多用工具 (黑曜石, 骨头)",
   "paxel:item-paxel-bone-peridotite": "多用工具 (橄榄岩, 骨头)",
-  "paxel:item-paxel-bone-flint": "多用工具 (燧石, 骨头)",
 
-  // Mod: Geology Additions 
+  // Copper + Bronze Age Additions
+  "paxel:item-paxelhead-copper": "多用工具头 (铜)",
+  "paxel:item-paxelhead-tinbronze": "多用工具头 (锡铜)",
+  "paxel:item-paxelhead-bismuthbronze": "多用工具头 (铋铜)",
+  "paxel:item-paxelhead-blackbronze": "多用工具头 (黑铜)",
+
+  "paxel:item-paxel-copper": "多用工具 (铜)",
+  "paxel:item-paxel-tinbronze": "多用工具 (锡铜)",
+  "paxel:item-paxel-bismuthbronze": "多用工具 (铋铜)",
+  "paxel:item-paxel-blackbronze": "多用工具 (黑铜)",
+
+  // Iron Age Additions
+  "paxel:item-paxelhead-iron": "多用工具头 (铁)",
+  "paxel:item-paxelhead-meteoriciron": "多用工具头 (陨铁)",
+  "paxel:item-paxelhead-steel": "多用工具头 (钢)",
+
+  "paxel:item-paxel-iron": "多用工具 (铁)",
+  "paxel:item-paxel-meteoriciron": "多用工具 (陨铁)",
+  "paxel:item-paxel-steel": "多用工具 (钢)",
+
+  // Decoration Paxel
+  "paxel:item-paxelhead-gold": "多用工具头 (金)",
+  "paxel:item-paxelhead-silver": "多用工具头 (银)",
+
+  "paxel:item-paxel-gold": "多用工具 (金)",
+  "paxel:item-paxel-silver": "多用工具 (银)",
+
+  // New Metals
+  "paxel:item-paxelhead-electrum": "多用工具头 (琥珀金)",
+  "paxel:item-paxelhead-platinum": "多用工具头 (铂)",
+  "paxel:item-paxelhead-cupronickel": "多用工具头 (白铜)",
+  "paxel:item-paxelhead-uranium": "多用工具头 (铀)",
+
+  "paxel:item-paxel-electrum": "多用工具 (琥珀金)",
+  "paxel:item-paxel-platinum": "多用工具 (铂)",
+  "paxel:item-paxel-cupronickel": "多用工具 (白铜)",
+  "paxel:item-paxel-uranium": "多用工具 (铀)",
+
+
+  // === Handbook Descriptions ===
+  "paxel:paxelhead-stone-handbook-title": "",
+  "paxel:paxelhead-stone-handbook-text": "",
+
+  "paxel:paxelhead-metal-handbook-title": "",
+  "paxel:paxelhead-metal-handbook-text": "",
+
+  "paxel:paxel-stone-handbook-title": "",
+  "paxel:paxel-stone-handbook-text": "",
+
+  "paxel:paxel-metal-handbook-title": "",
+  "paxel:paxel-metal-handbook-text": "",
+
+
+
+  // === Mod: Geology Additions ===
+
+  // Item descriptions
   "paxel:item-paxelhead-diorite": "多用工具头 (闪长岩)",
   "paxel:item-paxelhead-gabbro": "多用工具头 (辉长岩)",
   "paxel:item-paxelhead-quartzite": "多用工具头 (石英岩)",
@@ -48,69 +105,169 @@
   "paxel:item-paxel-bone-gabbro": "多用工具 (辉长岩, 骨头)",
   "paxel:item-paxel-bone-quartzite": "多用工具 (石英岩, 骨头)",
 
+  // Handbook descriptions
+  "paxel:paxelhead-geoaddons-handbook-title": "",
+  "paxel:paxelhead-geoaddons-handbook-text": "",
 
-  // Copper Age Additions
-  "paxel:item-paxel-copper": "多用工具 (铜)",
-  "paxel:item-paxel-tinbronze": "多用工具 (锡铜)",
-  "paxel:item-paxel-bismuthbronze": "多用工具 (铋铜)",
-  "paxel:item-paxel-blackbronze": "多用工具 (黑铜)",
-
-  "paxel:item-paxelhead-copper": "多用工具头 (铜)",
-  "paxel:item-paxelhead-tinbronze": "多用工具头 (锡铜)",
-  "paxel:item-paxelhead-bismuthbronze": "多用工具头 (铋铜)",
-  "paxel:item-paxelhead-blackbronze": "多用工具头 (黑铜)",
+  "paxel:paxel-geoaddons-handbook-title": "",
+  "paxel:paxel-geoaddons-handbook-text": "",
 
 
-  // Iron Age Additions
-  "paxel:item-paxel-iron": "多用工具 (铁)",
-  "paxel:item-paxel-meteoriciron": "多用工具 (陨铁)",
-  "paxel:item-paxel-steel": "多用工具 (钢)",
 
-  "paxel:item-paxelhead-iron": "多用工具头 (铁)",
-  "paxel:item-paxelhead-meteoriciron": "多用工具头 (陨铁)",
-  "paxel:item-paxelhead-steel": "多用工具头 (钢)",
+  // === Mod: Tools Extended ===
 
-
-  // Decoration Paxel
-  "paxel:item-paxel-gold": "多用工具 (金)",
-  "paxel:item-paxel-silver": "多用工具 (银)",
-
-  "paxel:item-paxelhead-gold": "多用工具头 (金)",
-  "paxel:item-paxelhead-silver": "多用工具头 (银)",
-
-
-  // New Metals
-  "paxel:item-paxel-electrum": "多用工具 (琥珀金)",
-  "paxel:item-paxelhead-electrum": "多用工具头 (琥珀金)",
-
-  "paxel:item-paxel-platinum": "多用工具 (铂)",
-  "paxel:item-paxelhead-platinum": "多用工具头 (铂)",
-
-  "paxel:item-paxel-cupronickel": "多用工具 (白铜)",
-  "paxel:item-paxelhead-cupronickel": "多用工具头 (白铜)",
-
-  "paxel:item-paxel-titanium": "多用工具 (钛)",
+  // Item descriptions
+  "paxel:item-paxelhead-stainlesssteel": "多用工具头 (不锈钢)",
   "paxel:item-paxelhead-titanium": "多用工具头 (钛)",
 
   "paxel:item-paxel-stainlesssteel": "多用工具 (不锈钢)",
-  "paxel:item-paxelhead-stainlesssteel": "多用工具头 (不锈钢)",
+  "paxel:item-paxel-titanium": "多用工具 (钛)",
 
-  "paxel:item-paxel-uranium": "多用工具 (铀)",
-  "paxel:item-paxelhead-uranium": "多用工具头 (铀)",
+  // Handbook descriptions
+  "paxel:paxelhead-toolsextended-handbook-title": "",
+  "paxel:paxelhead-toolsextended-handbook-text": "",
+
+  "paxel:paxel-toolsextended-handbook-title": "",
+  "paxel:paxel-toolsextended-handbook-text": "",
 
 
-  // Handbook Additions
-  "paxel:paxel-metal-handbook-title": "",
-  "paxel:paxel-metal-handbook-text": "",
 
-  "paxel:paxelhead-metal-handbook-title": "",
-  "paxel:paxelhead-metal-handbook-text": "",
+  // === Mod: Legendary Mobs ===
 
-  "paxel:paxel-stone-handbook-title": "",
-  "paxel:paxel-stone-handbook-text": "",
+  // Item descriptions
+  "paxel:item-paxelhead-legendary-rough": "Paxelhead (Legendary, rough)",
+  "paxel:item-paxelhead-legendary-finished": "Paxelhead (Legendary, finished)",
 
-  "paxel:paxelhead-stone-handbook-title": "",
-  "paxel:paxelhead-stone-handbook-text": ""
+  "paxel:item-paxel-legendary": "Paxel (Legendary)",
 
+  // Handbook descriptions
+  "paxel:paxelhead-legendarymobs-handbook-title": "The legendary Paxel",
+  "paxel:paxelhead-legendarymobs-handbook-text": "The rough Paxelhead is forged from 3 ingots of legendary ore. To make it a finished Paxelhead, they put the rough Paxelhead into a barrel of melted fat. After 36 hours the paxelhead is finished and can be used to make the legendary paxel.",
+
+  "paxel:paxel-legendarymobs-handbook-title": "The legendary Paxel",
+  "paxel:paxel-legendarymobs-handbook-text": "<strong>Legendary mobs</strong> mod by <i>FunnyBunnyofDOOM</i> adds a new metal, legendary ore. This paxel is made from it.<br>It is noticeably stronger than the steel paxel. You can't sharpen it (repair it) and you can't enchant them.",
+
+
+
+  // === Mod: Config lib by Maltiez ===
+
+  "PaxelRecipeSettings": "Setting for the recipes",
+  "PaxelRecipeSettingsText": "\nIn this section, you can make settings for the recipes of the paxels.\n\n",
+
+  "RecipeEnabled/andesite": "Andesite paxel\n\n",
+  "RecipeEnabledAndesiteComment": "Recipe enabled",
+
+  "RecipeEnabled/basalt": "Basalt paxel\n\n",
+  "RecipeEnabledBasaltComment": "Recipe enabled",
+
+  "RecipeEnabled/chert": "Chert paxel\n\n",
+  "RecipeEnabledChertComment": "Recipe enabled",
+
+  "RecipeEnabled/granite": "Granite paxel\n\n",
+  "RecipeEnabledGraniteComment": "Recipe enabled",
+
+  "RecipeEnabled/peridotite": "Peridotite paxel\n\n",
+  "RecipeEnabledPeridotiteComment": "Recipe enabled",
+
+  "RecipeEnabled/flint": "Flint paxel\n\n",
+  "RecipeEnabledFlintComment": "Recipe enabled",
+
+  "RecipeEnabled/obsidian": "Obsidian paxel\n\n",
+  "RecipeEnabledObsidianComment": "Recipe enabled",
+
+  "RecipeEnabled/copper": "Copper paxel\n\n",
+  "RecipeEnabledCopperComment": "Recipe enabled",
+
+  "RecipeEnabled/tinbronze": "Tinbronze paxel\n\n",
+  "RecipeEnabledTinbronzeComment": "Recipe enabled",
+
+  "RecipeEnabled/bismuthbronze": "Bismuthbronze paxel\n\n",
+  "RecipeEnabledBismuthbronzeComment": "Recipe enabled",
+
+  "RecipeEnabled/blackbronze": "Blackbronze paxel\n\n",
+  "RecipeEnabledBlackbronzeComment": "Recipe enabled",
+
+  "RecipeEnabled/silver": "Silver paxel\n\n",
+  "RecipeEnabledSilverComment": "Recipe enabled",
+
+  "RecipeEnabled/gold": "Gold paxel\n\n",
+  "RecipeEnabledGoldComment": "Recipe enabled",
+
+  "RecipeEnabled/iron": "Iron paxel\n\n",
+  "RecipeEnabledIronComment": "Recipe enabled",
+
+  "RecipeEnabled/meteoriciron": "Meteoriciron paxel\n\n",
+  "RecipeEnabledMeteoricironComment": "Recipe enabled",
+
+  "RecipeEnabled/steel": "Steel paxel\n\n",
+  "RecipeEnabledSteelComment": "Recipe enabled",
+
+  "RecipeEnabled/electrum": "Electrum paxel\n\n",
+  "RecipeEnabledElectrumComment": "Recipe enabled",
+
+  "RecipeEnabled/platinum": "Platinum paxel\n\n",
+  "RecipeEnabledPlatinumComment": "Recipe enabled",
+
+  "RecipeEnabled/cupronickel": "Cupronickel paxel\n\n",
+  "RecipeEnabledCupronickelComment": "Recipe enabled",
+
+  "RecipeEnabled/titanium": "Titanium paxel\n\n",
+  "RecipeEnabledTitaniumComment": "Recipe enabled",
+
+  "RecipeEnabled/diorite": "Diorite paxel\n\n",
+  "RecipeEnabledDioriteComment": "Recipe enabled",
+
+  "RecipeEnabled/gabbro": "Gabbro paxel\n\n",
+  "RecipeEnabledGabbroComment": "Recipe enabled",
+
+  "RecipeEnabled/quartzite": "Quartzite paxel\n\n",
+  "RecipeEnabledQuartziteComment": "Recipe enabled",
+
+  "RecipeEnabled/stainlesssteel": "Stainless steel paxel\n\n",
+  "RecipeEnabledStainlessSteelComment": "Recipe enabled",
+
+  "RecipeEnabled/legendary": "Legendary paxel\n\n",
+  "RecipeEnabledLegendaryComment": "Recipe enabled",
+
+  "RecipeEnabled/uranium": "Uranium paxel\n\n",
+  "RecipeEnabledUraniumComment": "Recipe enabled",
+
+
+  "PaxelLootSettings": "Settings for the loot locations",
+  "PaxelLootSettingsText": "\nIn this section, you can make settings for the loot locations for the paxels.\n\n",
+
+  "LootEnabled/ruins": "Vanilla - found paxel in ruins?\n\nActivate this so that you can find the paxel in old ruins.\n\n",
+
+  "LootEnabled/crackedvessel": "Vanilla - found paxel in cracked tool vessel?\n\nActivate this to find the paxel in the tool vessel.\n\n",
+
+  "LootEnabled/primitivesurvival": "MOD Primitive Survival\n\nWant to find some paxels in tree hollows?\n\n",
+
+  "LootEnabled/battletowers": "MOD Battle Towers\n\nWant to find some paxels in treasure vessels?\n\n",
+
+
+
+  "PaxelTraderSettings": "Settings for traders",
+  "PaxelTraderSettingsText": "\nIn this section, you can make settings for the traders.\n\n",
+
+  "TraderEnabled/buildmaterials": "Building material trader\n\nActivate to sell paxels to the trader.\n\n",
+
+  "TraderEnabled/survivalgoods": "Survival goods trader\n\nActivate to sell paxels to the trader.\n\n",
+
+  "TraderEnabled/treasurehunter": "Treasure hunter trader\n\nActivate to buy paxels from the trader.\n\n",
+
+
+
+  "PaxelModDependenceSettings": "Settings for other mods",
+  "PaxelModDependenceSettingsText": "\nIn this section, you can make settings for other mods.\n\n",
+
+  "ModDependence/necessaries": "Still Necessaries \/ Necessaries Fix \/ Necessaries\n\nShould the paxel be sharpened on the grindstone of these mods?\n\n",
+
+  "ModDependence/helvehammerextensions": "Helve Hammer Extensions\n\nShould the paxel head be able to be forged automatically on the anvil?\n\n",
+
+  "ModDependence/canjewelry": "CAN Jewelry\n\nShould metal paxels be improved with gemstones?\n\n",
+
+  "ModDependence/krpgenchantment": "KRPG Enchantment\n\nDo you want to enchant your paxel?\n\n",
+
+  "ModDependence/toolsextended": "Tools Extended\n\nA paxel made of stainless steel and extended recipes for the titanium paxel.\n\n"
 
 }
