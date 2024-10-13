@@ -1,0 +1,35 @@
+[
+	{
+    "enabled": true,
+		"ingredientPattern": "A,L",
+		"ingredients": {
+			"A": { "type": "item", "code": "paxel:paxel-*", "isTool": true  },
+			"L": { "type": "block", "code": "game:log-*", "skipVariants": ["placed-kapok-ud", "placed-purpleheart-ud", "placed-ebony-ud"] }
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:firewood", "quantity": 4  }
+	},
+	{
+    "enabled": true,
+		"ingredientPattern": "A,L",
+		"ingredients": {
+			"A": { "type": "item", "code": "paxel:paxel-*", "isTool": true  },
+			"L": { "type": "block", "code": "game:logsection-placed-*" }
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:firewood", "quantity": 4  }
+	},
+	{
+    "enabled": true,
+		"ingredientPattern": "A,L",
+		"ingredients": {
+			"A": { "type": "item", "code": "paxel:paxel-*", "isTool": true  },
+			"L": { "type": "block", "code": "game:log-*", "allowedVariants": ["placed-kapok-ud", "placed-purpleheart-ud", "placed-ebony-ud"] }
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:firewood", "quantity": 3  }
+	}
+]

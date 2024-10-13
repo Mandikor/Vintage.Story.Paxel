@@ -1,0 +1,25 @@
+[
+  {
+    "op": "add",
+    "path": "/paxel:v1.2.1",
+    "value": [
+
+      "/iir remap paxel:paxelhead-legendary-rough paxel:paxelheadrough-legendary force",
+      "/iir remap paxel:paxelhead-legendary-finished paxel:paxelheadfinished-legendary force"
+
+    ],
+    "file": "game:config/remaps.json"
+  },
+  {
+    "op": "add",
+    "path": "/paxel:v1.4.0",
+    "value": [
+
+      "/bir remap paxel:paxelmold-raw paxel:toolmold-raw-paxel force",
+      "/bir remap paxel:paxelmold-burned paxel:toolmold-burned-paxel force"
+
+    ],
+    "file": "game:config/remaps.json"
+  }
+]
+

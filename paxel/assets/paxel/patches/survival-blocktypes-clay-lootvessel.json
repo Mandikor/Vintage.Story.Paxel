@@ -1,0 +1,32 @@
+[
+  {
+    "condition": { "when": "Paxel.Loot.Enabled.CrackedVessel", "isValue": "true" },
+    "side": "server",
+    "file": "game:blocktypes/clay/lootvessel.json",
+    "op": "addeach",
+    "path": "/attributes/lootListByType/*-tool/-",
+    "value": [
+      {
+        "type": "item",
+        "chance": 0.8,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "codes": [ "paxel:paxel-flint" ]
+      },
+      {
+        "type": "item",
+        "chance": 0.5,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "codes": [ "paxel:paxel-obsidian" ]
+      },
+      {
+        "type": "item",
+        "chance": 0.1,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "codes": [ "paxel:paxel-copper" ]
+      }
+    ]
+  }
+]

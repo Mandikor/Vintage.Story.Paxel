@@ -1,0 +1,3 @@
+﻿[
+  { "op": "replace", "path": "/0/enabled", "value": false, "file": "paxel:recipes/grid/paxel-platinum.json", "condition": { "when": "Paxel.Recipe.Enabled.Platinum", "isValue": "false" }, "side": "server" }
+]

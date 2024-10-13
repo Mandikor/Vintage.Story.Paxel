@@ -1,0 +1,170 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>bin\$(Configuration)\Mods\mod</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="VintagestoryAPI">
+      <HintPath>$(VINTAGE_STORY)/VintagestoryAPI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="VSSurvivalMod">
+      <HintPath>$(VINTAGE_STORY)/Mods/VSSurvivalMod.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VSEssentials">
+      <HintPath>$(VINTAGE_STORY)/Mods/VSEssentials.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VSCreativeMod">
+      <HintPath>$(VINTAGE_STORY)/Mods/VSCreativeMod.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(VINTAGE_STORY)/Lib/Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(VINTAGE_STORY)/Lib/0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VintagestoryLib">
+      <HintPath>$(VINTAGE_STORY)/VintagestoryLib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>$(VINTAGE_STORY)/Lib/protobuf-net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="cairo-sharp">
+      <HintPath>$(VINTAGE_STORY)/Lib/cairo-sharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>$(VINTAGE_STORY)/Lib/System.Data.SQLite.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+<ItemGroup>
+  <Content Include="assets\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </Content>
+  <Compile Remove="assets\paxel\sounds\**" />
+  <Compile Remove="src\Block\**" />
+  <Compile Remove="src\HarmonyPatches\**" />
+  <Compile Remove="unused\**" />
+  <Content Remove="assets\paxel\sounds\**" />
+  <EmbeddedResource Remove="assets\paxel\sounds\**" />
+  <EmbeddedResource Remove="src\Block\**" />
+  <EmbeddedResource Remove="src\HarmonyPatches\**" />
+  <EmbeddedResource Remove="unused\**" />
+  <None Remove="assets\paxel\sounds\**" />
+  <None Remove="src\Block\**" />
+  <None Remove="src\HarmonyPatches\**" />
+  <None Remove="unused\**" />
+  <Compile Remove="src\Core - Kopieren.cs" />
+  <Compile Remove="src\Item\drill.cs" />
+  <Compile Remove="src\Item\HUDMiningDrill.cs" />
+  <Compile Remove="src\Item\ItemAOETool.cs" />
+  <Compile Remove="src\Item\ItemMiningDrill.cs" />
+  <Compile Remove="src\Item\ItemPaxelPowered.cs" />
+  <Compile Remove="src\Item\ItemPaxelPoweredClean.cs" />
+  <Compile Remove="src\Item\WorldEaterItem.cs" />
+  <Compile Remove="src\Item\XSkillsItemPickaxe.cs" />
+  <Content Remove="assets\paxel\itemtypes\tool\diamondpick.json" />
+  <Content Remove="assets\paxel\itemtypes\tool\miningdrill-qpt.json" />
+  <Content Remove="assets\paxel\itemtypes\tool\miningdrill-tt.json" />
+  <Content Remove="assets\paxel\itemtypes\tool\miningexcavator.json" />
+  <Content Remove="assets\paxel\itemtypes\tool\mininghammer.json" />
+  <Content Remove="assets\paxel\itemtypes\tool\paxel-powered.json" />
+  <Content Remove="assets\paxel\itemtypes\tool\worldeater.json" />
+  <Content Remove="assets\paxel\lang\en - Kopieren.json" />
+  <Content Remove="assets\paxel\patches\paxel-itemtypes-tool-paxel.json" />
+  <Content Remove="assets\paxel\recipes\grid\diamondpick.json" />
+  <Content Remove="assets\paxel\recipes\grid\worldeater.json" />
+  <Content Remove="assets\paxel\shapes\item\tool\axelhead-shiny.json" />
+  <Content Remove="assets\paxel\shapes\item\tool\axelhead.json" />
+  <Content Remove="assets\paxel\shapes\item\tool\diamondpick.json" />
+  <Content Remove="assets\paxel\shapes\item\tool\miningdrill-qpt.json" />
+  <Content Remove="assets\paxel\shapes\item\tool\miningdrill-tt.json" />
+  <Content Remove="assets\paxel\shapes\item\tool\miningexcavator.json" />
+  <Content Remove="assets\paxel\shapes\item\tool\mininghammer.json" />
+  <Content Remove="assets\paxel\shapes\item\tool\paxel\paxel-metal-shiny.json" />
+  <Content Remove="assets\paxel\shapes\item\tool\paxel\paxel-metal.json" />
+  <Content Remove="assets\paxel\shapes\item\tool\paxel\paxel-metal2-shiny.json" />
+  <Content Remove="assets\paxel\shapes\item\tool\paxel\paxel-metal2.json" />
+  <Content Remove="assets\paxel\shapes\item\tool\paxel\paxel-stone-shiny.json" />
+  <Content Remove="assets\paxel\shapes\item\tool\paxel\paxel-stone.json" />
+  <Content Remove="assets\paxel\shapes\item\tool\worldeater.json" />
+  <None Remove="assets\paxel\compatibility\battletowers\patches\tier1-loot-additions.json" />
+  <None Remove="assets\paxel\compatibility\battletowers\patches\tier2-loot-additions.json" />
+  <None Remove="assets\paxel\compatibility\battletowers\patches\tier3-loot-additions.json" />
+  <None Remove="assets\paxel\compatibility\battletowers\patches\tier4-loot-additions.json" />
+  <None Remove="assets\paxel\compatibility\battletowers\patches\tier5-loot-additions.json" />
+  <None Remove="assets\paxel\compatibility\krpgenchantment\patches\paxel-recipes-enchantingtable-tier1.json" />
+  <None Remove="assets\paxel\compatibility\krpgenchantment\patches\paxel-recipes-enchantingtable-tier2.json" />
+  <None Remove="assets\paxel\compatibility\krpgenchantment\patches\paxel-recipes-enchantingtable-tier3.json" />
+  <None Remove="assets\paxel\compatibility\krpgenchantment\patches\paxel-recipes-enchantingtable-tier4.json" />
+  <None Remove="assets\paxel\compatibility\krpgenchantment\patches\paxel-toolsextended-add-enchantment-behavior.json" />
+  <None Remove="assets\paxel\compatibility\krpgenchantment\recipes\enchanting-table\paxel-toolsextended-add-tiers.json" />
+  <None Remove="assets\paxel\compatibility\primitivesurvival\patches\paxel-in-treehollows.json" />
+  <None Remove="assets\paxel\compatibility\primitivesurvival\patches\paxel-itemtypes-tool-paxel.json" />
+  <None Remove="assets\paxel\compatibility\toolsextended\patches\helvehammerworkable-toolsextended.json" />
+  <None Remove="assets\paxel\config\configlib-patches.json" />
+  <None Remove="assets\paxel\itemtypes\tool\diamondpick.json" />
+  <None Remove="assets\paxel\itemtypes\tool\miningdrill-qpt.json" />
+  <None Remove="assets\paxel\itemtypes\tool\miningdrill-tt.json" />
+  <None Remove="assets\paxel\itemtypes\tool\miningexcavator.json" />
+  <None Remove="assets\paxel\itemtypes\tool\mininghammer.json" />
+  <None Remove="assets\paxel\itemtypes\tool\paxel-powered.json" />
+  <None Remove="assets\paxel\itemtypes\tool\worldeater.json" />
+  <None Remove="assets\paxel\lang\en - Kopieren.json" />
+  <None Remove="assets\paxel\patches\paxel-itemtypes-tool-paxel.json" />
+  <None Remove="assets\paxel\patches\survival-blocktypes-clay-lootvessel.json" />
+  <None Remove="assets\paxel\recipes\grid\diamondpick.json" />
+  <None Remove="assets\paxel\recipes\grid\worldeater.json" />
+  <None Remove="assets\paxel\shapes\item\tool\axelhead-shiny.json" />
+  <None Remove="assets\paxel\shapes\item\tool\axelhead.json" />
+  <None Remove="assets\paxel\shapes\item\tool\diamondpick.json" />
+  <None Remove="assets\paxel\shapes\item\tool\miningdrill-qpt.json" />
+  <None Remove="assets\paxel\shapes\item\tool\miningdrill-tt.json" />
+  <None Remove="assets\paxel\shapes\item\tool\miningexcavator.json" />
+  <None Remove="assets\paxel\shapes\item\tool\mininghammer.json" />
+  <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-.json" />
+  <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-bone-diorite.json" />
+  <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-bone-gabbro.json" />
+  <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-bone-quartzite.json" />
+  <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-legendary.json" />
+  <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-metal-shiny.json" />
+  <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-metal.json" />
+  <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-metal2-shiny.json" />
+  <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-metal2.json" />
+  <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-stainlesssteel-shiny.json" />
+  <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-stone-shiny.json" />
+  <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-stone.json" />
+  <None Remove="assets\paxel\shapes\item\tool\paxel\paxel-uranium.json" />
+  <None Remove="assets\paxel\shapes\item\tool\worldeater.json" />
+  <None Remove="assets\paxel\textures\icons\1x1.svg" />
+  <None Remove="assets\paxel\textures\icons\1x2.svg" />
+  <None Remove="assets\paxel\textures\icons\1x3.svg" />
+  <None Remove="assets\paxel\textures\icons\3x3.svg" />
+  <None Remove="assets\paxel\textures\icons\5x5.svg" />
+  <None Remove="assets\paxel\textures\icons\chess.svg" />
+  <None Remove="assets\paxel\textures\icons\vein.svg" />
+  <Content Include="modinfo.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </Content>
+  <Content Include="modicon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </Content>
+</ItemGroup>
+
+<ItemGroup>
+  <Folder Include="assets\paxel\textures\block\stone\rock\" />
+</ItemGroup>
+
+</Project>

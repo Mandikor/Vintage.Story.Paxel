@@ -1,0 +1,79 @@
+[
+  {
+    "file": "paxel:recipes/enchanting-table/paxel-tier-2.json",
+    "side": "server",
+    "op": "replace",
+    "path": "/0/ingredients/target/allowedVariants",
+    "value": [ "electrum", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "cupronickel" ]
+  },
+  {
+    "file": "paxel:recipes/enchanting-table/paxel-tier-2.json",
+    "side": "server",
+    "op": "replace",
+    "path": "/1/ingredients/target/allowedVariants",
+    "value": [ "electrum", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "cupronickel" ]
+  },
+  {
+    "file": "paxel:recipes/enchanting-table/paxel-tier-2.json",
+    "side": "server",
+    "op": "replace",
+    "path": "/2/ingredients/target/allowedVariants",
+    "value": [ "electrum", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "cupronickel" ]
+  },
+  {
+    "file": "paxel:recipes/enchanting-table/paxel-tier-2.json",
+    "side": "server",
+    "op": "replace",
+    "path": "/3/ingredients/target/allowedVariants",
+    "value": [ "electrum", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "cupronickel" ]
+  },
+  {
+    "file": "paxel:recipes/enchanting-table/paxel-tier-2.json",
+    "side": "server",
+    "op": "replace",
+    "path": "/4/ingredients/target/allowedVariants",
+    "value": [ "electrum", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "cupronickel" ]
+  },
+  {
+    "file": "paxel:recipes/enchanting-table/paxel-tier-2.json",
+    "side": "server",
+    "op": "replace",
+    "path": "/5/ingredients/target/allowedVariants",
+    "value": [ "electrum", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "cupronickel" ]
+  },
+  {
+    "file": "paxel:recipes/enchanting-table/paxel-tier-2.json",
+    "side": "server",
+    "op": "replace",
+    "path": "/6/ingredients/target/allowedVariants",
+    "value": [ "electrum", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "cupronickel" ]
+  },
+  {
+    "file": "paxel:recipes/enchanting-table/paxel-tier-2.json",
+    "side": "server",
+    "op": "replace",
+    "path": "/7/ingredients/target/allowedVariants",
+    "value": [ "electrum", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "cupronickel" ]
+  },
+  {
+    "file": "paxel:recipes/enchanting-table/paxel-tier-2.json",
+    "side": "server",
+    "op": "replace",
+    "path": "/8/ingredients/target/allowedVariants",
+    "value": [ "electrum", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "cupronickel" ]
+  },
+  {
+    "file": "paxel:recipes/enchanting-table/paxel-tier-2.json",
+    "side": "server",
+    "op": "replace",
+    "path": "/9/ingredients/target/allowedVariants",
+    "value": [ "electrum", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "cupronickel" ]
+  },
+  {
+    "file": "paxel:recipes/enchanting-table/paxel-tier-2.json",
+    "side": "server",
+    "op": "replace",
+    "path": "/10/ingredients/target/allowedVariants",
+    "value": [ "electrum", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "cupronickel" ]
+  }
+]

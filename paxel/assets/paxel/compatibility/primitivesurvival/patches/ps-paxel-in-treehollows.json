@@ -1,0 +1,44 @@
+[
+  {
+    "condition": { "when": "Paxel.Loot.Enabled.PrimitiveSurvival", "isValue": "true" },
+    "side": "server",
+    "file": "primitivesurvival:blocktypes/wood/treehollowgrown.json",
+    "op": "addeach",
+    "path": "/attributes/primitivesurvival/treeHollowContentsByHollowType/all/-",
+    "value": [
+      { "code": "paxel:item-paxel-flint", "amount": 1 },
+      { "code": "paxel:item-paxel-obsidian", "amount": 1 },
+      { "code": "paxel:item-paxel-copper", "amount": 1 }
+    ]
+  },
+  {
+    "condition": { "when": "Paxel.Loot.Enabled.PrimitiveSurvival", "isValue": "true" },
+    "side": "server",
+    "file": "paxel:itemtypes/tool/paxel-metal.json",
+    "op": "add",
+    "path": "/behaviors/-",
+    "value": {
+      "name": "inTreeHollowTransform",
+      "properties": {
+        "rotation": { "x": 0, "y": 0, "z": -60 },
+        "origin": { "x": 0.7, "y": 0.4, "z": 0.5 },
+        "scale": 0.5
+      }
+    }
+  },
+  {
+    "condition": { "when": "Paxel.Loot.Enabled.PrimitiveSurvival", "isValue": "true" },
+    "side": "server",
+    "file": "paxel:itemtypes/tool/paxel-stone.json",
+    "op": "add",
+    "path": "/behaviors/-",
+    "value": {
+      "name": "inTreeHollowTransform",
+      "properties": {
+        "rotation": { "x": 0, "y": 0, "z": -60 },
+        "origin": { "x": 0.7, "y": 0.4, "z": 0.5 },
+        "scale": 0.5
+      }
+    }
+  }
+]

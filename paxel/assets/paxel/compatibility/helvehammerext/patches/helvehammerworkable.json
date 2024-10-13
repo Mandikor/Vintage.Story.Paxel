@@ -1,0 +1,10 @@
+[
+  {
+    "condition": { "when": "Paxel.Mod.Enabled.HelveHammerExtensions", "isValue": "true" },
+    "side": "server",
+    "file": "paxel:itemtypes/toolhead/paxelhead-metal.json",
+    "op": "add",
+    "path": "/attributes/helvehammerworkable",
+    "value": true
+  }
+]

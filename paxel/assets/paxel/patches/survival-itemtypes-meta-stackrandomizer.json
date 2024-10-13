@@ -1,0 +1,21 @@
+[
+  {
+    "condition": { "when": "Paxel.Loot.Enabled.Ruins", "isValue": "true" },
+    "side": "server",
+    "file": "game:itemtypes/meta/stackrandomizer.json",
+    "op": "addeach",
+    "path": "/attributesByType/*-coppertool/stacks/-",
+    "value": [
+      {
+        "type": "item",
+        "code": "paxel:paxel-obsidian",
+        "chance": 18
+      },
+      {
+        "type": "item",
+        "code": "paxel:paxel-copper",
+        "chance": 0.9
+      }
+    ]
+  }
+]
