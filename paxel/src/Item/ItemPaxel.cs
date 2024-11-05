@@ -12,12 +12,54 @@ using Vintagestory.GameContent;
 using Vintagestory.API.Config;
 using Vintagestory.API.Datastructures;
 using System.Numerics;
+using System.Runtime.CompilerServices;
 
 namespace Paxel;
 
 public class ItemPaxel : ItemAxe
 {
     public SkillItem[] toolModes;
+
+    private int minWidth;
+
+    private int minHeight;
+
+    private int minDepth;
+
+    private int xMin;
+
+    private int yMin;
+
+    private int zMin;
+
+    private int maxWidth;
+
+    private int maxHeight;
+
+    private int maxDepth;
+
+    private int xMax;
+
+    private int yMax;
+
+    private int zMax;
+
+    private List<BlockPos> blockPositions;
+
+    private int curMode = 3;
+
+    private int numBlocks = 1;
+
+    /// <summary>
+    /// A (hopefully) unique id for my high lighting
+    /// </summary>
+    private int highlightID = 92;
+
+    /// <summary>
+    /// Current Highlighted blocks
+    /// </summary>
+    private List<BlockPos> highlightedBlocks;
+
 
     public override void OnLoaded(ICoreAPI api)
     {
@@ -30,14 +72,15 @@ public class ItemPaxel : ItemAxe
             SkillItem[] modes;
             toolModes = ObjectCacheUtil.GetOrCreate(api, "paxelToolModes", () =>
             {
-                modes = new SkillItem[7];
+                modes = new SkillItem[8];
                 modes[0] = new SkillItem() { Code = new AssetLocation("1x1"), Name = Lang.Get("paxel:1x1", Array.Empty<object>()) }.WithIcon(capi, capi.Gui.LoadSvgWithPadding(new AssetLocation("paxel:textures/icons/1x1.svg"), 64, 64, 5, ColorUtil.WhiteArgb));
                 modes[1] = new SkillItem() { Code = new AssetLocation("1x2"), Name = Lang.Get("paxel:1x2", Array.Empty<object>()) }.WithIcon(capi, capi.Gui.LoadSvgWithPadding(new AssetLocation("paxel:textures/icons/1x2.svg"), 64, 64, 5, ColorUtil.WhiteArgb));
                 modes[2] = new SkillItem() { Code = new AssetLocation("1x3"), Name = Lang.Get("paxel:1x3", Array.Empty<object>()) }.WithIcon(capi, capi.Gui.LoadSvgWithPadding(new AssetLocation("paxel:textures/icons/1x3.svg"), 64, 64, 5, ColorUtil.WhiteArgb));
                 modes[3] = new SkillItem() { Code = new AssetLocation("chess"), Name = Lang.Get("paxel:chessboard", Array.Empty<object>()) }.WithIcon(capi, capi.Gui.LoadSvgWithPadding(new AssetLocation("paxel:textures/icons/chess.svg"), 64, 64, 5, ColorUtil.WhiteArgb));
                 modes[4] = new SkillItem() { Code = new AssetLocation("3x3"), Name = Lang.Get("paxel:3x3", Array.Empty<object>()) }.WithIcon(capi, capi.Gui.LoadSvgWithPadding(new AssetLocation("paxel:textures/icons/3x3.svg"), 64, 64, 5, ColorUtil.WhiteArgb));
                 modes[5] = new SkillItem() { Code = new AssetLocation("5x5"), Name = Lang.Get("paxel:5x5", Array.Empty<object>()) }.WithIcon(capi, capi.Gui.LoadSvgWithPadding(new AssetLocation("paxel:textures/icons/5x5.svg"), 64, 64, 5, ColorUtil.WhiteArgb));
-                modes[6] = new SkillItem() { Code = new AssetLocation("veinmine"), Name = Lang.Get("paxel:veinmining", Array.Empty<object>()) }.WithIcon(capi, capi.Gui.LoadSvgWithPadding(new AssetLocation("paxel:textures/icons/vein.svg"), 64, 64, 5, ColorUtil.WhiteArgb));
+                modes[6] = new SkillItem() { Code = new AssetLocation("tunnel"), Name = Lang.Get("paxel:tunnel", Array.Empty<object>()), Linebreak = true }.WithIcon(capi, capi.Gui.LoadSvgWithPadding(new AssetLocation("paxel:textures/icons/tunnel.svg"), 64, 64, 5, ColorUtil.WhiteArgb));
+                modes[7] = new SkillItem() { Code = new AssetLocation("veinmine"), Name = Lang.Get("paxel:veinmining", Array.Empty<object>()) }.WithIcon(capi, capi.Gui.LoadSvgWithPadding(new AssetLocation("paxel:textures/icons/vein.svg"), 64, 64, 5, ColorUtil.WhiteArgb));
 
                 if (capi != null)
                 {
@@ -78,6 +121,7 @@ public class ItemPaxel : ItemAxe
     {
         if (blockSel == null) return;
         slot.Itemstack.Attributes.SetInt("toolMode", toolMode);
+        ClearHighlight(byPlayer.Entity.World, byPlayer, slot); // clear the highlight so it can be redrawn with new settings
     }
 
     public override WorldInteraction[] GetHeldInteractionHelp(ItemSlot itemSlot) => new WorldInteraction[] {
@@ -618,14 +662,23 @@ public class ItemPaxel : ItemAxe
                 return;
             case 2:
                 minWidth = 0;
-                maxWidth = 1;
+                maxWidth = 0;
                 minHeight = -1;
-                maxHeight = 0;
+                maxHeight = 1;
                 minDepth = 0;
                 maxDepth = 0;
-                numBlocks = 4;
+                numBlocks = 3;
                 return;
             case 3:
+                minWidth = -2;
+                maxWidth = 2;
+                minHeight = -1;
+                maxHeight = 2;
+                minDepth = 0;
+                maxDepth = 0;
+                numBlocks = 10;
+                return;
+            case 4:
                 minWidth = -1;
                 maxWidth = 1;
                 minHeight = -1;
@@ -634,23 +687,14 @@ public class ItemPaxel : ItemAxe
                 maxDepth = 0;
                 numBlocks = 9;
                 return;
-            case 4:
-                minWidth = -1;
-                maxWidth = 1;
-                minHeight = -1;
-                maxHeight = 0;
+            case 5:
+                minWidth = -2;
+                maxWidth = 2;
+                minHeight = -2;
+                maxHeight = 2;
                 minDepth = 0;
                 maxDepth = 0;
-                numBlocks = 6;
-                return;
-            case 5:
-                minWidth = 0;
-                maxWidth = 0;
-                minHeight = -1;
-                maxHeight = 1;
-                minDepth = 0;
-                maxDepth = 2;
-                numBlocks = 4;
+                numBlocks = 25;
                 return;
             default:
                 return;
@@ -680,34 +724,445 @@ public class ItemPaxel : ItemAxe
         return dir;
     }
 
+    /// <summary>
+    /// Highlight the blocks the tool will cover for the given player. 
+    /// </summary>
+    /// <param name="slot"></param>
+    /// <param name="player"></param>
+    /// <param name="blocks"></param>
+    /// <param name="selectedFace"></param>
+    //public void HighlightToolBlocks(ItemSlot slot, EntityPlayer player, BlockPos blockSel, BlockPos playerPos, BlockFacing selectedFace)
+    //{
+    //    int toolMode = GetToolMode(slot, player.Player, null);
+    //    //int toolFunc = GetToolFunction(slot, player.Player);
+    //    //int toolPlac = GetToolPlaceMode(slot, player.Player);
+    //    //int toolrange = GetToolRange(slot, player.Player);
+    //    //if (toolrange == -1) toolrange = 0; // if no range is saved, default of 0
+    //    //BlockPos toolAnchor = GetAnchor(slot, player.Player); // can be used for everything
+    //    BlockPos startPoint = null; // start of highlight
+    //    BlockPos endPoint = null;   // end of highlight
+    //                                // Tool Mode ... Largely ignored as all modes affect in the same way.
+    //                                // Function Mode ... Build2Me ignores Range ... Others based on player view direction :(
+    //                                // Placement mode ... taken care of in OnHeldIdle
 
-    private int minWidth;
+    //    if (toolFunc <= 0) // selection for Build2Me specifically, the only one that uses playerPos
+    //    {
+    //        // The start is obvious, the selected block
+    //        if (toolAnchor.X != int.MinValue) startPoint = toolAnchor.Copy();
+    //        else startPoint = blockSel.Copy();
+    //        // the end, however isn't obvious...                 
+    //        switch (selectedFace.Code)
+    //        {
+    //            case "north": endPoint = blockSel.NorthCopy(Math.Abs(blockSel.Z - playerPos.Z)); break;
+    //            case "east": endPoint = blockSel.EastCopy(Math.Abs(blockSel.X - playerPos.X)); break;
+    //            case "south": endPoint = blockSel.SouthCopy(Math.Abs(blockSel.Z - playerPos.Z)); break;
+    //            case "west": endPoint = blockSel.WestCopy(Math.Abs(blockSel.X - playerPos.X)); break;
+    //            case "up": endPoint = blockSel.UpCopy(Math.Abs(blockSel.Y - playerPos.Y)); break;
+    //            case "down": endPoint = blockSel.DownCopy(Math.Abs(blockSel.Y - playerPos.Y)); break;
+    //            default: endPoint = blockSel.AddCopy(BlockFacing.UP, 64); break;
+    //        }
+    //        if (blockSel.Y == playerPos.Y) endPoint.Y = blockSel.Y;
+    //    }
+    //    else
+    //    {
+    //        // other tool functions!
+    //        if (toolrange == 0) startPoint = endPoint = blockSel;
+    //        else
+    //        {
+    //            string playerfacecode = BlockFacing.HorizontalFromAngle(GameMath.Mod(player.Pos.Yaw, 6.28318548f)).Code;
+    //            switch (toolFunc)
+    //            {
+    //                case 1: // Horizontal Line
+    //                    {
+    //                        switch (selectedFace.Code)
+    //                        {
+    //                            case "north":
+    //                            case "south":
+    //                                {
+    //                                    startPoint = blockSel.EastCopy(toolrange);
+    //                                    endPoint = blockSel.WestCopy(toolrange);
+    //                                    break;
+    //                                }
+    //                            case "east":
+    //                            case "west":
+    //                                {
+    //                                    startPoint = blockSel.NorthCopy(toolrange);
+    //                                    endPoint = blockSel.SouthCopy(toolrange);
+    //                                    break;
+    //                                }
+    //                            case "up":
+    //                            case "down":
+    //                                {
+    //                                    if (playerfacecode == "north" || playerfacecode == "south")
+    //                                    {
+    //                                        startPoint = blockSel.EastCopy(toolrange);
+    //                                        endPoint = blockSel.WestCopy(toolrange);
+    //                                    }
+    //                                    else
+    //                                    {
+    //                                        startPoint = blockSel.NorthCopy(toolrange);
+    //                                        endPoint = blockSel.SouthCopy(toolrange);
+    //                                    }
+    //                                    break;
+    //                                }
+    //                        }
+    //                        break;
+    //                    }
+    //                case 2: // Vertical Line
+    //                    {
+    //                        switch (selectedFace.Code)
+    //                        {
+    //                            case "north":
+    //                            case "south":
+    //                                {
+    //                                    startPoint = blockSel.UpCopy(toolrange);
+    //                                    endPoint = blockSel.DownCopy(toolrange);
+    //                                    break;
+    //                                }
+    //                            case "east":
+    //                            case "west":
+    //                                {
+    //                                    startPoint = blockSel.UpCopy(toolrange);
+    //                                    endPoint = blockSel.DownCopy(toolrange);
+    //                                    break;
+    //                                }
+    //                            case "up":
+    //                                {
+    //                                    startPoint = blockSel.Copy();
+    //                                    endPoint = blockSel.UpCopy(toolrange * 2);
+    //                                    break;
+    //                                }
+    //                            case "down":
+    //                                {
+    //                                    startPoint = blockSel.Copy();
+    //                                    endPoint = blockSel.DownCopy(toolrange * 2);
+    //                                    break;
+    //                                }
+    //                        }
+    //                        break;
+    //                    }
+    //                case 3: // Area - 2 dimensional area of blocks
+    //                    {
+    //                        switch (selectedFace.Code)
+    //                        {
+    //                            case "north":
+    //                            case "south":
+    //                                {
+    //                                    startPoint = blockSel.EastCopy(toolrange).Up(toolrange);
+    //                                    endPoint = blockSel.WestCopy(toolrange).Down(toolrange);
+    //                                    break;
+    //                                }
+    //                            case "east":
+    //                            case "west":
+    //                                {
+    //                                    startPoint = blockSel.NorthCopy(toolrange).Up(toolrange);
+    //                                    endPoint = blockSel.SouthCopy(toolrange).Down(toolrange);
+    //                                    break;
+    //                                }
+    //                            case "up":
+    //                            case "down":
+    //                                {
+    //                                    startPoint = blockSel.AddCopy(toolrange, 0, toolrange);
+    //                                    endPoint = blockSel.AddCopy(-toolrange, 0, -toolrange);
+    //                                    break;
+    //                                }
+    //                        }
+    //                        break;
+    //                    }
+    //                case 4: // Volume ... Around the player? Or away from player? Using Anchor will be key
+    //                    {
+    //                        startPoint = blockSel.AddCopy(toolrange, toolrange, toolrange);
+    //                        endPoint = blockSel.AddCopy(-toolrange, -toolrange, -toolrange);
+    //                        break;
+    //                    }
+    //            }
+    //        }
+    //    }
 
-    private int minHeight;
+    //    List<int> usecolors = new List<int>
+    //        {
+    //            ColorUtil.ColorFromRgba( 0, 0, 110, 110 ) // Blue for build
+    //        };
+    //    // if in destroy mode, highlight goes RED
+    //    if (toolMode == 1) usecolors[0] = ColorUtil.ColorFromRgba(110, 0, 0, 110); // Red for Destroy
+    //    if (toolMode == 2) usecolors[0] = ColorUtil.ColorFromRgba(110, 0, 110, 110); // Purple for Exchange
 
-    private int minDepth;
+    //    // Build the Highlight and list of blocks for this selection
+    //    if (startPoint != null && endPoint != null)
+    //    {
+    //        if (highlightedBlocks != null && highlightedBlocks.Count > 0)
+    //        {
+    //            ClearHighlight(player.World, player.Player, slot); // clears the items in the array AND the highlight object in the world...
+    //        }
+    //        highlightedBlocks = GetToolBlocks(slot, startPoint, endPoint, selectedFace, blockSel);
+    //        try
+    //        {
+    //            api.World.HighlightBlocks(player.Player, highlightID, highlightedBlocks,
+    //                    usecolors, EnumHighlightBlocksMode.Absolute, EnumHighlightShape.Arbitrary);
+    //        }
+    //        catch (Exception e)
+    //        {
+    //            //capi?.ShowChatMessage($"Exception : {e}");
+    //        }
+    //    }
 
-    private int xMin;
+    //}
 
-    private int yMin;
+    /// <summary>
+    /// Clears the block highlight for a given player.
+    /// Resets the gadget internals, called after build.
+    /// </summary>
+    /// <param name="world">IWorldAccessor</param>
+    /// <param name="player">IPlayer</param>
+    /// <param name="slot">Gadget</param>
+    /// <param name="resetGadget">If true, resets stored BlockPos values</param>
+    public void ClearHighlight(IWorldAccessor world, IPlayer player, ItemSlot slot) //, bool resetGadget
+    {
+        if (highlightedBlocks != null && highlightedBlocks.Count > 0)
+        {
+            highlightedBlocks.Clear();
+            //if (resetGadget)
+            //{
+            //    cur_blockSelection = null;
+            //    cur_playerPosition = null;
+            //    cur_blockFaceSelection = null;
+            //}
+        }
+        api.World.HighlightBlocks(player, highlightID, new List<BlockPos>(), new List<int>(), EnumHighlightBlocksMode.Absolute, EnumHighlightShape.Arbitrary);
+    }
 
-    private int zMin;
 
-    private int maxWidth;
+    /// <summary>
+    /// Gets a List of BlockPos to highlight/edit
+    /// </summary>
+    /// <param name="slot">Slot holding the gadget</param>
+    /// <param name="startBlock">Start Block, typically the block right at the selected block.</param>
+    /// <param name="endBlock">End Block, depends on toolMode</param>
+    /// <param name="blockFacing">Block Face player is looking at</param>
+    /// <param name="originalPos">Original Block Selected, before the offsets</param>
+    /// <returns>List of valid matching Blocks for tool mode selections.</returns>
+    //public List<BlockPos> GetToolBlocks(ItemSlot slot, BlockPos startBlock, BlockPos endBlock, BlockFacing blockFacing, BlockPos originalPos)
+    //{
+    //    int toolMode = GetToolMode(slot, null, null);
 
-    private int maxHeight;
+    //    if (startBlock.dimension != endBlock.dimension)
+    //    {
+    //        api.Logger.Debug($"BuildingGadget: GetToolBlocks crosses from dimension {startBlock.dimension} to {endBlock.dimension}");
+    //    }
+    //    int dim = startBlock.dimension;
 
-    private int maxDepth;
+    //    List<BlockPos> blocksForTool = new List<BlockPos>();
+    //    BlockPos minBlock = new BlockPos(Math.Min(startBlock.X, endBlock.X), Math.Min(startBlock.Y, endBlock.Y),
+    //        Math.Min(startBlock.Z, endBlock.Z), dim);
+    //    BlockPos maxBlock = new BlockPos(Math.Max(startBlock.X, endBlock.X), Math.Max(startBlock.Y, endBlock.Y),
+    //        Math.Max(startBlock.Z, endBlock.Z), dim);
 
-    private int xMax;
+    //    if (toolMode != 2)
+    //    {
+    //        for (int x = minBlock.X; x <= maxBlock.X; x++)
+    //        {
+    //            for (int y = minBlock.Y; y <= maxBlock.Y; y++)
+    //            {
+    //                for (int z = minBlock.Z; z <= maxBlock.Z; z++)
+    //                {
+    //                    blocksForTool.Add(new BlockPos(x, y, z, dim));
+    //                }
+    //            }
+    //        }
+    //    }
+    //    else
+    //    {
+    //        Block originalBlock = api.World.BlockAccessor.GetBlock(originalPos);
+    //        for (int x = minBlock.X; x <= maxBlock.X; x++)
+    //        {
+    //            for (int y = minBlock.Y; y <= maxBlock.Y; y++)
+    //            {
+    //                for (int z = minBlock.Z; z <= maxBlock.Z; z++)
+    //                {
+    //                    Block blockCheck = api.World.BlockAccessor.GetBlock(new BlockPos(x, y, z, dim));
+    //                    if (blockCheck.Id == 0) continue; // skip air
+    //                                                      // ignore blocks with an entity
+    //                    if (api.World.BlockAccessor.GetBlockEntity(new BlockPos(x, y, z, dim)) == null)
+    //                    {
+    //                        if (blockCheck.FirstCodePart() == block_build.FirstCodePart())
+    //                        {
+    //                            // they are both soil, or rock, or whatever                                
+    //                            if (blockCheck.CodeWithoutParts(1) != block_build.CodeWithoutParts(1))
+    //                            {
+    //                                //checked the code without the end part to see if they are the same.
+    //                                // if they are NOT the same, add to list. 
+    //                                // IOW soil-medium-none != soil-medium-grassy
+    //                                blocksForTool.Add(new BlockPos(x, y, z, dim));
+    //                            }
+    //                        }
+    //                        else
+    //                        {
+    //                            blocksForTool.Add(new BlockPos(x, y, z, dim));
+    //                        }
+    //                    }
+    //                }
+    //            }
+    //        }
+    //    }
+    //    return blocksForTool;
+    //}
 
-    private int yMax;
 
-    private int zMax;
+    //private void AttemptVeinMine(IWorldAccessor world, Entity byEntity, ItemSlot itemslot, BlockSelection blockSel, float dropQuantityMultiplier = 1f)
+    //{
+    //    if (this.api.Side != EnumAppSide.Server)
+    //    {
+    //        return;
+    //    }
+    //    if (world == null)
+    //    {
+    //        this.capi.ShowChatMessage("World is null!");
+    //    }
+    //    if (byEntity == null)
+    //    {
+    //        this.capi.ShowChatMessage("Entity is null!");
+    //    }
+    //    if (itemslot == null)
+    //    {
+    //        this.capi.ShowChatMessage("ItemSlot is null!");
+    //    }
+    //    if (blockSel == null)
+    //    {
+    //        this.capi.ShowChatMessage("BlockSel is null!");
+    //    }
+    //    Block block = world.BlockAccessor.GetBlock(blockSel.Position);
+    //    if (block.Id != 0)
+    //    {
+    //        string path = block.Code.Path;
+    //    }
+    //    IPlayer player = null;
+    //    List<ItemStack> itemsToDrop = new List<ItemStack>();
+    //    if (byEntity is EntityPlayer)
+    //    {
+    //        player = this.api.World.PlayerByUid(((EntityPlayer)byEntity).PlayerUID);
+    //    }
+    //    if (player == null)
+    //    {
+    //        this.api.World.Logger.VerboseDebug("FlexibleTools: Worldeater Player isnt EntityPlayer; Player is null!");
+    //        return;
+    //    }
+    //    bool istree = false;
+    //    string treeGroupCode = string.Empty;
+    //    int savedLimit = this.config.WorldEaterVeinMineLimit;
+    //    if (this.blockToMatch.Contains("log"))
+    //    {
+    //        istree = true;
+    //        treeGroupCode = block.Attributes["treeFellingGroupCode"].AsString(null);
+    //        if (treeGroupCode != null)
+    //        {
+    //            this.config.WorldEaterVeinMineLimit = 1024;
+    //        }
+    //        else
+    //        {
+    //            istree = false;
+    //        }
+    //    }
+    //    List<BlockPos> blocksToMine = new List<BlockPos>();
+    //    List<BlockPos> blocksToCheck = new List<BlockPos>();
+    //    blocksToCheck.Add(blockSel.Position);
+    //    blocksToMine.Add(blockSel.Position);
+    //    while (blocksToCheck.Count > 0 && blocksToMine.Count < this.config.WorldEaterVeinMineLimit)
+    //    {
+    //        List<BlockPos> blockstoadd = new List<BlockPos>();
+    //        Action<Block, int, int, int> <> 9__0;
+    //        foreach (BlockPos blockPos2 in blocksToCheck)
+    //        {
+    //            BlockPos start = blockPos2.AddCopy(-1, -1, -1);
+    //            BlockPos end = blockPos2.AddCopy(1, 1, 1);
+    //            IBlockAccessor blockAccessor = world.BlockAccessor;
+    //            BlockPos minPos = start;
+    //            BlockPos maxPos = end;
+    //            Action<Block, int, int, int> onBlock;
+    //            if ((onBlock = <> 9__0) == null)
+    //            {
+    //                onBlock = (<> 9__0 = delegate (Block dblock, int x, int y, int z)
+    //                {
+    //                    if (dblock.BlockId != 0)
+    //                    {
+    //                        BlockPos bcheck = new BlockPos(x, y, z, 0);
+    //                        if (istree)
+    //                        {
+    //                            if (dblock.Attributes != null && dblock.Attributes["treeFellingGroupCode"].Exists && dblock.Attributes["treeFellingGroupCode"].AsString(null).Contains(treeGroupCode) && !dblock.Code.Path.Contains("leaves") && !blocksToMine.Contains(bcheck))
+    //                            {
+    //                                blockstoadd.Add(bcheck);
+    //                                blocksToMine.Add(bcheck);
+    //                                return;
+    //                            }
+    //                        }
+    //                        else if (dblock.Code.Path.Contains(this.blockToMatch) && !blocksToMine.Contains(bcheck))
+    //                        {
+    //                            blockstoadd.Add(bcheck);
+    //                            blocksToMine.Add(bcheck);
+    //                        }
+    //                    }
+    //                });
+    //            }
+    //            blockAccessor.WalkBlocks(minPos, maxPos, onBlock, false);
+    //        }
+    //        blocksToCheck.Clear();
+    //        if (blockstoadd.Count > 0 && blocksToMine.Count < this.config.WorldEaterVeinMineLimit)
+    //        {
+    //            blocksToCheck.AddRange(blockstoadd);
+    //        }
+    //        blockstoadd.Clear();
+    //    }
+    //    blocksToCheck.Clear();
+    //    this.config.WorldEaterVeinMineLimit = savedLimit;
+    //    if (blocksToMine.Count > 0)
+    //    {
+    //        foreach (BlockPos blockPos in blocksToMine)
+    //        {
+    //            ItemStack[] blockDrops = world.BlockAccessor.GetBlock(blockPos).GetDrops(world, blockPos, player, dropQuantityMultiplier);
+    //            if (blockDrops != null)
+    //            {
+    //                if (blockDrops.Length != 0)
+    //                {
+    //                    foreach (ItemStack itemStack in blockDrops)
+    //                    {
+    //                        itemsToDrop.Add(itemStack);
+    //                    }
+    //                }
+    //                this.coreapi.World.BlockAccessor.SetBlock(0, blockPos);
+    //                this.coreapi.World.BlockAccessor.MarkBlockDirty(blockPos, null);
+    //                world.BlockAccessor.TriggerNeighbourBlockUpdate(blockPos);
+    //                player.InventoryManager.ActiveHotbarSlot.Itemstack.Collectible.DamageItem(world, player.Entity, player.InventoryManager.ActiveHotbarSlot, 1);
+    //                if (player.InventoryManager.ActiveHotbarSlot.Itemstack == null)
+    //                {
+    //                    break;
+    //                }
+    //                if (player.InventoryManager.ActiveHotbarSlot.Itemstack.Item != null && player.InventoryManager.ActiveHotbarSlot.Itemstack.Item != this)
+    //                {
+    //                    break;
+    //                }
+    //            }
+    //        }
+    //        foreach (ItemStack stack in itemsToDrop)
+    //        {
+    //            try
+    //            {
+    //                if (!player.InventoryManager.TryGiveItemstack(stack, true))
+    //                {
+    //                    world.SpawnItemEntity(stack, blockSel.Position.ToVec3d(), null);
+    //                }
+    //            }
+    //            catch (Exception e)
+    //            {
+    //                ILogger logger = this.coreapi.World.Logger;
+    //                DefaultInterpolatedStringHandler defaultInterpolatedStringHandler = new DefaultInterpolatedStringHandler(41, 1);
+    //                defaultInterpolatedStringHandler.AppendLiteral("Exception while trying to process drops! ");
+    //                defaultInterpolatedStringHandler.AppendFormatted<Exception>(e);
+    //                logger.Warning(defaultInterpolatedStringHandler.ToStringAndClear());
+    //                this.coreapi.World.Logger.Warning("Stacktrace: " + e.StackTrace);
+    //            }
+    //        }
+    //        blocksToMine.Clear();
+    //        itemsToDrop.Clear();
+    //    }
+    //}
 
-    private List<BlockPos> blockPositions;
-
-    private int curMode = 3;
-
-    private int numBlocks = 1;
 }

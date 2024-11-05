@@ -11,6 +11,12 @@
       "executablePath": "$(VINTAGE_STORY)/VintagestoryServer.exe",
       "commandLineArgs": "--tracelog --addModPath $(ProjectDir)/bin/$(Configuration)/Mods --openWorld net7paxeldev --playStyle creativebuilding",
       "workingDirectory": "$(VINTAGE_STORY)"
+    },
+    "Client Play": {
+      "commandName": "Executable",
+      "executablePath": "$(VINTAGE_STORY)/Vintagestory.exe",
+      "commandLineArgs": "--tracelog --addModPath $(ProjectDir)/bin/$(Configuration)/Mods --openWorld net7paxelplay",
+      "workingDirectory": "$(VINTAGE_STORY)"
     }
   }
 }
