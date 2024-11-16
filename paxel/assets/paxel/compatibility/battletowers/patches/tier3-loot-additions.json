@@ -2,19 +2,21 @@
   {
     "condition": { "when": "Paxel.Loot.Enabled.BattleTowers", "isValue": "true" },
     "side": "server",
-    "file": "battletowers:blocktypes/loottreasures.json",
-    "op": "addmerge",
-    "path": "/attributes/lootListByType/*-tier3",
+    "file": "battletowers:itemtypes/meta/stackrandomizer-battletowers.json",
+    "op": "addeach",
+    "path": "/attributesByType/*-surfacetowerstier3/stacks/-",
     "value": [
-      {
-        "type": "item",
-        "chance": 0.5,
-        "minQuantity": 1,
-        "maxQuantity": 1,
-        "codes": [
-          "paxel:paxel-copper"
-        ]
-      }
+      { "type": "item", "code": "paxel:paxel-tinbronze", "chance": 0.9 }
+    ]
+  },
+  {
+    "condition": { "when": "Paxel.Loot.Enabled.BattleTowers", "isValue": "true" },
+    "side": "server",
+    "file": "battletowers:itemtypes/meta/stackrandomizer-battletowers.json",
+    "op": "addeach",
+    "path": "/attributesByType/*-undergroundtowerstier3/stacks/-",
+    "value": [
+      { "type": "item", "code": "paxel:paxel-tinbronze", "chance": 0.9 }
     ]
   }
 ]

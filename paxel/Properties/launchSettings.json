@@ -1,9 +1,15 @@
 {
   "profiles": {
-    "Client": {
+    "Client Dev": {
       "commandName": "Executable",
       "executablePath": "$(VINTAGE_STORY)/Vintagestory.exe",
       "commandLineArgs": "--tracelog --addModPath $(ProjectDir)/bin/$(Configuration)/Mods --openWorld net7paxelnew --playStyle creativebuilding",
+      "workingDirectory": "$(VINTAGE_STORY)"
+    },
+    "Client Play": {
+      "commandName": "Executable",
+      "executablePath": "$(VINTAGE_STORY)/Vintagestory.exe",
+      "commandLineArgs": "--tracelog --addModPath $(ProjectDir)/bin/$(Configuration)/Mods --openWorld net7paxelplay --playStyle preset-surviveandbuild",
       "workingDirectory": "$(VINTAGE_STORY)"
     },
     "Server": {
