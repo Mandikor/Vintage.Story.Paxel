@@ -3,14 +3,12 @@
     "file": "paxel:itemtypes/tool/paxel-toolsextended.json",
     "side": "server",
     "op": "addmerge",
-    "path": "/behaviors",
-    "value": [
-      {
+    "path": "/behaviors/-",
+    "value": {
         "name": "EnchantmentBehavior",
         "properties": {
           "enchantable": true
         }
-      }
-    ]
+     }
   }
 ]
