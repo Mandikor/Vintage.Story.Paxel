@@ -1,0 +1,9 @@
+[
+  {
+    "side": "Server",
+    "file": "toolsextended:recipes/grid/titaniumblend.json",
+    "op": "replace",
+    "path": "/ingredients/P/code",
+    "value": "game:powder-borax"
+  }
+]
