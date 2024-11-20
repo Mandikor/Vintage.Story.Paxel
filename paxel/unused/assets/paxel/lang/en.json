@@ -131,6 +131,23 @@
 
 
 
+  // === Mod: Legendary Mobs ===
+
+  // Item descriptions
+  "paxel:item-paxelhead-legendary-rough": "Paxelhead (Legendary, rough)",
+  "paxel:item-paxelhead-legendary-finished": "Paxelhead (Legendary, finished)",
+
+  "paxel:item-paxel-legendary": "Paxel (Legendary)",
+
+  // Handbook descriptions
+  "paxel:paxelhead-legendarymobs-handbook-title": "The legendary Paxel",
+  "paxel:paxelhead-legendarymobs-handbook-text": "The rough Paxelhead is forged from 3 ingots of legendary ore. To make it a finished Paxelhead, they put the rough Paxelhead into a barrel of melted fat. After 36 hours the paxelhead is finished and can be used to make the legendary paxel.",
+
+  "paxel:paxel-legendarymobs-handbook-title": "The legendary Paxel",
+  "paxel:paxel-legendarymobs-handbook-text": "<strong>Legendary mobs</strong> mod by <i>FunnyBunnyofDOOM</i> adds a new metal, legendary ore. This paxel is made from it.<br>It is noticeably stronger than the steel paxel. You can't sharpen it (repair it) and you can't enchant them.",
+
+
+
   // === Mod: Config lib by Maltiez ===
 
   "PaxelRecipeSettings": "Setting for the recipes",
@@ -207,6 +224,9 @@
 
   "RecipeEnabled/stainlesssteel": "Stainless steel paxel\n\n",
   "RecipeEnabledStainlessSteelComment": "Recipe enabled",
+
+  "RecipeEnabled/legendary": "Legendary paxel\n\n",
+  "RecipeEnabledLegendaryComment": "Recipe enabled",
 
   "RecipeEnabled/uranium": "Uranium paxel\n\n",
   "RecipeEnabledUraniumComment": "Recipe enabled",

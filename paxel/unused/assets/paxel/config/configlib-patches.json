@@ -160,6 +160,12 @@
       "default": true
     },
     {
+      "code": "RecipeEnabled/legendary",
+      "comment": "RecipeEnabledLegendaryComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
       "type": "separator",
       "title": "PaxelLootSettings",
       "text": "PaxelLootSettingsText",
