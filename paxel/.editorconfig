@@ -2,8 +2,9 @@
 root = true
 
 # C#-Dateien
-[*.cs]
+[*.{cs,vb}]
 dotnet_diagnostic.IDE0130.severity = none
+dotnet_diagnostic.IDE0060.severity = none
 
 #### Wichtige EditorConfig-Optionen ####
 
