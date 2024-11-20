@@ -130,14 +130,14 @@ public class Core : ModSystem
         }
 
         // MOD Legendary Mobs - recipes for legendary paxel
-        if (api.ModLoader.IsModEnabled("legendarymobs"))
-        {
-            api.World.Config.SetBool("Paxel.Recipe.Enabled.Legendary", Config.RecipeEnabled["legendary"]);
-        }
-        else
-        {
-            api.World.Config.SetBool("Paxel.Recipe.Enabled.Legendary", false);
-        }
+        //if (api.ModLoader.IsModEnabled("legendarymobs"))
+        //{
+        //    api.World.Config.SetBool("Paxel.Recipe.Enabled.Legendary", Config.RecipeEnabled["legendary"]);
+        //}
+        //else
+        //{
+        //    api.World.Config.SetBool("Paxel.Recipe.Enabled.Legendary", false);
+        //}
 
         #endregion
 

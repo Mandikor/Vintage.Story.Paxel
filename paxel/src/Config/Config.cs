@@ -40,8 +40,8 @@ public class Config : IModConfig
         { "gabbro", true },
         { "quartzite", true },
         { "stainlesssteel", true },
-        { "titanium", true },
-        { "legendary", false }
+        { "titanium", true }//,
+        //{ "legendary", false }
     };
 
     public Dictionary<string, bool> LootEnabled = new()
@@ -115,7 +115,7 @@ public class Config : IModConfig
         RecipeEnabled["quartzite"] = previousConfig.RecipeEnabled["quartzite"];
         RecipeEnabled["stainlesssteel"] = previousConfig.RecipeEnabled["stainlesssteel"];
         RecipeEnabled["titanium"] = previousConfig.RecipeEnabled["titanium"];
-        RecipeEnabled["legendary"] = previousConfig.RecipeEnabled["legendary"];
+        //RecipeEnabled["legendary"] = previousConfig.RecipeEnabled["legendary"];
     }
 
 }
