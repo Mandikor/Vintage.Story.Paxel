@@ -7,8 +7,8 @@
   // === Item descriptions ===
 
   // Claymold
-  "paxel:block-paxelmold-raw": "未烧制的多用工具模具",
-  "paxel:block-paxelmold-burned": "多用工具模具",
+  "paxel:block-toolmold-raw-paxel-north": "未烧制的多用工具模具",
+  "paxel:block-toolmold-burned-paxel-north": "多用工具模具",
   "paxel:blockcraftdesc-paxelmold-raw": "直接用融化的金属制作多用工具头",
 
   // Stone Age Additions

@@ -11,8 +11,8 @@
   // === Item descriptions ===
 
   // Claymold
-  "paxel:block-paxelmold-raw": "パクセルの鋳型(未焼成)",
-  "paxel:block-paxelmold-burned": "パクセルの鋳型",
+  "paxel:block-toolmold-raw-paxel-north": "パクセルの鋳型(未焼成)",
+  "paxel:block-toolmold-burned-paxel-north": "パクセルの鋳型",
   "paxel:blockcraftdesc-paxelmold-raw": "溶けた金属から直接パクセルの頭を作るためのもの",
 
   // Stone Age Additions

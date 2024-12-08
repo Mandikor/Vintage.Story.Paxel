@@ -6,8 +6,8 @@
   // === Item descriptions ===
 
   // Claymold
-  "paxel:block-paxelmold-raw": "ungebrannte Paxel Gussform",
-  "paxel:block-paxelmold-burned": "Paxel Gussform",
+  "paxel:block-toolmold-raw-paxel-north": "ungebrannte Paxel Gussform",
+  "paxel:block-toolmold-burned-paxel-north": "Paxel Gussform",
   "paxel:blockcraftdesc-paxelmold-raw": "Um Paxelköpfe direkt aus geschmolzenem Metall herzustellen",
 
   // Stone Age Additions

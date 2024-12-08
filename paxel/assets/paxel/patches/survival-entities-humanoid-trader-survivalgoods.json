@@ -2,9 +2,9 @@
   {
     "condition": { "when": "Paxel.Trader.Enabled.SurvivalGoods", "isValue": "true" },
     "side": "server",
-    "file": "game:entities/humanoid/trader-survivalgoods.json",
+    "file": "game:config/tradelists/trader-survivalgoods.json",
     "op": "addeach",
-    "path": "/attributes/tradeProps/selling/list/-",
+    "path": "/selling/list/-",
     "value": [
       {
         "code": "paxel:paxel-copper",

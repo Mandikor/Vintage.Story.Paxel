@@ -1,34 +1,15 @@
 [
   {
     "op": "add",
-    "path": "/paxel:v1.2.1",
-    "value": [
-
-      "/iir remap paxel:paxelhead-legendary-rough paxel:paxelheadrough-legendary force",
-      "/iir remap paxel:paxelhead-legendary-finished paxel:paxelheadfinished-legendary force"
-
-    ],
-    "file": "game:config/remaps.json"
-  },
-  {
-    "op": "add",
-    "path": "/paxel:v1.4.0",
-    "value": [
-
-      "/bir remap paxel:paxelmold-raw paxel:toolmold-raw-paxel force",
-      "/bir remap paxel:paxelmold-burned paxel:toolmold-burned-paxel force"
-
-    ],
-    "file": "game:config/remaps.json"
-  },
-  {
-    "op": "add",
     "path": "/paxel:v1.6.0",
     "value": [
 
       "/iir remap paxel:paxelhead-steel paxel:paxelhead-legendary-rough force",
       "/iir remap paxel:paxelhead-steel paxel:paxelhead-legendary-finished force",
-      "/iir remap paxel:paxel-steel paxel:paxel-legendary force"
+      "/iir remap paxel:paxel-steel paxel:paxel-legendary force",
+
+      "/bir remap paxel:toolmold-raw-paxel-north paxel:paxelmold-raw force",
+      "/bir remap paxel:toolmold-burned-paxel-north paxel:paxelmold-burned force"
 
     ],
     "file": "game:config/remaps.json"

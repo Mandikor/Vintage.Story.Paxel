@@ -6,8 +6,8 @@
   // === Item descriptions ===
 
   // Claymold
-  "paxel:block-paxelmold-raw": "Raw paxel mold",
-  "paxel:block-paxelmold-burned": "Paxel mold",
+  "paxel:block-toolmold-raw-paxel-north": "Raw paxel mold",
+  "paxel:block-toolmold-burned-paxel-north": "Paxel mold",
   "paxel:blockcraftdesc-paxelmold-raw": "To create paxel heads directly from molten metal",
 
   // Stone Age Additions

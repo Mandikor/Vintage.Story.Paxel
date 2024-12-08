@@ -2,9 +2,9 @@
   {
     "condition": { "when": "Paxel.Trader.Enabled.TreasureHunter", "isValue": "true" },
     "side": "server",
-    "file": "game:entities/humanoid/trader-treasurehunter.json",
+    "file": "game:config/tradelists/trader-treasurehunter.json",
     "op": "addeach",
-    "path": "/attributes/tradeProps/buying/list/-",
+    "path": "/buying/list/-",
     "value": [
       {
         "code": "paxel:paxel-copper",

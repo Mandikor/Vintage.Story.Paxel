@@ -2,9 +2,9 @@
   {
     "condition": { "when": "Paxel.Trader.Enabled.BuildMaterials", "isValue": "true" },
     "side": "server",
-    "file": "game:entities/humanoid/trader-buildmaterials.json",
+    "file": "game:config/tradelists/trader-buildmaterials.json",
     "op": "addeach",
-    "path": "/attributes/tradeProps/buying/list/-",
+    "path": "/buying/list/-",
     "value": [
       {
         "code": "paxel:paxel-copper",
