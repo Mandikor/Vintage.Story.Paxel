@@ -131,6 +131,23 @@
 
 
 
+  // === Mod: Legendary Mobs ===
+
+  // Item descriptions
+  "paxel:item-paxelhead-legendary-rough": "Paxelkopf (Legendär, roh)",
+  "paxel:item-paxelhead-legendary-finished": "Paxelkopf (Legendär, fertig)",
+
+  "paxel:item-paxel-legendary": "Paxel (Legendär)",
+
+  // Handbook descriptions
+  "paxel:paxelhead-legendarymobs-handbook-title": "Die legendäre Paxel",
+  "paxel:paxelhead-legendarymobs-handbook-text": "Der rohe Paxelkopf wird aus 3 Barren legendären Erzes geschmiedet. Um einen fertigen Paxelkopf herzustellen, wird der rohe Paxelkopf in ein Fass mit geschmolzenem Fett gelegt. Nach 36 Stunden ist der Paxelkopf fertig und kann für die Herstellung der legendären Paxel verwendet werden.",
+
+  "paxel:paxel-legendarymobs-handbook-title": "Die legendäre Paxel",
+  "paxel:paxel-legendarymobs-handbook-text": "Die <strong>Legendary Mobs</strong> Mod von <i>FunnyBunnyofDOOM</i> fügt ein neues Metall hinzu, das legendäre Erz. Dieses Paxel wird aus ihm hergestellt.<br>Sie ist spürbar stärker als die Stahlpaxel. Man kann sie nicht schärfen (reparieren) oder verzaubern.",
+
+
+
   // === Mod: Config lib by Maltiez ===
 
   "PaxelRecipeSettings": "Einstellungen für die Rezepte",

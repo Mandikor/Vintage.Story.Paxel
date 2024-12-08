@@ -42,8 +42,8 @@
       "groupBy": [ "paxelhead-*" ],
       "extraSections": [
         {
-          "title": "paxel:paxelhead-legendary-handbook-title",
-          "text": "paxel:paxelhead-legendary-handbook-text"
+          "title": "paxel:paxelhead-legendarymobs-handbook-title",
+          "text": "paxel:paxelhead-legendarymobs-handbook-text"
         }
       ]
     },
