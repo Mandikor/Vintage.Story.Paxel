@@ -1,0 +1,16 @@
+[
+  {
+    "side": "Server",
+    "file": "toolsextended:patches/titanium.json",
+    "op": "replace",
+    "path": "/0/file",
+    "value": "game:itemtypes/resource/ingot.json"
+  },
+  {
+    "side": "Server",
+    "file": "toolsextended:patches/titanium.json",
+    "op": "replace",
+    "path": "/3/file",
+    "value": "game:itemtypes/resource/ingot.json"
+  }
+]
