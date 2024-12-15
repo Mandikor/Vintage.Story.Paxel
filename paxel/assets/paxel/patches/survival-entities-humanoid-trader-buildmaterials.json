@@ -3,7 +3,7 @@
     "condition": { "when": "Paxel.Trader.Enabled.BuildMaterials", "isValue": "true" },
     "side": "server",
     "file": "game:config/tradelists/trader-buildmaterials.json",
-    "op": "addeach",
+    "op": "addmerge",
     "path": "/buying/list/-",
     "value": [
       {

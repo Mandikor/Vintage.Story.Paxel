@@ -7,7 +7,7 @@
     "path": "/buying/list/-",
     "value": [
       {
-        "code": "paxel:paxel-copper",
+        "code": "paxel:paxel-flint",
         "type": "item",
         "stacksize": 1,
         "stock": {
