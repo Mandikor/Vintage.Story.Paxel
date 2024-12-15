@@ -20,9 +20,9 @@
     "value": {
       "name": "inTreeHollowTransform",
       "properties": {
-        "rotation": { "x": 0, "y": 0, "z": -60 },
-        "origin": { "x": 0.7, "y": 0.4, "z": 0.5 },
-        "scale": 0.5
+        "rotation": { "x": 0, "y": -45, "z": 0 },
+        "origin": { "x": 0.4, "y": 0, "z": 0.48 },
+        "scale": 0.35
       }
     }
   },
@@ -35,9 +35,9 @@
     "value": {
       "name": "inTreeHollowTransform",
       "properties": {
-        "rotation": { "x": 0, "y": 0, "z": -60 },
-        "origin": { "x": 0.7, "y": 0.4, "z": 0.5 },
-        "scale": 0.5
+        "rotation": { "x": 0, "y": -45, "z": 0 },
+        "origin": { "x": 0.4, "y": 0, "z": 0.48 },
+        "scale": 0.35
       }
     }
   }

@@ -233,6 +233,9 @@
   "RecipeEnabled/uranium": "Uranium paxel\n\n",
   "RecipeEnabledUraniumComment": "Recipe enabled",
 
+  "RecipeEnabled/legendary": "Legendary paxel\n\n",
+  "RecipeEnabledLegendayComment": "Recipe enabled\n\n\n",
+
 
   "PaxelLootSettings": "Settings for the loot locations",
   "PaxelLootSettingsText": "\nIn this section, you can make settings for the loot locations for the paxels.\n\n",

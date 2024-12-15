@@ -1,13 +1,5 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using Vintagestory.API.Client;
 using Vintagestory.API.Common;
-using Vintagestory.API.Common.Entities;
-using Vintagestory.API.MathTools;
-using Vintagestory.API.Server;
-using Vintagestory.API.Util;
-using static HarmonyLib.Code;
 
 namespace Paxel.Configuration;
 
@@ -70,16 +62,13 @@ public class Config : IModConfig
 
     public Config(ICoreAPI api, Config previousConfig = null)
     {
-        if (previousConfig == null)
-        {
-            return;
-        }
-        
-        ModDependence["necessaries"] = previousConfig.ModDependence["necessaries"];
-        ModDependence["helvehammerextensions"] = previousConfig.ModDependence["helvehammerextensions"];
-        ModDependence["canjewelry"] = previousConfig.ModDependence["canjewelry"];
-        ModDependence["krpgenchantment"] = previousConfig.ModDependence["krpgenchantment"];
-        ModDependence["toolsextended"] = previousConfig.ModDependence["toolsextended"];
+        if (previousConfig == null) { return; }
+
+        ModDependence["necessaries"] = previousConfig.ModDependence["necessaries"] ? previousConfig.ModDependence["necessaries"] : true;
+        ModDependence["helvehammerextensions"] = previousConfig.ModDependence["helvehammerextensions"] ? previousConfig.ModDependence["helvehammerextensions"] : true;
+        ModDependence["canjewelry"] = previousConfig.ModDependence["canjewelry"] ? previousConfig.ModDependence["canjewelry"] : true;
+        ModDependence["krpgenchantment"] = previousConfig.ModDependence["krpgenchantment"] ? previousConfig.ModDependence["krpgenchantment"] : true;
+        ModDependence["toolsextended"] = previousConfig.ModDependence["toolsextended"] ? previousConfig.ModDependence["toolsextended"] : true;
 
         LootEnabled["crackedvessel"] = previousConfig.LootEnabled["crackedvessel"];
         LootEnabled["ruins"] = previousConfig.LootEnabled["ruins"];

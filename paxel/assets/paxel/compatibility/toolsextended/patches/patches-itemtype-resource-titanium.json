@@ -1,16 +1,16 @@
 [
   {
     "side": "Server",
-    "file": "toolsextended:patches/titanium.json",
+    "file": "game:itemtypes/resource/ingot.json",
     "op": "replace",
-    "path": "/0/file",
-    "value": "game:itemtypes/resource/ingot.json"
+    "path": "/attributes/handbook/excludeByType/*-titanium",
+    "value": "false"
   },
   {
     "side": "Server",
-    "file": "toolsextended:patches/titanium.json",
+    "file": "game:itemtypes/resource/metalbit.json",
     "op": "replace",
-    "path": "/3/file",
-    "value": "game:itemtypes/resource/ingot.json"
+    "path": "/attributes/handbook/excludeByType/*-titanium",
+    "value": "false"
   }
 ]
