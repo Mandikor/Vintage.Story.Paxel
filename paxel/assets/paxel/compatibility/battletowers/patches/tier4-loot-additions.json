@@ -18,5 +18,23 @@
     "value": [
       { "type": "item", "code": "paxel:paxel-iron", "chance": 0.9 }
     ]
+  },
+  {
+    "condition": { "when": "Paxel.Loot.Enabled.BattleTowers", "isValue": "true" },
+    "side": "server",
+    "file": "battletowers:blocktypes/loottreasures.json",
+    "op": "addmerge",
+    "path": "/attributes/lootListByType/*-tier4",
+    "value": [
+      {
+        "type": "item",
+        "chance": 0.2,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "codes": [
+          "paxel:paxel-iron"
+        ]
+      }
+    ]
   }
 ]

@@ -20,5 +20,23 @@
       { "type": "item", "code": "paxel:paxel-flint", "chance": 0.9 },
       { "type": "item", "code": "paxel:paxel-obsidian", "chance": 0.9 }
     ]
+  },
+  {
+    "condition": { "when": "Paxel.Loot.Enabled.BattleTowers", "isValue": "true" },
+    "side": "server",
+    "file": "battletowers:blocktypes/loottreasures.json",
+    "op": "addmerge",
+    "path": "/attributes/lootListByType/*-tier1",
+    "value": [
+      {
+        "type": "item",
+        "chance": 0.5,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "codes": [
+          "paxel:paxel-flint"
+        ]
+      }
+    ]
   }
 ]

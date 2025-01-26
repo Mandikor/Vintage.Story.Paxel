@@ -18,5 +18,23 @@
     "value": [
       { "type": "item", "code": "paxel:paxel-copper", "chance": 0.9 }
     ]
+  },
+  {
+    "condition": { "when": "Paxel.Loot.Enabled.BattleTowers", "isValue": "true" },
+    "side": "server",
+    "file": "battletowers:blocktypes/loottreasures.json",
+    "op": "addmerge",
+    "path": "/attributes/lootListByType/*-tier2",
+    "value": [
+      {
+        "type": "item",
+        "chance": 0.4,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "codes": [
+          "paxel:paxel-obsidian"
+        ]
+      }
+    ]
   }
 ]
