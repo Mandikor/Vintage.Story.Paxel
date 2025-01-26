@@ -252,6 +252,9 @@
   "RecipeEnabled/legendary": "Legendary paxel\n\n",
   "RecipeEnabledLegendayComment": "Recipe enabled\n\n\n",
 
+  "RecipeEnabled/tstools": "Titanium paxel (TsTools)\n\n",
+  "RecipeEnabledTsToolsComment": "Recipe enabled",
+
 
   "PaxelLootSettings": "Settings for the loot locations",
   "PaxelLootSettingsText": "\nIn this section, you can make settings for the loot locations for the paxels.\n\n",
@@ -288,6 +291,8 @@
 
   "ModDependence/krpgenchantment": "KRPG Enchantment\n\nDo you want to enchant your paxel?\n\n",
 
-  "ModDependence/toolsextended": "Tools Extended\n\nA paxel made of stainless steel and extended recipes for the titanium paxel.\n\n"
+  "ModDependence/toolsextended": "Tools Extended\n\nA paxel made of stainless steel and extended recipes for the titanium paxel.\n\n",
+
+  "ModDependence/tstools": "Titanium Tools\n\nA paxel made of titanium.\n\n"
 
 }
