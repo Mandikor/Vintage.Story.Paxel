@@ -42,5 +42,28 @@
       "origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
       "scale": 1
     }
+  },
+  {
+    "dependsOn": [ { "modid": "tstools" } ],
+    "condition": { "when": "Paxel.Mod.Enabled.Necessaries", "isValue": "true" },
+    "side": "server",
+    "file": "paxel:itemtypes/tool/paxel-tstools.json",
+    "op": "add",
+    "path": "/attributes/sharpenable",
+    "value": true
+  },
+  {
+    "dependsOn": [ { "modid": "tstools" } ],
+    "condition": { "when": "Paxel.Mod.Enabled.Necessaries", "isValue": "true" },
+    "file": "paxel:itemtypes/tool/paxel-tstools.json",
+    "side": "server",
+    "op": "add",
+    "path": "/attributes/onGrindstoneTransform",
+    "value": {
+      "translation": { "x": -0.3, "y": 0.5, "z": 0.3 },
+      "rotation": { "x": 35, "y": 0, "z": 0 },
+      "origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
+      "scale": 1
+    }
   }
 ]
