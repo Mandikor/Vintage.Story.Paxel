@@ -32,6 +32,9 @@ public class Core : ModSystem
         // MOD Tools Extended - recipes for titanium and stainless steel paxel
         api.World.Config.SetBool("Paxel.Mod.Enabled.ToolsExtended", Config.ModDependence["toolsextended"]);
 
+        // MOD TsTools - recipes for titanium paxel
+        api.World.Config.SetBool("Paxel.Mod.Enabled.TsTools", Config.ModDependence["tstools"]);
+
         // MOD CAN Jewlry - improve paxels with buffs through gemstones
         api.World.Config.SetBool("Paxel.Mod.Enabled.CANJewelry", Config.ModDependence["canjewelry"]);
 
@@ -119,6 +122,16 @@ public class Core : ModSystem
         {
             api.World.Config.SetBool("Paxel.Recipe.Enabled.StainlessSteel", false);
             api.World.Config.SetBool("Paxel.Recipe.Enabled.Titanium", false);
+        }
+
+        // MOD TsTools - recipes for titanium paxel
+        if (api.ModLoader.IsModEnabled("tstools"))
+        {
+            api.World.Config.SetBool("Paxel.Recipe.Enabled.TsTools", Config.RecipeEnabled["tstools"]);
+        }
+        else
+        {
+            api.World.Config.SetBool("Paxel.Recipe.Enabled.TsTools", false);
         }
 
         // MOD Legendary Mobs - recipes for legendary paxel

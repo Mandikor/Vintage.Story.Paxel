@@ -136,6 +136,22 @@
 
 
 
+  // === Mod: Titanium Tools ===
+
+  // Item descriptions
+  "paxel:item-paxelhead-tstools": "Paxelhead (Titanium Tools)",
+
+  "paxel:item-paxel-tstools": "Paxel (Titanium Tools)",
+
+  // Handbook descriptions
+  "paxel:paxelhead-tstools-handbook-title": "",
+  "paxel:paxelhead-tstools-handbook-text": "",
+
+  "paxel:paxel-tstools-handbook-title": "",
+  "paxel:paxel-tstools-handbook-text": "",
+
+
+
   // === Mod: Legendary Mobs ===
 
   // Item descriptions

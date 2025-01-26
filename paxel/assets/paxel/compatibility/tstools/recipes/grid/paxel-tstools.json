@@ -3,14 +3,14 @@
     "enabled": true,
     "ingredientPattern": "__P,_T_,T__",
     "ingredients": {
-      "P": { "type": "item", "code": "paxel:paxelhead-titanium" },
+      "P": { "type": "item", "code": "paxel:paxelhead-tstools" },
       "T": { "type": "item", "code": "game:ingot-iron", "quantity": 1 }
     },
     "width": 3,
     "height": 3,
     "recipeGroup": 3,
     "shapeless": false,
-    "output": { "type": "item", "code": "paxel:paxel-titanium", "quantity": 1 }
+    "output": { "type": "item", "code": "paxel:paxel-tstools", "quantity": 1 }
   },
   {
     "enabled": true,
@@ -23,7 +23,7 @@
     "width": 2,
     "height": 2,
     "shapeless": false,
-    "output": { "type": "item", "code": "paxel:paxelhead-titanium", "quantity": 1 }
+    "output": { "type": "item", "code": "paxel:paxelhead-tstools", "quantity": 1 }
   },
   {
     "enabled": true,
@@ -39,7 +39,7 @@
     "height": 2,
     "recipeGroup": 1,
     "shapeless": false,
-    "output": { "type": "item", "code": "paxel:paxel-titanium", "quantity": 1 }
+    "output": { "type": "item", "code": "paxel:paxel-tstools", "quantity": 1 }
   },
   {
     "enabled": true,
@@ -54,6 +54,6 @@
     "height": 3,
     "recipeGroup": 2,
     "shapeless": false,
-    "output": { "type": "item", "code": "paxel:paxel-titanium", "quantity": 1 }
+    "output": { "type": "item", "code": "paxel:paxel-tstools", "quantity": 1 }
   }
 ]

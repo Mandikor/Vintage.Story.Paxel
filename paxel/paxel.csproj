@@ -166,6 +166,7 @@
 
 <ItemGroup>
   <Folder Include="assets\paxel\textures\block\stone\rock\" />
+  <Folder Include="assets\paxel\textures\item\" />
 </ItemGroup>
 
 </Project>

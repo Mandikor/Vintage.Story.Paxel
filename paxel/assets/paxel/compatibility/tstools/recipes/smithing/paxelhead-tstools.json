@@ -26,5 +26,5 @@
 			"___###____"
 		]
 	],
-	"output": { "type": "item", "code": "paxel:paxelhead-{metal}", "quantity": 1  }
+	"output": { "type": "item", "code": "paxel:paxelhead-tstools", "quantity": 1  }
 }

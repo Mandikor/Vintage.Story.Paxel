@@ -49,8 +49,8 @@
       "groupBy": [ "paxel-*" ],
       "extraSections": [
         {
-          "title": "paxel:paxel-toolsextended-handbook-title",
-          "text": "paxel:paxel-toolsextended-handbook-text"
+          "title": "paxel:paxel-tstools-handbook-title",
+          "text": "paxel:paxel-tstools-handbook-text"
         }
       ]
     },
@@ -59,35 +59,35 @@
 
     "toolrackTransform": {
       "rotation": {
-        "x": 0,
-        "y": 1,
-        "z": -1
+        "x": -10,
+        "y": 0,
+        "z": -4
       },
       "translation": {
-        "x": -0.47,
-        "y": 0.6,
+        "x": -0.3,
+        "y": 0.38,
         "z": 0
       },
       "origin": {
-        "x": -0.8,
-        "y": 0.4,
+        "x": 0.5,
+        "y": 0.5,
         "z": 0.5
       },
-      "scale": 1.25
+      "scale": 1.05
     },
 
     "groundStorageTransform": {
       "translation": {
         "x": 0,
-        "y": 0.3,
-        "z": -0.16
+        "y": 0.37,
+        "z": -0.22
       },
       "rotation": {
-        "x": 13,
-        "y": 88,
-        "z": -87
+        "x": 25,
+        "y": 80,
+        "z": -80
       },
-      "scale": 0.88
+      "scale": 0.7
     },
 
     "slotRefillIdentifier": "paxel"
@@ -99,28 +99,22 @@
   "variantgroups": [
     {
       "code": "material",
-      "states": [ "titanium" ]
+      "states": [ "tstools" ]
     }
   ],
 
-  "texturesByType": {
-    "paxel-titanium": {
-      "string": { "base": "game:block/transparent" }
-    }
-  },
-
   "shapeByType": {
-    "paxel-titanium": { "base": "paxel:item/tool/paxel/paxel-{material}" }
+    "paxel-tstools": { "base": "paxel:item/tool/paxel/paxel-tstools" }
   },
 
   "damagedby": [ "blockbreaking", "attacking" ],
 
   "tooltierbytype": {
-    "*-titanium": 6
+    "*-tstools": 6
   },
 
   "miningspeedbytype": {
-    "*-titanium": {
+    "*-tstools": {
       "soil": 8,
       "sand": 8,
       "gravel": 4.8,
@@ -137,13 +131,13 @@
   },
 
   "durabilitybytype": {
-    "paxel-titanium": 13530 //10200 + 2100 from iron ingots + 10% from all
+    "paxel-tstools": 13530 //10200 + 2100 from iron ingots + 10% from all
   },
 
   "attackRange": 1.6,
 
   "attackpowerbytype": {
-    "paxel-titanium": 4.2
+    "paxel-tstools": 4.2
   },
 
   "guiTransform": {
@@ -158,11 +152,11 @@
       "z": -10
     },
     "origin": {
-      "x": 0.4,
+      "x": 0.5,
       "y": 0,
-      "z": 0.45
+      "z": 0.5
     },
-    "scale": 1.15
+    "scale": 1
   },
 
   "fpHandTransform": {

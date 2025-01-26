@@ -33,6 +33,7 @@ public class Config : IModConfig
         { "quartzite", true },
         { "stainlesssteel", true },
         { "titanium", true },
+        { "tstools", true },
         { "legendary", false }
     };
 
@@ -57,7 +58,8 @@ public class Config : IModConfig
         { "helvehammerextensions", true },
         { "canjewelry", true },
         { "krpgenchantment", true },
-        { "toolsextended", true }
+        { "toolsextended", true },
+        { "tstools", true }
     };
 
     public Config(ICoreAPI api, Config previousConfig = null)
@@ -69,6 +71,7 @@ public class Config : IModConfig
         ModDependence["canjewelry"] = previousConfig.ModDependence["canjewelry"] ? previousConfig.ModDependence["canjewelry"] : true;
         ModDependence["krpgenchantment"] = previousConfig.ModDependence["krpgenchantment"] ? previousConfig.ModDependence["krpgenchantment"] : true;
         ModDependence["toolsextended"] = previousConfig.ModDependence["toolsextended"] ? previousConfig.ModDependence["toolsextended"] : true;
+        ModDependence["tstools"] = previousConfig.ModDependence["tstools"] ? previousConfig.ModDependence["tstools"] : true;
 
         LootEnabled["crackedvessel"] = previousConfig.LootEnabled["crackedvessel"] ? previousConfig.LootEnabled["crackedvessel"] : true;
         LootEnabled["ruins"] = previousConfig.LootEnabled["ruins"] ? previousConfig.LootEnabled["ruins"] : true;
@@ -104,6 +107,7 @@ public class Config : IModConfig
         RecipeEnabled["quartzite"] = previousConfig.RecipeEnabled["quartzite"] ? previousConfig.RecipeEnabled["quartzite"] : true;
         RecipeEnabled["stainlesssteel"] = previousConfig.RecipeEnabled["stainlesssteel"] ? previousConfig.RecipeEnabled["stainlesssteel"] : true;
         RecipeEnabled["titanium"] = previousConfig.RecipeEnabled["titanium"] ? previousConfig.RecipeEnabled["titanium"] : true;
+        RecipeEnabled["tstools"] = previousConfig.RecipeEnabled["tstools"] ? previousConfig.RecipeEnabled["tstools"] : true;
         RecipeEnabled["legendary"] = previousConfig.RecipeEnabled["legendary"] ? previousConfig.RecipeEnabled["legendary"] : false;
     }
 }

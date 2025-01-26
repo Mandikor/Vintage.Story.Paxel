@@ -1,5 +1,5 @@
 {
-  "version": 0,
+  "version": 1,
   "file": "MandikorsMods/PaxelConfig.json",
   "patches": {},
   "settings": [
@@ -160,6 +160,12 @@
       "default": true
     },
     {
+      "code": "RecipeEnabled/tstools",
+      "comment": "RecipeEnabledTsToolsComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
       "code": "RecipeEnabled/legendary",
       "comment": "RecipeEnabledLegendaryComment",
       "type": "boolean",
@@ -230,6 +236,11 @@
     },
     {
       "code": "ModDependence/toolsextended",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "ModDependence/tstools",
       "type": "boolean",
       "default": true
     },
