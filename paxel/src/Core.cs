@@ -153,6 +153,7 @@ public class Core : ModSystem
         base.Start(api);
 
         api.RegisterItemClass("ItemPaxel", typeof(ItemPaxel));
+        api.RegisterItemClass("ItemPaxelTMfull", typeof(ItemPaxelTMfull));
     }
 
     public override void AssetsFinalize(ICoreAPI api)
