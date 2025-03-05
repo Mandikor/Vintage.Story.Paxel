@@ -3,7 +3,7 @@
     "Client Dev": {
       "commandName": "Executable",
       "executablePath": "$(VINTAGE_STORY)/Vintagestory.exe",
-      "commandLineArgs": "--tracelog --addModPath $(ProjectDir)/bin/$(Configuration)/Mods --openWorld net7paxelnew --playStyle creativebuilding",
+      "commandLineArgs": "--tracelog --addModPath $(ProjectDir)/bin/$(Configuration)/Mods --openWorld net7paxeldev --playStyle creativebuilding",
       "workingDirectory": "$(VINTAGE_STORY)"
     },
     "Client Play": {
@@ -15,7 +15,7 @@
     "Server": {
       "commandName": "Executable",
       "executablePath": "$(VINTAGE_STORY)/VintagestoryServer.exe",
-      "commandLineArgs": "--tracelog --addModPath $(ProjectDir)/bin/$(Configuration)/Mods --openWorld net7paxelnew --playStyle creativebuilding",
+      "commandLineArgs": "--tracelog --addModPath $(ProjectDir)/bin/$(Configuration)/Mods --openWorld net7paxeldev --playStyle creativebuilding",
       "workingDirectory": "$(VINTAGE_STORY)"
     }
   }
