@@ -165,6 +165,9 @@
 </ItemGroup>
 
 <ItemGroup>
+  <Folder Include="assets\paxel\compatibility\realloy\patches\" />
+  <Folder Include="assets\paxel\compatibility\realloy\recipes\grid\" />
+  <Folder Include="assets\paxel\compatibility\realloy\recipes\smithing\" />
   <Folder Include="assets\paxel\textures\block\stone\rock\" />
   <Folder Include="assets\paxel\textures\item\" />
 </ItemGroup>
