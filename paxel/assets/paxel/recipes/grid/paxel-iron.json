@@ -6,7 +6,7 @@
       "P": { "type": "item", "code": "game:pickaxe-iron" },
       "A": { "type": "item", "code": "game:axe-felling-iron" },
       "S": { "type": "item", "code": "game:shovel-iron" },
-      "L": { "type": "item", "code": "game:ingot-iron", "quantity": 2, "returnedStack": { "type": "item", "code": "game:stick", "quantity": 3 }
+      "L": { "type": "item", "code": "game:rod-iron", "quantity": 2, "returnedStack": { "type": "item", "code": "game:stick", "quantity": 3 }
       }
     },
     "width": 2,
@@ -22,7 +22,7 @@
       "P": { "type": "item", "code": "game:pickaxehead-iron" },
       "A": { "type": "item", "code": "game:axehead-iron" },
       "S": { "type": "item", "code": "game:shovelhead-iron" },
-      "T": { "type": "item", "code": "game:ingot-iron", "quantity": 1 }
+      "T": { "type": "item", "code": "game:rod-iron", "quantity": 1 }
     },
     "width": 3,
     "height": 3,
@@ -35,7 +35,7 @@
     "ingredientPattern": "__P,_T_,T__",
     "ingredients": {
       "P": { "type": "item", "code": "paxel:paxelhead-iron" },
-      "T": { "type": "item", "code": "game:ingot-iron", "quantity": 1 }
+      "T": { "type": "item", "code": "game:rod-iron", "quantity": 1 }
     },
     "width": 3,
     "height": 3,

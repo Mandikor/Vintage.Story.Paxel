@@ -3,7 +3,7 @@
     "ingredientPattern": "__P,_T_,T__",
     "ingredients": {
       "P": { "type": "item", "code": "paxel:paxelhead-uranium" },
-      "T": { "type": "item", "code": "game:ingot-iron", "quantity": 1 }
+      "T": { "type": "item", "code": "game:rod-iron", "quantity": 1 }
     },
     "width": 3,
     "height": 3,

@@ -4,7 +4,7 @@
     "ingredientPattern": "__P,_T_,T__",
     "ingredients": {
       "P": { "type": "item", "code": "paxel:paxelhead-tstools" },
-      "T": { "type": "item", "code": "game:ingot-iron", "quantity": 1 }
+      "T": { "type": "item", "code": "game:rod-iron", "quantity": 1 }
     },
     "width": 3,
     "height": 3,
@@ -32,7 +32,7 @@
       "P": { "type": "item", "code": "tstools:tspickaxe" },
       "A": { "type": "item", "code": "tstools:tsaxe" },
       "S": { "type": "item", "code": "tstools:tsshovel" },
-      "L": { "type": "item", "code": "game:ingot-iron", "quantity": 2, "returnedStack": { "type": "item", "code": "tstools:khandle", "quantity": 3 }
+      "L": { "type": "item", "code": "game:rod-iron", "quantity": 2, "returnedStack": { "type": "item", "code": "tstools:khandle", "quantity": 3 }
       }
     },
     "width": 2,
@@ -48,7 +48,7 @@
       "P": { "type": "item", "code": "tstools:axehead-titanium" },
       "A": { "type": "item", "code": "tstools:taxehead-titanium" },
       "S": { "type": "item", "code": "tstools:shovelhead-tsshovel" },
-      "T": { "type": "item", "code": "game:ingot-iron", "quantity": 1 }
+      "T": { "type": "item", "code": "game:rod-iron", "quantity": 1 }
     },
     "width": 3,
     "height": 3,
