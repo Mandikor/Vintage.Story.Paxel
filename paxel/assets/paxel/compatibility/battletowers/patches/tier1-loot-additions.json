@@ -7,7 +7,7 @@
     "path": "/attributesByType/*-surfacetowerstier1/stacks/-",
     "value": [
       { "type": "item", "code": "paxel:paxel-flint", "chance": 0.9 },
-      { "type": "item", "code": "paxel:paxel-obsidian", "chance": 0.9 }
+      { "type": "item", "code": "paxel:paxel-obsidian", "chance": 0.8 }
     ]
   },
   {
@@ -18,7 +18,7 @@
     "path": "/attributesByType/*-undergroundtowerstier1/stacks/-",
     "value": [
       { "type": "item", "code": "paxel:paxel-flint", "chance": 0.9 },
-      { "type": "item", "code": "paxel:paxel-obsidian", "chance": 0.9 }
+      { "type": "item", "code": "paxel:paxel-obsidian", "chance": 0.8 }
     ]
   },
   {

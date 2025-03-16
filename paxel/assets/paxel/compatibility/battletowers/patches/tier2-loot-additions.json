@@ -6,7 +6,7 @@
     "op": "addeach",
     "path": "/attributesByType/*-surfacetowerstier2/stacks/-",
     "value": [
-      { "type": "item", "code": "paxel:paxel-copper", "chance": 0.9 }
+      { "type": "item", "code": "paxel:paxel-copper", "chance": 0.85 }
     ]
   },
   {
@@ -16,7 +16,7 @@
     "op": "addeach",
     "path": "/attributesByType/*-undergroundtowerstier2/stacks/-",
     "value": [
-      { "type": "item", "code": "paxel:paxel-copper", "chance": 0.9 }
+      { "type": "item", "code": "paxel:paxel-copper", "chance": 0.85 }
     ]
   },
   {

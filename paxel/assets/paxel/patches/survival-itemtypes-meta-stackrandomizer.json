@@ -8,13 +8,8 @@
     "value": [
       {
         "type": "item",
-        "code": "paxel:paxel-obsidian",
-        "chance": 18
-      },
-      {
-        "type": "item",
         "code": "paxel:paxel-copper",
-        "chance": 0.7
+        "chance": 0.5
       }
     ]
   }

@@ -6,7 +6,7 @@
     "op": "addeach",
     "path": "/attributesByType/*-surfacetowerstier4/stacks/-",
     "value": [
-      { "type": "item", "code": "paxel:paxel-iron", "chance": 0.9 }
+      { "type": "item", "code": "paxel:paxel-iron", "chance": 0.8 }
     ]
   },
   {
@@ -16,7 +16,7 @@
     "op": "addeach",
     "path": "/attributesByType/*-undergroundtowerstier4/stacks/-",
     "value": [
-      { "type": "item", "code": "paxel:paxel-iron", "chance": 0.9 }
+      { "type": "item", "code": "paxel:paxel-iron", "chance": 0.8 }
     ]
   },
   {

@@ -6,7 +6,7 @@
     "op": "addeach",
     "path": "/attributesByType/*-surfacetowerstier3/stacks/-",
     "value": [
-      { "type": "item", "code": "paxel:paxel-tinbronze", "chance": 0.9 }
+      { "type": "item", "code": "paxel:paxel-tinbronze", "chance": 0.7 }
     ]
   },
   {
@@ -16,7 +16,7 @@
     "op": "addeach",
     "path": "/attributesByType/*-undergroundtowerstier3/stacks/-",
     "value": [
-      { "type": "item", "code": "paxel:paxel-tinbronze", "chance": 0.9 }
+      { "type": "item", "code": "paxel:paxel-tinbronze", "chance": 0.7 }
     ]
   },
   {
