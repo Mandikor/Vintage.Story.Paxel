@@ -166,6 +166,18 @@
       "default": true
     },
     {
+      "code": "RecipeEnabled/aluminumbronze",
+      "comment": "RecipeEnabledAluminumBronzeComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "RecipeEnabled/lockalloy",
+      "comment": "RecipeEnabledLockAlloyComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
       "code": "RecipeEnabled/legendary",
       "comment": "RecipeEnabledLegendaryComment",
       "type": "boolean",
@@ -241,6 +253,11 @@
     },
     {
       "code": "ModDependence/tstools",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "ModDependence/realloy",
       "type": "boolean",
       "default": true
     },

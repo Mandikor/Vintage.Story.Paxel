@@ -1,0 +1,3 @@
+﻿[
+  { "op": "replace", "path": "/0/enabled", "value": false, "file": "paxel:compatibility/realloy/recipes/grid/paxel-realloy-aluminumbronze.json", "condition": { "when": "Paxel.Recipe.Enabled.AluminumBronze", "isValue": "false" }, "side": "server" }
+]

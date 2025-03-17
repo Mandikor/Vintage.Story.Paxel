@@ -34,6 +34,8 @@ public class Config : IModConfig
         { "stainlesssteel", true },
         { "titanium", true },
         { "tstools", true },
+        { "aluminumbronze", true },
+        { "lockalloy", true },
         { "legendary", false }
     };
 
@@ -59,7 +61,8 @@ public class Config : IModConfig
         { "canjewelry", true },
         { "krpgenchantment", true },
         { "toolsextended", true },
-        { "tstools", true }
+        { "tstools", true },
+        { "realloy", true }
     };
 
     public Config(ICoreAPI api, Config previousConfig = null)
@@ -72,6 +75,7 @@ public class Config : IModConfig
         ModDependence["krpgenchantment"] = previousConfig.ModDependence["krpgenchantment"] ? previousConfig.ModDependence["krpgenchantment"] : true;
         ModDependence["toolsextended"] = previousConfig.ModDependence["toolsextended"] ? previousConfig.ModDependence["toolsextended"] : true;
         ModDependence["tstools"] = previousConfig.ModDependence["tstools"] ? previousConfig.ModDependence["tstools"] : true;
+        ModDependence["realloy"] = previousConfig.ModDependence["realloy"] ? previousConfig.ModDependence["realloy"] : true;
 
         LootEnabled["crackedvessel"] = previousConfig.LootEnabled["crackedvessel"] ? previousConfig.LootEnabled["crackedvessel"] : true;
         LootEnabled["ruins"] = previousConfig.LootEnabled["ruins"] ? previousConfig.LootEnabled["ruins"] : true;
@@ -109,5 +113,7 @@ public class Config : IModConfig
         RecipeEnabled["titanium"] = previousConfig.RecipeEnabled["titanium"] ? previousConfig.RecipeEnabled["titanium"] : true;
         RecipeEnabled["tstools"] = previousConfig.RecipeEnabled["tstools"] ? previousConfig.RecipeEnabled["tstools"] : true;
         RecipeEnabled["legendary"] = previousConfig.RecipeEnabled["legendary"] ? previousConfig.RecipeEnabled["legendary"] : false;
+        RecipeEnabled["aluminumbronze"] = previousConfig.RecipeEnabled["aluminumbronze"] ? previousConfig.RecipeEnabled["aluminumbronze"] : true;
+        RecipeEnabled["lockalloy"] = previousConfig.RecipeEnabled["lockalloy"] ? previousConfig.RecipeEnabled["lockalloy"] : false;
     }
 }

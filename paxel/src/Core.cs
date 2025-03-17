@@ -41,6 +41,9 @@ public class Core : ModSystem
         // MOD KRPG Enchantment - improve paxels with enchantments
         api.World.Config.SetBool("Paxel.Mod.Enabled.KRPGEnchantment", Config.ModDependence["krpgenchantment"]);
 
+        // MOD Re-Alloy - recipes for aluminum bronze and lockalloy paxel
+        api.World.Config.SetBool("Paxel.Mod.Enabled.ReAlloy", Config.ModDependence["realloy"]);
+
         #endregion
 
         #region Loot
@@ -142,6 +145,18 @@ public class Core : ModSystem
         else
         {
             api.World.Config.SetBool("Paxel.Recipe.Enabled.Legendary", false);
+        }
+
+        // MOD Re-Alloy - recipes for aluminum bronze and lockalloy paxel
+        if (api.ModLoader.IsModEnabled("realloy"))
+        {
+            api.World.Config.SetBool("Paxel.Recipe.Enabled.AluminumBronze", Config.RecipeEnabled["aluminumbronze"]);
+            api.World.Config.SetBool("Paxel.Recipe.Enabled.LockAlloy", Config.RecipeEnabled["lockalloy"]);
+        }
+        else
+        {
+            api.World.Config.SetBool("Paxel.Recipe.Enabled.AluminumBronze", false);
+            api.World.Config.SetBool("Paxel.Recipe.Enabled.LockAlloy", false);
         }
 
         #endregion
