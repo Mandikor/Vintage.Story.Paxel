@@ -36,6 +36,7 @@ public class Config : IModConfig
         { "tstools", true },
         { "aluminumbronze", true },
         { "lockalloy", true },
+        { "temporalsteel", true },
         { "legendary", false }
     };
 
@@ -115,5 +116,6 @@ public class Config : IModConfig
         RecipeEnabled["legendary"] = previousConfig.RecipeEnabled["legendary"] ? previousConfig.RecipeEnabled["legendary"] : false;
         RecipeEnabled["aluminumbronze"] = previousConfig.RecipeEnabled["aluminumbronze"] ? previousConfig.RecipeEnabled["aluminumbronze"] : true;
         RecipeEnabled["lockalloy"] = previousConfig.RecipeEnabled["lockalloy"] ? previousConfig.RecipeEnabled["lockalloy"] : false;
+        RecipeEnabled["temporalsteel"] = previousConfig.RecipeEnabled["temporalsteel"] ? previousConfig.RecipeEnabled["temporalsteel"] : false;
     }
 }

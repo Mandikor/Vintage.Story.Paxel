@@ -178,6 +178,12 @@
       "default": true
     },
     {
+      "code": "RecipeEnabled/temporalsteel",
+      "comment": "RecipeEnabledTemporalSteelComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
       "code": "RecipeEnabled/legendary",
       "comment": "RecipeEnabledLegendaryComment",
       "type": "boolean",

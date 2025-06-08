@@ -152,11 +152,13 @@ public class Core : ModSystem
         {
             api.World.Config.SetBool("Paxel.Recipe.Enabled.AluminumBronze", Config.RecipeEnabled["aluminumbronze"]);
             api.World.Config.SetBool("Paxel.Recipe.Enabled.LockAlloy", Config.RecipeEnabled["lockalloy"]);
+            api.World.Config.SetBool("Paxel.Recipe.Enabled.TemporalSteel", Config.RecipeEnabled["temporalsteel"]);
         }
         else
         {
             api.World.Config.SetBool("Paxel.Recipe.Enabled.AluminumBronze", false);
             api.World.Config.SetBool("Paxel.Recipe.Enabled.LockAlloy", false);
+            api.World.Config.SetBool("Paxel.Recipe.Enabled.TemporalSteel", false);
         }
 
         #endregion

@@ -1,6 +1,6 @@
 {
   "enabled": true,
-	"ingredient": { "type": "item", "code": "game:ingot-*", "name": "metal", "allowedVariants": [ "aluminumbronze", "lockalloy" ] },
+	"ingredient": { "type": "item", "code": "game:ingot-*", "name": "metal", "allowedVariants": [ "aluminumbronze", "lockalloy", "temporalsteel" ] },
 	"name": "paxelhead",
 	"pattern": [
 		[

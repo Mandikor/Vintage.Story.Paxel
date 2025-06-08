@@ -152,9 +152,11 @@
   // Item descriptions
   "paxel:item-paxelhead-aluminumbronze": "Paxelkopf (Aluminiumbronze)",
   "paxel:item-paxelhead-lockalloy": "Paxelhead (Lockalloy)",
+  "paxel:item-paxelhead-temporalsteel": "Paxelhead (Temporalstahl)",
 
   "paxel:item-paxel-aluminumbronze": "Paxel (Aluminiumbronze)",
   "paxel:item-paxel-lockalloy": "Paxel (Lockalloy)",
+  "paxel:item-paxel-temporalsteel": "Paxel (Temporalstahl)",
 
   // Handbook descriptions
   "paxel:paxelhead-realloy-handbook-title": "",
@@ -274,6 +276,9 @@
   "RecipeEnabled/lockalloy": "Lockalloy Paxel\n\n",
   "RecipeEnabledLockAlloyComment": "Rezept aktiv",
 
+  "RecipeEnabled/temporalsteel": "Temporalstahl Paxel\n\n",
+  "RecipeEnabledTemporalSteelComment": "Rezept aktiv",
+
 
   "PaxelLootSettings": "Settings for the loot locations",
   "PaxelLootSettingsText": "\nIn this section, you can make settings for the loot locations for the paxels.\n\n",
@@ -314,6 +319,6 @@
 
   "ModDependence/tstools": "Titanium Tools\n\nA paxel made of titanium.\n\n",
 
-  "ModDependence/realloy": "Re-Alloy\n\nA paxel made of aluminum bronze and lockalloy.\n\n"
+  "ModDependence/realloy": "Re-Alloy\n\nA paxel made of aluminum bronze, lockalloy and temporal steel.\n\n"
 
 }
