@@ -96,13 +96,13 @@
   "variantgroups": [
     {
       "code": "material",
-      "states": [ "aluminumbronze", "lockalloy" ]
+      "states": [ "aluminumbronze", "lockalloy", "temporalsteel" ]
     }
   ],
 
   "texturesByType": {
     "*": {
-      "metal": { "base": "game:block/metal/ingot/{material}" },
+      "metal": { "base": "paxel:block/metal/ingot/{material}" },
       "string": { "base": "game:block/transparent" },
       "handle": { "base": "game:block/transparent" }
     }
@@ -110,7 +110,8 @@
 
   "shapeByType": {
     "*-aluminumbronze": { "base": "paxel:item/tool/paxelhead" },
-    "*-lockalloy": { "base": "paxel:item/tool/paxelhead" }
+    "*-lockalloy": { "base": "paxel:item/tool/paxelhead" },
+    "*-temporalsteel": { "base": "paxel:item/tool/paxelhead" }
   },
 
   "guiTransform": {

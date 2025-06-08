@@ -110,6 +110,9 @@
 
   "miningspeedbytype": {
     "*-tstools": {
+      "wood": 13.6,
+      "plant": 7,
+      "leaves": 4.8,
       "soil": 8,
       "sand": 8,
       "gravel": 4.8,
@@ -118,10 +121,7 @@
       "stone": 10,
       "ore": 10,
       "metal": 10,
-      "ice": 5,
-      "wood": 13.6,
-      "plant": 7,
-      "leaves": 4.8
+      "ice": 5
     }
   },
 

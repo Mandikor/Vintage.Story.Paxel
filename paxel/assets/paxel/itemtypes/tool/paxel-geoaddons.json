@@ -118,28 +118,28 @@
 
   "miningspeedbytype": {
     "@paxel-(diorite|gabbro|bone-diorite|bone-gabbro)": {
+      "wood": 2.6,
+      "plant": 2.2,
+      "leaves": 1.7,
       "soil": 2.2,
       "sand": 2.2,
       "gravel": 1.9,
       "snow": 1.9,
       "ceramic": 1,
       "stone": 2,
-      "ice": 1.25,
-      "wood": 2.6,
-      "plant": 2.2,
-      "leaves": 1.7
+      "ice": 1.25
     },
     "@paxel-(quartzite|bone-quartzite)": {
+      "wood": 2.7,
+      "plant": 2.25,
+      "leaves": 1.75,
       "soil": 2.4,
       "sand": 2.4,
       "gravel": 2,
       "snow": 2,
       "ceramic": 1.1,
       "stone": 2.3,
-      "ice": 1.4,
-      "wood": 2.7,
-      "plant": 2.25,
-      "leaves": 1.75
+      "ice": 1.4
     }
   },
 

@@ -113,6 +113,9 @@
 
   "miningspeedbytype": {
     "*-legendary": {
+      "wood": 15.6,
+      "plant": 8.4,
+      "leaves": 6.2,
       "soil": 10,
       "sand": 10,
       "gravel": 6,
@@ -121,10 +124,7 @@
       "stone": 12,
       "ore": 12,
       "metal": 12,
-      "ice": 6.5,
-      "wood": 15.6,
-      "plant": 8.4,
-      "leaves": 6.2
+      "ice": 6.5
     }
   },
 

@@ -94,7 +94,7 @@
   "variantgroups": [
     {
       "code": "material",
-      "states": [ "aluminumbronze", "lockalloy" ]
+      "states": [ "aluminumbronze", "lockalloy", "temporalsteel" ]
     }
   ],
 
@@ -104,37 +104,59 @@
     },
     "paxel-lockalloy": {
       "string": { "base": "game:block/transparent" }
+    },
+    "paxel-temporalsteel": {
+      "string": { "base": "game:block/transparent" }
     }
   },
 
   "shapeByType": {
     "paxel-aluminumbronze": { "base": "paxel:item/tool/paxel/paxel-{material}" },
-    "paxel-lockalloy": { "base": "paxel:item/tool/paxel/paxel-{material}" }
+    "paxel-lockalloy": { "base": "paxel:item/tool/paxel/paxel-{material}" },
+    "paxel-temporalsteel": { "base": "paxel:item/tool/paxel/paxel-{material}" }
   },
 
   "damagedby": [ "blockbreaking", "attacking" ],
 
   "tooltierbytype": {
     "*-aluminumbronze": 5,
-    "*-lockalloy": 6
+    "*-lockalloy": 6,
+    "*-temporalsteel": 8
   },
 
   "miningspeedbytype": {
     "*-aluminumbronze": {
-      "soil": 7.5,
-      "sand": 7.5,
-      "gravel": 4.6,
-      "snow": 4.6,
-      "ceramic": 3.5,
-      "stone": 9.5,
-      "ore": 9.5,
-      "metal": 9.5,
-      "ice": 4.5,
-      "wood": 12.2,
-      "plant": 6.5,
-      "leaves": 4.4
+      "wood": 7,
+      "plant": 4.2,
+      "leaves": 3.1,
+      "soil": 5.7,
+      "sand": 5.7,
+      "gravel": 3.8,
+      "snow": 3.8,
+      "ceramic": 2.6,
+      "stone": 7,
+      "ore": 7,
+      "metal": 7,
+      "ice": 3
     },
     "*-lockalloy": {
+      "wood": 10.4,
+      "plant": 5.7,
+      "leaves": 3.8,
+      "soil": 6.7,
+      "sand": 6.7,
+      "gravel": 4.3,
+      "snow": 4.3,
+      "ceramic": 3.1,
+      "stone": 8.5,
+      "ore": 8.5,
+      "metal": 8.5,
+      "ice": 4
+    },
+    "*-temporalsteel": {
+      "wood": 13.6,
+      "plant": 7,
+      "leaves": 4.8,
       "soil": 8,
       "sand": 8,
       "gravel": 4.8,
@@ -143,23 +165,22 @@
       "stone": 10,
       "ore": 10,
       "metal": 10,
-      "ice": 5,
-      "wood": 13.6,
-      "plant": 7,
-      "leaves": 4.8
+      "ice": 5
     }
   },
 
   "durabilitybytype": {
-    "paxel-aluminumbronze": 11440, //8300 + 2100 from iron ingots + 10% from all
-    "paxel-lockalloy": 13530 //10200 + 2100 from iron ingots + 10% from all
+    "paxel-aluminumbronze": 4895, //2350 + 2100 from iron ingots + 10% from all
+    "paxel-lockalloy": 8030, //5200 + 2100 from iron ingots + 10% from all
+    "paxel-temporalsteel": 13530 //10200 + 2100 from iron ingots + 10% from all
   },
 
   "attackRange": 1.6,
 
   "attackpowerbytype": {
     "paxel-aluminumbronze": 3.9,
-    "paxel-lockalloy": 4.2
+    "paxel-lockalloy": 4.2,
+    "paxel-temporalsteel": 5
   },
 
   "guiTransform": {
