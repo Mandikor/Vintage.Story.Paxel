@@ -1,5 +1,6 @@
-﻿namespace Paxel.Configuration;
-
-public interface IModConfig
+﻿namespace Paxel.Configuration
 {
+    public interface IModConfig
+    {
+    }
 }

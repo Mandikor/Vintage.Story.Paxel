@@ -8,9 +8,10 @@ using Vintagestory.GameContent;
 using Vintagestory.API.Config;
 using System;
 
-namespace Paxel;
-
-public class ItemPaxel : ItemAxe
+namespace Paxel
 {
+    public class ItemPaxel : ItemAxe
+    {
 
+    }
 }
