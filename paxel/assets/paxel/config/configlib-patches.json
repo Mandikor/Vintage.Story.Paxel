@@ -184,6 +184,12 @@
       "default": true
     },
     {
+      "code": "RecipeEnabled/diamond",
+      "comment": "RecipeEnabledDiamondComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
       "code": "RecipeEnabled/legendary",
       "comment": "RecipeEnabledLegendaryComment",
       "type": "boolean",
@@ -264,6 +270,11 @@
     },
     {
       "code": "ModDependence/realloy",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "ModDependence/diamondtools",
       "type": "boolean",
       "default": true
     },

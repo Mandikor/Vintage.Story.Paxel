@@ -168,6 +168,17 @@
 
 
 
+  // === Mod: Diamond Tools ===
+
+  // Item descriptions
+  "paxel:item-paxel-diamond": "Paxel (Diamond)",
+
+  // Handbook descriptions
+  "paxel:paxel-diamondtools-handbook-title": "",
+  "paxel:paxel-diamondtools-handbook-text": "",
+
+
+
   // === Mod: Legendary Mobs ===
 
   // Item descriptions
@@ -280,6 +291,9 @@
   "RecipeEnabled/temporalsteel": "Temporal steel paxel\n\n",
   "RecipeEnabledTemporalSteelComment": "Recipe enabled",
 
+  "RecipeEnabled/diamond": "Diamond paxel\n\n",
+  "RecipeEnabledDiamondComment": "Recipe enabled",
+
 
   "PaxelLootSettings": "Settings for the loot locations",
   "PaxelLootSettingsText": "\nIn this section, you can make settings for the loot locations for the paxels.\n\n",
@@ -320,6 +334,8 @@
 
   "ModDependence/tstools": "Titanium Tools\n\nA paxel made of titanium.\n\n",
 
-  "ModDependence/realloy": "Re-Alloy\n\nA paxel made of aluminum bronze, lockalloy and temporal steel.\n\n"
+  "ModDependence/realloy": "Re-Alloy\n\nA paxel made of aluminum bronze, lockalloy and temporal steel.\n\n",
+
+  "ModDependence/diamondtools": "Diamond Tools\n\nThe steel paxel improved with diamonds.\n\n"
 
 }

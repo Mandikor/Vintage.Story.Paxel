@@ -1,0 +1,215 @@
+{
+  "code": "paxel",
+
+  "class": "ItemPaxel",
+
+  "heldTpHitAnimation": "smithingwide",
+
+  "tool": "shovel",
+
+  "storageFlags": 5,
+
+  "creativeinventory": {
+    "general": [ "*" ],
+    "items": [ "*" ],
+    "tools": [ "*" ],
+    "paxel": [ "*" ]
+  },
+
+  "behaviors": [
+    {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "WallHalves",
+        "wallOffY": 2,
+        "sprintKey": true,
+        "selectionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.1,
+          "z2": 1
+        },
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 0,
+          "y2": 0,
+          "z2": 0
+        }
+      }
+    }
+  ],
+
+  "attributes": {
+
+    "handbook": {
+      "groupBy": [ "paxel-*" ],
+      "extraSections": [
+        {
+          "title": "paxel:paxel-diamondtools-handbook-title",
+          "text": "paxel:paxel-diamondtools-handbook-text"
+        }
+      ]
+    },
+
+    "rackable": true,
+
+    "toolrackTransform": {
+      "translation": {
+        "x": -0.1,
+        "y": 0.47,
+        "z": 0.07
+      },
+      "rotation": {
+        "x": 10,
+        "y": 3,
+        "z": -1
+      },
+      "scale": 1.01
+    },
+
+    "groundStorageTransform": {
+      "translation": {
+        "x": 0.07,
+        "y": 0.23,
+        "z": -0.13
+      },
+      "rotation": {
+        "x": 20,
+        "y": 75,
+        "z": -90
+      },
+      "scale": 0.8
+    },
+
+    "slotRefillIdentifier": "paxel"
+
+  },
+
+  "maxstacksize": 1,
+
+  "variantgroups": [
+    {
+      "code": "material",
+      "states": [ "diamond" ]
+    }
+  ],
+
+  "texturesByType": {
+    "paxel-diamond": {
+      "string": { "base": "game:block/transparent" }
+    }
+  },
+
+  "shapeByType": {
+    "paxel-diamond": { "base": "paxel:item/tool/paxel/paxel-{material}-shiny" }
+  },
+
+  "damagedby": [ "blockbreaking", "attacking" ],
+
+  "tooltierbytype": {
+    "*-diamond": 9
+  },
+
+  "miningspeedbytype": {
+    "*-diamond": {
+      "wood": 13.6,
+      "plant": 7,
+      "leaves": 4.8,
+      "soil": 8,
+      "sand": 8,
+      "gravel": 4.8,
+      "snow": 4.8,
+      "ceramic": 4,
+      "stone": 10,
+      "ore": 10,
+      "metal": 10,
+      "ice": 5
+    }
+  },
+
+  "durabilitybytype": {
+    "paxel-diamond": 13530 //10200 + 2100 from iron ingots + 10% from all
+  },
+
+  "attackRange": 1.6,
+
+  "attackpowerbytype": {
+    "paxel-diamond": 5
+  },
+
+  "guiTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": -35,
+      "y": 55,
+      "z": -10
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.4
+    },
+    "scale": 1.01
+  },
+
+  "fpHandTransform": {
+    "translation": {
+      "x": 0.0468,
+      "y": -0.2,
+      "z": 0
+    },
+    "rotation": {
+      "x": -15,
+      "y": 15,
+      "z": 100
+    },
+    "scale": 2
+  },
+
+  "groundTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "scale": 4
+  },
+
+  "tpHandTransform": {
+    "translation": {
+      "x": -1.15,
+      "y": -0.75,
+      "z": 0.03
+    },
+    "rotation": {
+      "x": 80,
+      "y": 5,
+      "z": -5
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.7,
+      "z": 0.5
+    },
+    "scale": 0.85
+  }
+
+}
