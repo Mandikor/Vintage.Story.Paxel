@@ -8,7 +8,7 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"diatools_texture": "paxel:block/resource/diatools_texture",
+		"diatools_texture": "paxel:block/diatools_texture",
 		"metal": "game:block/metal/ingot/stainlesssteel",
 		"handle": "game:block/metal/tarnished/rusty-iron",
 		"string": "game:item/tool/material/string"
